@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+	Enables to define configurations: options and resources. The resource or the option tag can be embedded under an option
+	tag in order to mark the fact that the resource is associated to an option, but it is for readability only, all resources
+	are stored in a flat way. A configuration can inherit another configuration: when there are conflicting options or resources,
+	it takes the most specific ones. A configuration may define a base directory from which all the resources are defined (the
+	basedir is not inherited). -->
+
+<configurations>
+
+	<config name="default">
+		<option name="timeout" value="0"/>
+		<option name="use_filtering" value="true"/>
+		<option name="use_bit_semantics" value="true"/>
+		<option name="missing_lexem_policy" value="output_missing_detailed"/>
+	</config>
+
+	<config name="minimal" inherit="default" basedir="resources/minimal">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="lexicon" file="lexicon.xml"/>
+		<resource name="testsuite" file="test.jeni"/>
+	</config>
+
+	<config name="semxtag" inherit="default" basedir="resources/sem-xtag2">
+		<resource name="grammar" file="grammar.xml"/>
+		<resource name="testsuite" file="test.jeni"/>
+		<resource name="morph" file="morph.mph"/>
+		<option name="selection" value="pattern_selection">
+			<option name="use_bit_semantics" value="false"/>	<!-- disabled for now -->
+			<resource name="grammar_semantics" file="semantics.sem"/>
+			<resource name="lexical_semantics" file="lexicon.sem"/>
+		</option>
+	</config>
+
+	<config name="kbgen" inherit="default">
+		<option name="timeout" value="10000"/>
+		<option name="use_filtering" value="true"/>
+		<option name="use_bit_semantics" value="true"/>
+		<option name="allow_duplicates" value="false"/> <!-- disabled for now -->
+		<resource name="grammar" file="resources/kbgen/grammar.xml"/>
+		<resource name="lexicon" file="resources/kbgen/lexicon.lex"/>
+		<resource name="testsuite" file="resources/kbgen/test.jeni"/>
+		<option name="ranker" value="default_ranker">
+			<option name="beam_size" value="3"/>
+			<resource name="lmfile" file="resources/ranking/lm-genia-lemma"/>
+		</option>
+	</config>
+
+</configurations>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE MODES SYSTEM "catalog.dtd">
+
+<MODES>
+  <MODE NAME="jeni" FILE="jeni.xml" FILE_NAME_GLOB="*.jeni"/>
+  <MODE NAME="sem" FILE="sem.xml" FILE_NAME_GLOB="*.sem"/>
+</MODES>
+
