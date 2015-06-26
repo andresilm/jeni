@@ -292,6 +292,7 @@ public class JeniGenerator implements Generator
 	 * @param agenda
 	 * @return chart items, each one being a surface realization
 	 */
+	//MAIN LOOP TO MODIFY
 	private JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
 		chart = new JeniChartItems();
