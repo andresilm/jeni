@@ -1,6 +1,7 @@
 *** Jeni project
 Java port of GenI - in progress
 
+
 *** Where is what?
 src/.../commons : common package for generators, include generation interfaces, grammar, lexicon, semantics, unification classes, tests, etc.
 src/../jeni : the Jeni package (mostly experimental, needs to be refactored)
