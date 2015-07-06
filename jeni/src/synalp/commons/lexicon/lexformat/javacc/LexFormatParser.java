@@ -100,7 +100,7 @@ public class LexFormatParser implements LexFormatParserConstants {
         String macroNameValue = "";
         FeatureStructure macroHeader = new FeatureStructure();
         Token acc;
-        float accValue = 1;
+        float accValue = 1.0f;
         Token family;
         FeatureStructure filters = new FeatureStructure();
         Token ex;
@@ -126,7 +126,7 @@ public class LexFormatParser implements LexFormatParserConstants {
     case 12:
       jj_consume_token(12);
       acc = jj_consume_token(ID);
-                           accValue=acc.image;
+                           accValue= Float.parseFloat(acc.image);
       break;
     default:
       jj_la1[3] = jj_gen;

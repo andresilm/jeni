@@ -295,9 +295,7 @@ public class JeniGenerator implements Generator
 	//MAIN LOOP TO MODIFY
 	private JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
-		for (JeniChartItem item : agenda) {
-			System.out.println("item probability: " + item.getProbability());
-		}
+		
 		chart = new JeniChartItems();
 		JeniChartItems auxiliaryAgenda = new JeniChartItems();
 

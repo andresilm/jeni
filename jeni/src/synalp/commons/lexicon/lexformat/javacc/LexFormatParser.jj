@@ -93,7 +93,7 @@ LexFormatEntry LexFormatEntry() :
 	String macroNameValue = "";
 	FeatureStructure macroHeader = new FeatureStructure();
 	Token acc;
-	float accValue = 1;
+	float accValue = 1.0f;
 	Token family;
 	FeatureStructure filters = new FeatureStructure();
 	Token ex;
@@ -105,7 +105,7 @@ LexFormatEntry LexFormatEntry() :
 	"*ENTRY:" name=<ID>
 	"*CAT:" cat=<ID>
 	"*SEM:" (macroName=<ID> macroHeader=FlatFS() {macroNameValue=macroName.image;})?
-	("*ACC:" acc=<ID> {accValue=acc.image;})? // not sure about what is acc
+	("*ACC:" acc=<ID> {accValue= Float.parseFloat(acc.image);})? // not sure about what is acc
 	"*FAM:" family=<ID>
 	("*FILTERS:" filters=FlatFS())?
 	("*EX:" ("{" (ex=<ID> {exValue=ex.image;})? "}")? )? // not sure about what is ex
