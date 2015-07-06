@@ -278,7 +278,7 @@ public class JeniGenerator implements Generator
 			for(GrammarEntry entry : entries)
 			{
 				TimeoutManager.checkTimeout("Timeout in preparing agenda");
-				items.addDoublons(new JeniChartItem(entry.getTree(), entry.getSemantics(), entry.getContext()));
+				items.addDoublons(new JeniChartItem(entry.getTree(), entry.getSemantics(), entry.getContext(), entry.getProbability()));
 			}
 			ret.add(items);
 		}
@@ -295,6 +295,9 @@ public class JeniGenerator implements Generator
 	//MAIN LOOP TO MODIFY
 	private JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
+		for (JeniChartItem item : agenda) {
+			System.out.println("item probability: " + item.getProbability());
+		}
 		chart = new JeniChartItems();
 		JeniChartItems auxiliaryAgenda = new JeniChartItems();
 

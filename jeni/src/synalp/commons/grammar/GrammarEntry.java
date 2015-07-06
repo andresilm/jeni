@@ -24,6 +24,8 @@ public class GrammarEntry implements UnifiableComponent
 	private Semantics semantics;
 	private InstantiationContext context;
 	private FeatureStructure entryInterface;
+	
+	private float probability;
 
 
 	/**
@@ -82,6 +84,8 @@ public class GrammarEntry implements UnifiableComponent
 		this.semantics = new Semantics(entry.getSemantics());
 		this.context = new InstantiationContext(entry.getContext());
 		this.entryInterface = new FeatureStructure(entry.getInterface());
+		
+		this.probability = entry.getProbability();
 	}
 
 
@@ -490,6 +494,16 @@ public class GrammarEntry implements UnifiableComponent
 	public void setOriginalName(String originalName)
 	{
 		this.originalName = originalName;
+	}
+
+
+	public float getProbability() {
+		return probability;
+	}
+
+
+	public void setProbability(float probability) {
+		this.probability = probability;
 	}
 
 }

@@ -62,6 +62,14 @@ public class JeniGeneratorTest extends GeneratorTest
 		test(new JeniGenerator(loadBundle(ResourcesBundleType.MINIMAL_BUNDLE.getBundle())),
 				Semantics.readSemantics("A0_1:sleep(e0 a0) A0_1:bill(a0)"), "Bill sleep");
 	}
+	
+	@Test
+	public void test1_probabilistic()
+	{
+		System.out.println("\n**** Test Probabilistic");
+		test(new JeniGenerator(loadBundle(ResourcesBundleType.PROBABILISTIC_BUNDLE.getBundle())),
+				Semantics.readSemantics("birthPlace(e x y) Yury_Usachov(x) Russia(y)"));
+	}
 
 
 	@Test

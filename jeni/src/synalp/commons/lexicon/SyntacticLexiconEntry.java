@@ -18,6 +18,8 @@ public class SyntacticLexiconEntry
 	private Semantics semantics = new Semantics();
 	private Equations equations = new Equations();
 	private FeatureStructure entryInterface = new FeatureStructure();
+	
+	private float probability;
 
 
 	/**
@@ -166,5 +168,15 @@ public class SyntacticLexiconEntry
 	public String toShortString()
 	{
 		return lemma + " " + Arrays.asList(families) + " semantics:" + semantics;
+	}
+
+
+	public float getProbability() {
+		return probability;
+	}
+
+
+	public void setProbability(float probability) {
+		this.probability = probability;
 	}
 }

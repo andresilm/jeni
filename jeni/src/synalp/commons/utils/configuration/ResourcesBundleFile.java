@@ -40,7 +40,12 @@ public enum ResourcesBundleFile
 
 	KBGEN_GRAMMAR(new File("resources/kbgen/grammar.xml")),
 	KBGEN_LEXICON(new File("resources/kbgen/lexicon.lex")),
-	KBGEN_TESTSUITE(new File("resources/kbgen/test.jeni"));
+	KBGEN_TESTSUITE(new File("resources/kbgen/test.jeni")),
+	
+	PROBABILISTIC_GRAMMAR(new File("resources/probabilistic/valuation.xml")),
+	PROBABILISTIC_LEXICON(new File("resources/probabilistic/koda-lexicon.lex")),
+	PROBABILISTIC_TESTSUITE(new File("resources/probabilistic/test.geni"));
+	
 
 	private final File value;
 

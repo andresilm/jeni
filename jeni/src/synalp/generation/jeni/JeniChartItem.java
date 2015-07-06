@@ -32,6 +32,8 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 	private JeniChartItem parentItemSource;
 	private JeniChartItem parentItemTarget;
 	private DerivationNodeType parentOperationType;
+	
+	private float probability;
 
 
 	/**
@@ -59,8 +61,9 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 	 * @param tree
 	 * @param semantics
 	 * @param context
+	 * @param probability
 	 */
-	public JeniChartItem(Tree tree, Semantics semantics, InstantiationContext context)
+	public JeniChartItem(Tree tree, Semantics semantics, InstantiationContext context,  float probability)
 	{
 		this.id = createNewId();
 		this.tree = tree;
@@ -69,9 +72,11 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 		this.context.clean(semantics, tree);
 		this.parentOperationType = DerivationNodeType.ANCHORING;
 		this.derivation = new DerivationTree(tree, new DerivationNode(DerivationNodeType.ANCHORING, tree));
+		
+		this.probability = probability;
 	}
-
-
+	
+	
 	/**
 	 * Creates a new ChartItem based on given tree, semantics, context and derivation tree. This
 	 * method creates a new id for the ChartItem.
@@ -82,6 +87,7 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 	 * @param type the type of operation that lead to that item
 	 * @param itemSource the source item of the operation
 	 * @param itemTarget the target item of the operation
+	 * @param probability the probability of this item
 	 */
 	public JeniChartItem(Tree tree, Semantics semantics, InstantiationContext context, DerivationTree derivationTree, DerivationNodeType type,
 			JeniChartItem itemSource, JeniChartItem itemTarget)
@@ -95,6 +101,8 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 		this.parentOperationType = type;
 		this.parentItemSource = itemSource;
 		this.parentItemTarget = itemTarget;
+		
+		this.probability = itemSource.getProbability() * itemTarget.getProbability();
 	}
 
 
@@ -397,5 +405,15 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 	public List<Lemma> getLemmas()
 	{
 		return tree.getLemmas();
+	}
+
+
+	public float getProbability() {
+		return probability;
+	}
+
+
+	public void setProbability(float probability) {
+		this.probability = probability;
 	}
 }

@@ -100,7 +100,7 @@ public class LexFormatParser implements LexFormatParserConstants {
         String macroNameValue = "";
         FeatureStructure macroHeader = new FeatureStructure();
         Token acc;
-        String accValue = "1";
+        float accValue = 1;
         Token family;
         FeatureStructure filters = new FeatureStructure();
         Token ex;

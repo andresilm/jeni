@@ -30,7 +30,7 @@ public class LexFormatEntry
 
 	private String name;
 	private String ex; // not sure of its use
-	private String acc; // not sure of its use
+	private float acc; // not sure of its use
 	private String cat; // cat does not seem used, is it ?
 	private String family;
 	private Filter filters;
@@ -49,7 +49,7 @@ public class LexFormatEntry
 	 * @param ex
 	 * @param equations
 	 */
-	public LexFormatEntry(String name, String cat, String macroName, FeatureStructure macroHeader, String acc, String family, Filter filters, String ex,
+	public LexFormatEntry(String name, String cat, String macroName, FeatureStructure macroHeader, float acc, String family, Filter filters, String ex,
 			Equations equations)
 	{
 		this.name = name;
@@ -111,6 +111,8 @@ public class LexFormatEntry
 			Semantics semantics = new Semantics(macro.getSemantics());
 			semantics.instantiate(context);
 			ret.setSemantics(semantics);
+			
+			ret.setProbability(acc);
 		}
 
 		return ret;
@@ -126,7 +128,7 @@ public class LexFormatEntry
 	/**
 	 * @return the ACC field
 	 */
-	public String getAcc() {
+	public float getAcc() {
 		return acc;
 	}
 
@@ -173,7 +175,7 @@ public class LexFormatEntry
 		ret.append("*ENTRY: ").append(name).append("\n");
 		ret.append("*CAT: ").append(cat).append("\n");
 		ret.append("*SEM: ").append(macroName).append(macroHeader).append("\n");
-		ret.append("*ACC: ").append(acc).append("\n");
+		ret.append("*PROB: ").append(acc).append("\n");
 		ret.append("*FAM: ").append(family).append("\n");
 		ret.append("*FILTERS: ").append(filters).append("\n");
 		ret.append("*EX: ").append(ex).append("\n");

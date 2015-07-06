@@ -50,7 +50,11 @@ public enum ResourcesBundleType
 	 */
 	KBGEN_BUNDLE(new ResourceBundle(KBGEN_GRAMMAR.getFile(), 
 	                                KBGEN_LEXICON.getFile(), 
-	                                KBGEN_TESTSUITE.getFile()));
+	                                KBGEN_TESTSUITE.getFile())),
+	
+	PROBABILISTIC_BUNDLE(new ResourceBundle(PROBABILISTIC_GRAMMAR.getFile(),
+											PROBABILISTIC_LEXICON.getFile(),
+											PROBABILISTIC_TESTSUITE.getFile()));
 	
 	private final ResourceBundle value;
 	

@@ -235,6 +235,8 @@ public class JeniLexicalSelection implements LexicalSelection
 			newEntry.getTree().setId(newName);
 			newEntry.setName(newName);
 			newEntry.setInterface(fs);
+			
+			newEntry.setProbability(lexEntry.getProbability());
 
 			/* 
 			 * If equations apply, we need to make sure that the semantics of the grammar entry is well instantiated with
