@@ -176,7 +176,7 @@ public class GeneratorMain
 			name = name.substring(0, 255);
 
 		File outputDir = new File(outputDirectory + File.separator + name);
-		outputDir.delete();
+		Utils.delete(outputDir);
 		outputDir.mkdirs();
 
 		RandomAccessFile output = new RandomAccessFile(outputDir + File.separator + "responses", "rw");

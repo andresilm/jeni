@@ -33,6 +33,13 @@
 		</option>
 	</config>
 
+	<config name="probabilistic" inherit="default" basedir="resources/probabilistic">
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="testsuite" file="test.geni"/>
+		<resource name="lexicon" file="koda-lexicon.lex"/>
+		<option name="missing_lexem_policy" value="output_lemma"/>
+	</config>
+
 	<config name="kbgen" inherit="default">
 		<option name="timeout" value="10000"/>
 		<option name="use_filtering" value="true"/>
