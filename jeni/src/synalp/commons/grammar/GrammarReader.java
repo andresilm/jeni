@@ -12,8 +12,6 @@ import org.xml.sax.helpers.DefaultHandler;
 import synalp.commons.input.Lemma;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.*;
-import synalp.commons.utils.Resources;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
 import synalp.generation.configuration.GeneratorOption;
 
 
