@@ -4,11 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 import synalp.commons.semantics.Semantics;
-import synalp.commons.utils.ResourceBundle;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.*;
-import synalp.generation.morphology.DefaultMorphRealizer;
-import synalp.generation.ranker.DefaultRanker;
+
 
 
 public class ProbabilisticGenerator extends JeniGenerator

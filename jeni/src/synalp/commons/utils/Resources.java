@@ -21,19 +21,6 @@ public class Resources
 	public static Map<File, SyntacticLexicon> loadedLexicons = new HashMap<File, SyntacticLexicon>();
 
 
-	/**
-	 * Loads the given ResourceBundle. This method modifies the given bundle by setting its grammar,
-	 * lexicon and test suite.
-	 * @return the input bundle with grammar, lexicon and test suite set.
-	 */
-	public static ResourceBundle loadBundle(ResourceBundle bundle)
-	{
-		bundle.setGrammar(loadGrammar(bundle.getGrammarFile()));
-		bundle.setSyntacticLexicon(loadLexicon(bundle.getSyntacticLexiconFile()));
-		bundle.setTestSuite(loadTestSuite(bundle.getTestSuiteFile()));
-		bundle.setMorphLexicon(loadMorphLexicon(bundle.getMorphLexiconFile()));
-		return bundle;
-	}
 
 
 	/**

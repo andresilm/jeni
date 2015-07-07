@@ -9,7 +9,6 @@ import synalp.commons.grammar.*;
 import synalp.commons.lexicon.SyntacticLexicon;
 import synalp.commons.semantics.*;
 import synalp.commons.utils.*;
-import synalp.commons.utils.ResourceBundle;
 import synalp.commons.utils.exceptions.TimeoutException;
 import synalp.generation.*;
 import synalp.generation.configuration.*;
@@ -42,29 +41,13 @@ public class JeniGenerator implements Generator
 
 
 	/**
-	 * Creates a new Generator based on given grammar and lexicon. It uses a DefaultRanker.
+	 * Creates a new Generator based on given grammar and lexicon. It uses a DefaultRanker and a DefaultMorphRealizer.
 	 * @param grammar
 	 * @param lexicon
 	 */
 	public JeniGenerator(Grammar grammar, SyntacticLexicon lexicon)
 	{
 		init(grammar, lexicon, new JeniLexicalSelection(grammar, lexicon), new DefaultMorphRealizer(), new DefaultRanker());
-	}
-
-
-	/**
-	 * Creates a new JeniGenerator based on given ResourceBundle. It uses a DefaultRanker. If the
-	 * bundle would be loaded it could simplify code.
-	 * @param bundle a loaded bundle
-	 */
-	public JeniGenerator(ResourceBundle bundle)
-	{
-		bundle.load();
-		init(bundle.getGrammar(),
-				bundle.getSyntacticLexicon(),
-				new JeniLexicalSelection(bundle),
-				new DefaultMorphRealizer(bundle.getMorphLexicon()),
-				new DefaultRanker());
 	}
 
 
@@ -108,72 +91,6 @@ public class JeniGenerator implements Generator
 			morphRealizer = new DefaultMorphRealizer(config.getMorphLexicon());
 		else morphRealizer = new DefaultMorphRealizer();
 
-	}
-
-
-	/**
-	 * Creates a new Generator based on given grammar, lexicon and ranker.
-	 * @param grammar
-	 * @param lexicon
-	 * @param ranker
-	 */
-	public JeniGenerator(Grammar grammar, SyntacticLexicon lexicon, Ranker ranker)
-	{
-		init(grammar, lexicon, new JeniLexicalSelection(grammar, lexicon), new DefaultMorphRealizer(), ranker);
-	}
-
-
-	/**
-	 * Creates a new JeniGenerator based on given ResourceBundle and Ranker.
-	 * @param bundle a loaded bundle
-	 * @param ranker
-	 */
-	public JeniGenerator(ResourceBundle bundle, Ranker ranker)
-	{
-		bundle.load();
-		init(bundle.getGrammar(),
-				bundle.getSyntacticLexicon(),
-				new JeniLexicalSelection(bundle),
-				new DefaultMorphRealizer(bundle.getMorphLexicon()),
-				ranker);
-	}
-
-
-	/**
-	 * Creates a new Generator based on given grammar, lexicon and ranker.
-	 * @param grammar
-	 * @param lexicon
-	 * @param morphRealizer
-	 */
-	public JeniGenerator(Grammar grammar, SyntacticLexicon lexicon, MorphRealizer morphRealizer)
-	{
-		init(grammar, lexicon, new JeniLexicalSelection(grammar, lexicon), morphRealizer, new DefaultRanker());
-	}
-
-
-	/**
-	 * Creates a new JeniGenerator based on given ResourceBundle and Ranker.
-	 * @param bundle a loaded bundle
-	 * @param morphRealizer
-	 */
-	public JeniGenerator(ResourceBundle bundle, MorphRealizer morphRealizer)
-	{
-		bundle.load();
-		init(bundle.getGrammar(), bundle.getSyntacticLexicon(), new JeniLexicalSelection(bundle), morphRealizer, new DefaultRanker());
-	}
-
-
-	/**
-	 * Creates a new JeniGenerator based on given resources and modules.
-	 * @param grammar
-	 * @param lexicon
-	 * @param selection
-	 * @param morphRealizer
-	 * @param ranker
-	 */
-	public JeniGenerator(Grammar grammar, SyntacticLexicon lexicon, LexicalSelection selection, MorphRealizer morphRealizer, Ranker ranker)
-	{
-		init(grammar, lexicon, selection, morphRealizer, ranker);
 	}
 
 
