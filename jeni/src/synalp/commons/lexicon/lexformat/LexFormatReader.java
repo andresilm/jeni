@@ -67,9 +67,11 @@ public class LexFormatReader
 	 */
 	public static Macros readMacros(File file) throws Exception
 	{
-		RandomAccessFile f = new RandomAccessFile(file, "r");
-		byte[] content = new byte[(int) f.length()];
-		f.readFully(content);
-		return LexFormatParser.readMacros(new String(content));
+		try(RandomAccessFile f = new RandomAccessFile(file, "r"))
+		{
+			byte[] content = new byte[(int) f.length()];
+			f.readFully(content);
+			return LexFormatParser.readMacros(new String(content));
+		}
 	}
 }
