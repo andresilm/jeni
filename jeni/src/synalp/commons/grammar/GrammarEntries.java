@@ -47,6 +47,7 @@ public class GrammarEntries extends HashSet<GrammarEntry>
 	 * Shallow copy constructor.
 	 * @param entries
 	 */
+	@SafeVarargs
 	public GrammarEntries(Collection<GrammarEntry>... entries)
 	{
 		for(Collection<GrammarEntry> coll : entries)
