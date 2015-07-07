@@ -103,7 +103,7 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 		this.parentItemTarget = itemTarget;
 	
 		this.probability = itemSource.getProbability() * itemTarget.getProbability();
-		//System.out.println("P(new item) = " +this.probability);
+		
 	}
 
 
