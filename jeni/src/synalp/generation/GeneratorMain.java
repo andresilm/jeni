@@ -12,11 +12,11 @@ import synalp.commons.utils.*;
 import synalp.commons.utils.ResourceBundle;
 import synalp.commons.utils.configuration.*;
 import synalp.commons.utils.exceptions.TimeoutException;
+import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.configuration.*;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.ranker.NgramRanker;
-
 import static org.kohsuke.args4j.ExampleMode.ALL;
 
 /**
@@ -57,6 +57,12 @@ public class GeneratorMain
 	private List<String> options = new ArrayList<String>();
 
 
+	static
+	{
+		LoggerConfiguration.init();
+	}
+	
+	
 	/**
 	 * @param args
 	 */
