@@ -293,7 +293,7 @@ public class JeniGenerator implements Generator
 	 * @return chart items, each one being a surface realization
 	 */
 	//MAIN LOOP TO MODIFY
-	private JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
+	protected JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
 		
 		chart = new JeniChartItems();
@@ -561,6 +561,24 @@ public class JeniGenerator implements Generator
 	public void setMorphRealizer(MorphRealizer morphRealizer)
 	{
 		this.morphRealizer = morphRealizer;
+	}
+
+
+	/**
+	 * @return the combiner
+	 */
+	public TreeCombiner getCombiner()
+	{
+		return combiner;
+	}
+
+
+	/**
+	 * @param combiner the combiner to set
+	 */
+	public void setCombiner(TreeCombiner combiner)
+	{
+		this.combiner = combiner;
 	}
 
 
