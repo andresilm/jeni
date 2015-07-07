@@ -23,7 +23,7 @@ public class SemanticBuilderTest
 	@SuppressWarnings("javadoc")
 	public void testLoad() throws IOException
 	{
-		Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
+		/*Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
 		FamiliesSemantics familySemantics = null;
 		try
 		{
@@ -46,6 +46,6 @@ public class SemanticBuilderTest
 
 		System.out.println();
 		
-		Grammar.printShort(grammar.values());
+		Grammar.printShort(grammar.values());*/
 	}
 }

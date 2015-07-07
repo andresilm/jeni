@@ -56,13 +56,27 @@ public class GeneratorConfigurations extends HashMap<String, GeneratorConfigurat
 	
 	
 	/**
+	 * Tests if the given configuration exists.
+	 * @param name
+	 * @return
+	 */
+	public static boolean hasConfig(String name)
+	{
+		return singleton.containsKey(name);
+	}
+	
+	
+	/**
 	 * Returns the configuration with given name.
 	 * @param name
 	 * @return a configuration or null if not found
+	 * @throws a ConfigurationException if the configuration is not found
 	 */
 	public static GeneratorConfiguration getConfig(String name)
 	{
-		return singleton.get(name);
+		if (hasConfig(name))
+			return singleton.get(name);
+		else throw new ConfigurationException("Error: unable to find configuration '"+name+"', known configurations: "+singleton.keySet());
 	}
 
 

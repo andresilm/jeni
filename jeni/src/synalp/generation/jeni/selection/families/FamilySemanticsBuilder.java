@@ -8,8 +8,7 @@ import org.apache.log4j.*;
 import synalp.commons.grammar.*;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.FeatureVariable;
-import synalp.commons.utils.Resources;
-import synalp.generation.configuration.GeneratorOption;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.JeniLexicalSelection;
 import synalp.generation.jeni.selection.patterns.*;
 import synalp.generation.jeni.selection.patterns.templates.*;
@@ -43,7 +42,7 @@ public class FamilySemanticsBuilder
 		// disables automatic node ids assignments otherwise it will overwrite the existing ids
 		GeneratorOption.ASSIGN_NODE_IDS = false;
 
-		Grammar grammar = Resources.loadGrammar(grammarFile);
+		Grammar grammar = GeneratorConfiguration.loadGrammar(grammarFile, false);
 		SelectionPatterns patterns = SelectionPatterns.load(patternsFile);
 		FamilySemanticsBuilder builder = new FamilySemanticsBuilder(patterns);
 		builder.setSemantics(grammar);

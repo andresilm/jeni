@@ -37,37 +37,6 @@ public class Resources
 
 
 	/**
-	 * Loads the given resources packaged as a ResourceBundle. If the resources were already loaded,
-	 * returns the loaded versions.
-	 * @param grammar
-	 * @param lexicon
-	 * @param testSuite
-	 * @return
-	 */
-	public static ResourceBundle loadBundle(File grammar, File lexicon, File testSuite)
-	{
-		return loadBundle(grammar, lexicon, testSuite, false);
-	}
-
-
-	/**
-	 * Loads the given resources packaged as a ResourceBundle.
-	 * @param grammar
-	 * @param lexicon
-	 * @param testSuite
-	 * @param forceReload if true, the resources will be reloaded, if false, the loaded resources
-	 *            will be returned or loaded for the first time.
-	 * @return
-	 */
-	public static ResourceBundle loadBundle(File grammar, File lexicon, File testSuite, boolean forceReload)
-	{
-		return new ResourceBundle(loadGrammar(grammar, forceReload),
-									loadLexicon(lexicon, forceReload),
-									loadTestSuite(testSuite));
-	}
-
-
-	/**
 	 * Loads the given grammar file in XML. If the given File is not a grammar or is not found an
 	 * exception is caught and print to stdout. If the grammar has already been loaded, it returns
 	 * the loaded grammar.

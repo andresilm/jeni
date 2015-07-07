@@ -1,25 +1,26 @@
 package synalp.generation.jeni.tests;
 
-import synalp.commons.grammar.Grammar;
 import synalp.commons.input.*;
-import synalp.commons.lexicon.SyntacticLexicon;
 import synalp.commons.utils.*;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
 import synalp.commons.utils.exceptions.TimeoutException;
 import synalp.commons.utils.loggers.LoggerConfiguration;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.JeniLexicalSelection;
 
+/**
+ * Simple filtering test.
+ * @author adenis
+ *
+ */
 public class TestFiltering
 {
 	public static void main(String[] args)
 	{
-		Grammar grammar = Resources.loadGrammar(ResourcesBundleFile.KBGEN_GRAMMAR.getFile());
-		SyntacticLexicon lexicon = Resources.loadLexicon(ResourcesBundleFile.KBGEN_LEXICON.getFile());
-		TestSuite testSuite = Resources.loadTestSuite(ResourcesBundleFile.KBGEN_TESTSUITE.getFile());
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig("kbgen");
 		
 		LoggerConfiguration.init();
-		JeniLexicalSelection selection = new JeniLexicalSelection(grammar, lexicon);
-		for(TestSuiteEntry entry : testSuite)
+		JeniLexicalSelection selection = new JeniLexicalSelection(config.getGrammar(), config.getSyntacticLexicon());
+		for(TestSuiteEntry entry : config.getTestSuite())
 		{
 			System.out.println(entry.getId());
 			try

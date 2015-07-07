@@ -31,6 +31,215 @@ public class GeneratorConfiguration
 	private static Map<File, SyntacticLexicon> loadedSynLexicons = new HashMap<File, SyntacticLexicon>();
 
 
+
+	/**
+	 * Loads the given lexicon file in XML or LEX format. If the given File is not a lexicon or is
+	 * not found an exception is caught and print to stderr.
+	 * @param file a lexicon file in XML or LEX format, the extension distinguishing the type.
+	 * @param forceReload if true, the lexicon will be reloaded, if false, the loaded lexicon will
+	 *            be returned or loaded for the first time.
+	 * @return a SyntacticLexicon or null if there has been an exception while reading the file
+	 */
+	public static SyntacticLexicon loadSynLexicon(File file, boolean forceReload)
+	{
+		if (loadedSynLexicons.containsKey(file) && !forceReload)
+			return loadedSynLexicons.get(file);
+
+		try
+		{
+			SyntacticLexicon ret = SyntacticLexiconReader.readLexicon(file);
+			loadedSynLexicons.put(file, ret);
+			return ret;
+		}
+		catch (Exception e)
+		{
+			System.err.println("Error: exception while reading lexicon " + file + " : " + e.getMessage());
+		}
+
+		return null;
+	}
+	
+	
+	/**
+	 * Loads the given grammar file in XML. If the given File is not a grammar or is not found an
+	 * exception is caught and print to stderr.
+	 * @param file a grammar file in XML format.
+	 * @param forceReload if true, the grammar will be reloaded, if false, the loaded grammar will
+	 *            be returned or loaded for the first time.
+	 * @return a Grammar or null if there has been an exception while reading the file
+	 */
+	public static Grammar loadGrammar(File file, boolean forceReload)
+	{
+		if (loadedGrammars.containsKey(file) && !forceReload)
+			return loadedGrammars.get(file);
+
+		try
+		{
+			Grammar ret = GrammarReader.readGrammar(file);
+			loadedGrammars.put(file, ret);
+			return ret;
+		}
+		catch (Exception e)
+		{
+			System.err.println("Error: exception while reading grammar " + file + " : " + e.getMessage());
+		}
+
+		return null;
+	}
+	
+	
+	/**
+	 * Returns the grammar found for given configuration name. If it has not been loaded before, loads it.
+	 * @param configuration
+	 * @return
+	 */
+	public static Grammar getGrammar(String configuration)
+	{
+		return GeneratorConfigurations.getConfig(configuration).getGrammar();
+	}
+	
+	
+	/**
+	 * Returns the grammar file found for given configuration name.
+	 * @param configuration
+	 * @return
+	 */
+	public static File getGrammarFile(String configuration)
+	{
+		return GeneratorConfigurations.getConfig(configuration).getGrammarFile();
+	}
+	
+
+
+	/**
+	 * Loads the given test suite file in Jeni format. If the given File is not in Jeni format or is
+	 * not found an exception is caught and print to stderr.
+	 * @param file a lexicon file in XML format.
+	 * @param forceReload
+	 * @return a TestSuite or null if there has been an exception while reading the file
+	 */
+	public static TestSuite loadTestSuite(File file, boolean forceReload)
+	{
+		if (loadedTestsuites.containsKey(file) && !forceReload)
+			return loadedTestsuites.get(file);
+
+		try
+		{
+			TestSuite ret = TestSuiteReader.readTestSuite(file);
+			loadedTestsuites.put(file, ret);
+			return ret;
+		}
+		catch (Exception e)
+		{
+			System.err.println("Error: exception while reading test suite " + file + " : " + e.getMessage());
+		}
+
+		return null;
+	}
+
+
+	/**
+	 * Loads the given morph lexicon in XML or MPH format.
+	 * @param file
+	 * @param forceReload
+	 * @return a morph lexicon
+	 */
+	public static MorphLexicon loadMorphLexicon(File file, boolean forceReload)
+	{
+		if (loadedMorphLexicons.containsKey(file) && !forceReload)
+			return loadedMorphLexicons.get(file);
+
+		if (file == null)
+			return new MorphLexicon();
+
+		try
+		{
+			MorphLexicon ret = MorphLexiconReader.readLexicon(file);
+			loadedMorphLexicons.put(file, ret);
+			return ret;
+		}
+		catch (Exception e)
+		{
+			System.err.println("Error: exception while reading morph lexicon " + file + " : " + e.getMessage());
+		}
+		return null;
+	}
+	
+
+	/**
+	 * @return the loadedGrammars
+	 */
+	public static Map<File, Grammar> getLoadedGrammars()
+	{
+		return loadedGrammars;
+	}
+
+
+	/**
+	 * @param loadedGrammars the loadedGrammars to set
+	 */
+	public static void setLoadedGrammars(Map<File, Grammar> loadedGrammars)
+	{
+		GeneratorConfiguration.loadedGrammars = loadedGrammars;
+	}
+
+
+	/**
+	 * @return the loadedTestsuites
+	 */
+	public static Map<File, TestSuite> getLoadedTestsuites()
+	{
+		return loadedTestsuites;
+	}
+
+
+	/**
+	 * @param loadedTestsuites the loadedTestsuites to set
+	 */
+	public static void setLoadedTestsuites(Map<File, TestSuite> loadedTestsuites)
+	{
+		GeneratorConfiguration.loadedTestsuites = loadedTestsuites;
+	}
+
+
+	/**
+	 * @return the loadedMorphLexicons
+	 */
+	public static Map<File, MorphLexicon> getLoadedMorphLexicons()
+	{
+		return loadedMorphLexicons;
+	}
+
+
+	/**
+	 * @param loadedMorphLexicons the loadedMorphLexicons to set
+	 */
+	public static void setLoadedMorphLexicons(Map<File, MorphLexicon> loadedMorphLexicons)
+	{
+		GeneratorConfiguration.loadedMorphLexicons = loadedMorphLexicons;
+	}
+
+
+	/**
+	 * @return the loadedSynLexicons
+	 */
+	public static Map<File, SyntacticLexicon> getLoadedSynLexicons()
+	{
+		return loadedSynLexicons;
+	}
+
+
+	/**
+	 * @param loadedSynLexicons the loadedSynLexicons to set
+	 */
+	public static void setLoadedSynLexicons(Map<File, SyntacticLexicon> loadedSynLexicons)
+	{
+		GeneratorConfiguration.loadedSynLexicons = loadedSynLexicons;
+	}
+
+	
+	
+
 	/**
 	 * @param name
 	 */
@@ -199,77 +408,6 @@ public class GeneratorConfiguration
 	}
 
 
-	/**
-	 * @return the loadedGrammars
-	 */
-	public static Map<File, Grammar> getLoadedGrammars()
-	{
-		return loadedGrammars;
-	}
-
-
-	/**
-	 * @param loadedGrammars the loadedGrammars to set
-	 */
-	public static void setLoadedGrammars(Map<File, Grammar> loadedGrammars)
-	{
-		GeneratorConfiguration.loadedGrammars = loadedGrammars;
-	}
-
-
-	/**
-	 * @return the loadedTestsuites
-	 */
-	public static Map<File, TestSuite> getLoadedTestsuites()
-	{
-		return loadedTestsuites;
-	}
-
-
-	/**
-	 * @param loadedTestsuites the loadedTestsuites to set
-	 */
-	public static void setLoadedTestsuites(Map<File, TestSuite> loadedTestsuites)
-	{
-		GeneratorConfiguration.loadedTestsuites = loadedTestsuites;
-	}
-
-
-	/**
-	 * @return the loadedMorphLexicons
-	 */
-	public static Map<File, MorphLexicon> getLoadedMorphLexicons()
-	{
-		return loadedMorphLexicons;
-	}
-
-
-	/**
-	 * @param loadedMorphLexicons the loadedMorphLexicons to set
-	 */
-	public static void setLoadedMorphLexicons(Map<File, MorphLexicon> loadedMorphLexicons)
-	{
-		GeneratorConfiguration.loadedMorphLexicons = loadedMorphLexicons;
-	}
-
-
-	/**
-	 * @return the loadedSynLexicons
-	 */
-	public static Map<File, SyntacticLexicon> getLoadedSynLexicons()
-	{
-		return loadedSynLexicons;
-	}
-
-
-	/**
-	 * @param loadedSynLexicons the loadedSynLexicons to set
-	 */
-	public static void setLoadedSynLexicons(Map<File, SyntacticLexicon> loadedSynLexicons)
-	{
-		GeneratorConfiguration.loadedSynLexicons = loadedSynLexicons;
-	}
-
 
 	/**
 	 * Returns the morph lexicon of this configuration. Throws a ConfigurationException if not
@@ -309,17 +447,28 @@ public class GeneratorConfiguration
 	}
 
 
+	
+	/**
+	 * Returns the grammar file of this configuration. Throws a ConfigurationException if not found.
+	 * @return the grammar file of this configuration if it exists
+	 */
+	public File getGrammarFile()
+	{
+		if (!resources.containsKey(GRAMMAR_KEY))
+			throwMissingResource(GRAMMAR_KEY);
+		return resources.get(GRAMMAR_KEY);
+	}
+	
+
 	/**
 	 * Returns the grammar of this configuration. Throws a ConfigurationException if not found.
 	 * @return the grammar of this configuration if it exists
 	 */
 	public Grammar getGrammar()
 	{
-		if (!resources.containsKey(GRAMMAR_KEY))
-			throwMissingResource(GRAMMAR_KEY);
-		return loadGrammar(resources.get(GRAMMAR_KEY), false);
+		return loadGrammar(getGrammarFile(), false);
 	}
-
+	
 
 	/**
 	 * Returns the morph lexicon of this configuration.
@@ -368,118 +517,7 @@ public class GeneratorConfiguration
 		else return loadGrammar(resources.get(GRAMMAR_KEY), false);
 	}
 
-
-	/**
-	 * Loads the given lexicon file in XML or LEX format. If the given File is not a lexicon or is
-	 * not found an exception is caught and print to stderr.
-	 * @param file a lexicon file in XML or LEX format, the extension distinguishing the type.
-	 * @param forceReload if true, the lexicon will be reloaded, if false, the loaded lexicon will
-	 *            be returned or loaded for the first time.
-	 * @return a SyntacticLexicon or null if there has been an exception while reading the file
-	 */
-	public static SyntacticLexicon loadSynLexicon(File file, boolean forceReload)
-	{
-		if (loadedSynLexicons.containsKey(file) && !forceReload)
-			return loadedSynLexicons.get(file);
-
-		try
-		{
-			SyntacticLexicon ret = SyntacticLexiconReader.readLexicon(file);
-			loadedSynLexicons.put(file, ret);
-			return ret;
-		}
-		catch (Exception e)
-		{
-			System.err.println("Error: exception while reading lexicon " + file + " : " + e.getMessage());
-		}
-
-		return null;
-	}
-
-
-	/**
-	 * Loads the given grammar file in XML. If the given File is not a grammar or is not found an
-	 * exception is caught and print to stderr.
-	 * @param file a grammar file in XML format.
-	 * @param forceReload if true, the grammar will be reloaded, if false, the loaded grammar will
-	 *            be returned or loaded for the first time.
-	 * @return a Grammar or null if there has been an exception while reading the file
-	 */
-	public static Grammar loadGrammar(File file, boolean forceReload)
-	{
-		if (loadedGrammars.containsKey(file) && !forceReload)
-			return loadedGrammars.get(file);
-
-		try
-		{
-			Grammar ret = GrammarReader.readGrammar(file);
-			loadedGrammars.put(file, ret);
-			return ret;
-		}
-		catch (Exception e)
-		{
-			System.err.println("Error: exception while reading grammar " + file + " : " + e.getMessage());
-		}
-
-		return null;
-	}
-
-
-	/**
-	 * Loads the given test suite file in Jeni format. If the given File is not in Jeni format or is
-	 * not found an exception is caught and print to stderr.
-	 * @param file a lexicon file in XML format.
-	 * @param forceReload
-	 * @return a TestSuite or null if there has been an exception while reading the file
-	 */
-	public static TestSuite loadTestSuite(File file, boolean forceReload)
-	{
-		if (loadedTestsuites.containsKey(file) && !forceReload)
-			return loadedTestsuites.get(file);
-
-		try
-		{
-			TestSuite ret = TestSuiteReader.readTestSuite(file);
-			loadedTestsuites.put(file, ret);
-			return ret;
-		}
-		catch (Exception e)
-		{
-			System.err.println("Error: exception while reading test suite " + file + " : " + e.getMessage());
-		}
-
-		return null;
-	}
-
-
-	/**
-	 * Loads the given morph lexicon in XML or MPH format.
-	 * @param file
-	 * @param forceReload
-	 * @return a morph lexicon
-	 */
-	public static MorphLexicon loadMorphLexicon(File file, boolean forceReload)
-	{
-		if (loadedMorphLexicons.containsKey(file) && !forceReload)
-			return loadedMorphLexicons.get(file);
-
-		if (file == null)
-			return new MorphLexicon();
-
-		try
-		{
-			MorphLexicon ret = MorphLexiconReader.readLexicon(file);
-			loadedMorphLexicons.put(file, ret);
-			return ret;
-		}
-		catch (Exception e)
-		{
-			System.err.println("Error: exception while reading morph lexicon " + file + " : " + e.getMessage());
-		}
-		return null;
-	}
-
-
+	
 	/**
 	 * Returns a multiline textual representation of this configuration.
 	 * @return a String

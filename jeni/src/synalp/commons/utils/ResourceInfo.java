@@ -6,8 +6,7 @@ import synalp.commons.grammar.*;
 import synalp.commons.input.TestSuite;
 import synalp.commons.lexicon.SyntacticLexicon;
 import synalp.commons.unification.FeatureConstant;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
-
+import synalp.generation.configuration.GeneratorConfiguration;
 import static synalp.commons.utils.Resources.*;
 
 /**
@@ -26,7 +25,8 @@ public class ResourceInfo
 		//printNbOfEntries(loadLexicon(FRENCH_LEXICON));
 		//printAllClasses(loadGrammar(SEMXTAG2_GRAMMAR));
 		//printGrammarByAdjunction(loadGrammar(SEMXTAG2_FULL_GRAMMAR), "n", FootType.RIGHT);
-		printGrammarByAnchors(loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile()));
+		printGrammarByAnchors(GeneratorConfiguration.getGrammar("semxtag2"));
+		
 		//printGrammarByTrace(loadGrammar(SEMXTAG2_GRAMMAR), "Reln0V");
 	}
 
