@@ -1,14 +1,9 @@
 package synalp.generation.jeni.semantics;
 
-import static synalp.commons.utils.Resources.*;
 
 import java.io.IOException;
 
 import org.junit.Test;
-import org.xml.sax.SAXException;
-
-import synalp.commons.grammar.*;
-import synalp.commons.lexicon.*;
 
 
 /**
