@@ -15,7 +15,6 @@ import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.generation.*;
 import synalp.generation.jeni.*;
 import synalp.generation.jeni.selection.families.*;
-import synalp.generation.ranker.NgramRanker;
 import synalp.generation.selection.LexicalSelectionResult;
 
 import com.google.gson.*;
@@ -123,9 +122,9 @@ public class GeneratorServer extends SimpleServer
 				return processGenerateForTests(object, message);
 			case REQUEST_TESTS:
 				return processRequestTests();
+			default:
+				return errorMessage("unprocessed request", message);
 		}
-
-		return errorMessage("unprocessed request", message);
 	}
 
 
