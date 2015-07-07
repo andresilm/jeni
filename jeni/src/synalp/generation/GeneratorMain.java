@@ -9,15 +9,11 @@ import org.kohsuke.args4j.*;
 import synalp.commons.input.TestSuiteEntry;
 import synalp.commons.output.*;
 import synalp.commons.utils.*;
-import synalp.commons.utils.ResourceBundle;
-import synalp.commons.utils.configuration.*;
 import synalp.commons.utils.exceptions.TimeoutException;
 import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.configuration.*;
-import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.ranker.NgramRanker;
-import synalp.generation.ui.configuration.GeneratorOptions;
 import static org.kohsuke.args4j.ExampleMode.ALL;
 
 /**
@@ -29,7 +25,7 @@ import static org.kohsuke.args4j.ExampleMode.ALL;
 public class GeneratorMain
 {
 	private static Logger logger = Logger.getLogger(GeneratorMain.class);
-	
+
 	@Option(name = "-g", usage = "grammar file", metaVar = "<xml file>", required = false)
 	private File grammarFile = null;
 
@@ -57,13 +53,12 @@ public class GeneratorMain
 	@Argument(usage = "other options, see format in default.options.properties", metaVar = "option=value")
 	private List<String> options = new ArrayList<String>();
 
-
 	static
 	{
 		LoggerConfiguration.init();
 	}
-	
-	
+
+
 	/**
 	 * @param args
 	 */
@@ -110,19 +105,19 @@ public class GeneratorMain
 	}
 
 
+	/**
+	 * Runs the generator with a configuration.
+	 * @throws IOException
+	 */
 	private void runWithConfig() throws IOException
 	{
-		GeneratorConfigurations allConfigs = GeneratorConfigurations.createConfigurations();
-		if (!allConfigs.containsKey(configName))
-			throw new ConfigurationException("Error: unable to load configuration '" + configName + "', it is not found in existing configurations (" + allConfigs.keySet() + ")");
-
-		GeneratorConfiguration config = allConfigs.get(configName);
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig(configName);
 		System.out.println(config.printConfiguration());
 		JeniGenerator generator = new JeniGenerator(config);
-		
+
 		if (logger.isInfoEnabled())
 			logger.info(GeneratorOption.getStatus());
-		
+
 		int index = 1;
 		for(TestSuiteEntry entry : config.getTestSuite())
 		{
@@ -132,6 +127,11 @@ public class GeneratorMain
 	}
 
 
+	/**
+	 * Runs the generator without a configuration.
+	 * @param parser
+	 * @throws Exception
+	 */
 	private void runNoConfig(CmdLineParser parser) throws Exception
 	{
 		if (outputDirectory == null || grammarFile == null || testSuiteFile == null)
@@ -149,20 +149,26 @@ public class GeneratorMain
 		System.out.println("options: " + options);
 		System.out.println("lib: " + System.getProperty("java.library.path"));
 
-		setOptions();
-
-		ResourceBundle bundle = new ResourceBundle(grammarFile, synLexiconFile, testSuiteFile, morphLexiconFile);
-		bundle.load();
+		GeneratorConfiguration config = new GeneratorConfiguration("custom");
+		config.setGrammarFile(grammarFile);
+		config.setSyntacticLexiconFile(synLexiconFile);
+		config.setTestSuiteFile(testSuiteFile);
+		config.setMorphLexiconFile(morphLexiconFile);
+		config.setOptions(getOptionsMap());
+		config.load();
 
 		Utils.delete(outputDirectory);
 		outputDirectory.mkdirs();
 
-		JeniGenerator generator = lmFile == null ? new JeniGenerator(bundle) : new JeniGenerator(bundle, new NgramRanker(lmFile.getAbsolutePath(), beamSize,
-																															"jni"));
+		JeniGenerator generator = new JeniGenerator(config);
+		
+		if (lmFile != null)
+			generator.setRanker(new NgramRanker(lmFile.getAbsolutePath(), beamSize, "jni"));
+		
 		int index = 1;
-		for(TestSuiteEntry entry : bundle.getTestSuite())
+		for(TestSuiteEntry entry : config.getTestSuite())
 		{
-			System.out.println("Processing " + (index++) + "/" + bundle.getTestSuite().size());
+			System.out.println("Processing " + (index++) + "/" + config.getTestSuite().size());
 			run(generator, entry);
 		}
 
@@ -209,21 +215,29 @@ public class GeneratorMain
 
 
 	/**
-	 * Sets the options in GeneratorOptions from the options field.
-	 * @throws Exception
+	 * Returns free options as a map.
+	 * @return
 	 */
-	private void setOptions() throws Exception
+	private Map<String, String> getOptionsMap()
 	{
 		StringBuilder str = new StringBuilder();
 		for(String option : options)
 			str.append(option).append("\n");
-		ByteArrayInputStream stream = new ByteArrayInputStream(str.toString().getBytes());
 
-		Properties props = new Properties();
-		props.load(stream);
-		stream.close();
-		System.err.println("!Loading options like that is deprecated and will be removed!");
-		GeneratorOptions.initialize(props);
+		try (ByteArrayInputStream stream = new ByteArrayInputStream(str.toString().getBytes()))
+		{
+			Properties props = new Properties();
+			props.load(stream);
+			Map<String, String> ret = new HashMap<>();
+			for(String key : props.stringPropertyNames())
+				ret.put(key, props.getProperty(key));
+			return ret;
+		}
+		catch (IOException e)
+		{
+			e.printStackTrace();
+			return new HashMap<>();
+		}
 	}
 
 

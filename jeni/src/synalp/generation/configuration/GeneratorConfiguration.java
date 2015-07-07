@@ -31,7 +31,6 @@ public class GeneratorConfiguration
 	private static Map<File, SyntacticLexicon> loadedSynLexicons = new HashMap<File, SyntacticLexicon>();
 
 
-
 	/**
 	 * Loads the given lexicon file in XML or LEX format. If the given File is not a lexicon or is
 	 * not found an exception is caught and print to stderr.
@@ -58,8 +57,8 @@ public class GeneratorConfiguration
 
 		return null;
 	}
-	
-	
+
+
 	/**
 	 * Loads the given grammar file in XML. If the given File is not a grammar or is not found an
 	 * exception is caught and print to stderr.
@@ -86,10 +85,11 @@ public class GeneratorConfiguration
 
 		return null;
 	}
-	
-	
+
+
 	/**
-	 * Returns the grammar found for given configuration name. If it has not been loaded before, loads it.
+	 * Returns the grammar found for given configuration name. If it has not been loaded before,
+	 * loads it.
 	 * @param configuration
 	 * @return
 	 */
@@ -97,8 +97,8 @@ public class GeneratorConfiguration
 	{
 		return GeneratorConfigurations.getConfig(configuration).getGrammar();
 	}
-	
-	
+
+
 	/**
 	 * Returns the grammar file found for given configuration name.
 	 * @param configuration
@@ -108,7 +108,6 @@ public class GeneratorConfiguration
 	{
 		return GeneratorConfigurations.getConfig(configuration).getGrammarFile();
 	}
-	
 
 
 	/**
@@ -164,7 +163,7 @@ public class GeneratorConfiguration
 		}
 		return null;
 	}
-	
+
 
 	/**
 	 * @return the loadedGrammars
@@ -237,8 +236,6 @@ public class GeneratorConfiguration
 		GeneratorConfiguration.loadedSynLexicons = loadedSynLexicons;
 	}
 
-	
-	
 
 	/**
 	 * @param name
@@ -378,6 +375,46 @@ public class GeneratorConfiguration
 
 
 	/**
+	 * Sets the grammar file of this configuration.
+	 * @param file
+	 */
+	public void setGrammarFile(File file)
+	{
+		setResource(GRAMMAR_KEY, file);
+	}
+
+
+	/**
+	 * Sets the syntactic lexicon file of this configuration.
+	 * @param file
+	 */
+	public void setSyntacticLexiconFile(File file)
+	{
+		setResource(SYN_LEXICON_KEY, file);
+	}
+
+
+	/**
+	 * Sets the morphological lexicon file of this configuration.
+	 * @param file
+	 */
+	public void setMorphLexiconFile(File file)
+	{
+		setResource(MORPH_LEXICON_KEY, file);
+	}
+
+
+	/**
+	 * Sets the test suite file of this configuration.
+	 * @param file
+	 */
+	public void setTestSuiteFile(File file)
+	{
+		setResource(TEST_SUITE_KEY, file);
+	}
+
+
+	/**
 	 * Sets the given resource.
 	 * @param name
 	 * @param file
@@ -406,7 +443,6 @@ public class GeneratorConfiguration
 	{
 		return resources.containsKey(name);
 	}
-
 
 
 	/**
@@ -447,7 +483,6 @@ public class GeneratorConfiguration
 	}
 
 
-	
 	/**
 	 * Returns the grammar file of this configuration. Throws a ConfigurationException if not found.
 	 * @return the grammar file of this configuration if it exists
@@ -458,7 +493,7 @@ public class GeneratorConfiguration
 			throwMissingResource(GRAMMAR_KEY);
 		return resources.get(GRAMMAR_KEY);
 	}
-	
+
 
 	/**
 	 * Returns the grammar of this configuration. Throws a ConfigurationException if not found.
@@ -468,7 +503,7 @@ public class GeneratorConfiguration
 	{
 		return loadGrammar(getGrammarFile(), false);
 	}
-	
+
 
 	/**
 	 * Returns the morph lexicon of this configuration.
@@ -517,7 +552,7 @@ public class GeneratorConfiguration
 		else return loadGrammar(resources.get(GRAMMAR_KEY), false);
 	}
 
-	
+
 	/**
 	 * Returns a multiline textual representation of this configuration.
 	 * @return a String
