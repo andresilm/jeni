@@ -338,7 +338,7 @@ public class JeniGenerator implements Generator
 	 * Remove items whose tree contain nodes that do not unify top and bot fs.
 	 * @param chart
 	 */
-	private static void ruleOutNonUnifyingTopBotTrees(JeniChartItems chart)
+	protected static void ruleOutNonUnifyingTopBotTrees(JeniChartItems chart)
 	{
 		for(Iterator<JeniChartItem> it = chart.iterator(); it.hasNext();)
 		{
@@ -611,21 +611,21 @@ public class JeniGenerator implements Generator
 
 ///// log messages
 
-	private static void logResults(JeniChartItems items)
+	protected static void logResults(JeniChartItems items)
 	{
 		if (logger.isInfoEnabled())
 			printInfo("results", items);
 	}
 
 
-	private static void logInitialAgenda(JeniChartItems agenda)
+	protected static void logInitialAgenda(JeniChartItems agenda)
 	{
 		if (logger.isInfoEnabled())
 			printInfo("initial agenda", agenda);
 	}
 
 
-	private static void printInfo(String prefix, JeniChartItems items)
+	protected static void printInfo(String prefix, JeniChartItems items)
 	{
 		if (logger.isInfoEnabled())
 			logger.info("--- " + prefix + " : " + items.size() + " items");
