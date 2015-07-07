@@ -2,7 +2,9 @@ package synalp.generation.probabilistic;
 
 import java.util.ArrayList;
 import java.util.List;
+
 import org.apache.log4j.Logger;
+
 import synalp.commons.semantics.Semantics;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.*;
@@ -19,7 +21,12 @@ public class ProbabilisticGenerator extends JeniGenerator
 		setRanker(new ProbabilisticRanker());
 	}
 
-
+	/**
+	 * Generates the given semantics with a priori list of selected items.
+	 * @param semantics
+	 * @param agenda
+	 * @return chart items, each one being a surface realization
+	 */
 	@Override
 	protected JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
@@ -31,8 +38,9 @@ public class ProbabilisticGenerator extends JeniGenerator
 		 */
 		int inputSize = semantics.size();
 
+		logInitialAgenda(agenda);
+		
 		//initial tree set, step i=0
-		//logInitialAgenda(agenda);
 		generatedTrees.add(agenda);
 
 		logger.info("*** Starting ProbabilisticGenerator main loop");
@@ -73,8 +81,18 @@ public class ProbabilisticGenerator extends JeniGenerator
 
 		logger.info("*** Ranking obtained trees");
 		JeniChartItems ret = new JeniChartItems(getRanker().rank(generatedTrees.get(inputSize - 1)));
+		
+		ruleOutNonUnifyingTopBotTrees(ret);
+
+		// eventually, makes sure that each lemma as a valid fs
+		for(JeniChartItem item : ret)
+			item.getTree().setupLemmaFeatures(item.getContext());
+
+		logResults(ret);
 
 		return ret;
 	}
+	
+	
 
 }
