@@ -1,4 +1,4 @@
-package synalp.commons.utils.configuration;
+package synalp.generation.ui.configuration;
 
 import synalp.generation.ui.gui.GUIMessages;
 

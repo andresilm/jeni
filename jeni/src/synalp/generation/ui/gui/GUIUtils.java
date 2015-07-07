@@ -25,7 +25,7 @@ import javax.swing.UIManager.LookAndFeelInfo;
 import javax.swing.UnsupportedLookAndFeelException;
 
 import synalp.commons.utils.OSUtils;
-import synalp.commons.utils.configuration.GeneratorConfiguration;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 import com.jgoodies.looks.common.RGBGrayFilter;
 //import com.jgoodies.looks.common.RGBGrayFilter; // missing lib

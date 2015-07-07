@@ -10,8 +10,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.border.Border;
 
-import synalp.commons.utils.configuration.GeneratorConfiguration;
-
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 import net.miginfocom.swing.MigLayout;
 
 /**

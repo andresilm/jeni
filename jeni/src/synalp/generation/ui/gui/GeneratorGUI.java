@@ -6,8 +6,8 @@ import java.util.logging.Logger;
 
 import javax.swing.SwingUtilities;
 
-import synalp.commons.utils.configuration.GeneratorOptions;
 import synalp.generation.ui.GeneratorApplication;
+import synalp.generation.ui.configuration.GeneratorOptions;
 
 
 /**

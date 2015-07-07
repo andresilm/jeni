@@ -1,7 +1,7 @@
 /**
  * 
  */
-package synalp.commons.utils.configuration;
+package synalp.generation.ui.configuration;
 
 import java.io.*;
 import java.lang.reflect.Field;

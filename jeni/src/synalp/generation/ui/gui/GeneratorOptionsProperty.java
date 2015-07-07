@@ -11,6 +11,7 @@ import java.util.logging.Logger;
 
 import synalp.commons.utils.configuration.*;
 import synalp.generation.morphology.MissingLexemPolicy;
+import synalp.generation.ui.configuration.*;
 
 import com.l2fprod.common.beans.editor.ComboBoxPropertyEditor;
 import com.l2fprod.common.propertysheet.DefaultProperty;

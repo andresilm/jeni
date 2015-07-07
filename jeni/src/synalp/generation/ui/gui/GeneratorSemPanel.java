@@ -23,15 +23,13 @@ import net.miginfocom.swing.MigLayout;
 
 import javax.swing.JComboBox;
 import javax.swing.JTextArea;
-
-
 import javax.swing.JButton;
 
 import org.xml.sax.SAXException;
 
 import synalp.commons.input.*;
 import synalp.commons.semantics.Semantics;
-import synalp.commons.utils.configuration.GeneratorConfiguration;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 /**
  * @author Céline Moro

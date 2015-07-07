@@ -10,7 +10,6 @@ import synalp.commons.input.Lemma;
 import synalp.commons.lexicon.*;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.*;
-import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.generation.jeni.JeniLexicalSelection;
 import synalp.generation.jeni.filtering.dlx.DLXGrouping;
 import synalp.generation.jeni.selection.patterns.*;

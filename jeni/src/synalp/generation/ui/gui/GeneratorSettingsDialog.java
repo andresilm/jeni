@@ -25,7 +25,7 @@ import javax.swing.SwingConstants;
 import javax.swing.border.EmptyBorder;
 
 import synalp.commons.grammar.NodeType;
-import synalp.commons.utils.configuration.GeneratorOptions;
+import synalp.generation.ui.configuration.GeneratorOptions;
 
 import com.l2fprod.common.swing.LookAndFeelTweaks;
 import com.l2fprod.common.util.ResourceManager;

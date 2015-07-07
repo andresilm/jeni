@@ -13,10 +13,10 @@ import synalp.commons.lexicon.*;
 import synalp.commons.output.SyntacticRealization;
 import synalp.commons.semantics.Semantics;
 import synalp.commons.utils.ResourceBundle;
-import synalp.commons.utils.configuration.GeneratorConfiguration;
 import synalp.generation.*;
 import synalp.generation.morphology.*;
 import synalp.generation.ranker.Ranker;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 /**
  * GeneratorApplication is the main class to do the generation. It contains a static method which is

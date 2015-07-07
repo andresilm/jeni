@@ -16,13 +16,12 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JOptionPane;
 import javax.swing.KeyStroke;
-
-
 import javax.swing.AbstractAction;
 import javax.swing.filechooser.FileFilter;
+
 import org.xml.sax.SAXException;
 
-import synalp.commons.utils.configuration.GeneratorConfiguration;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 
 /**

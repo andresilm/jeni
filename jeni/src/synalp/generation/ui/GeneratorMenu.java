@@ -5,8 +5,8 @@ import java.io.IOException;
 
 import org.xml.sax.SAXException;
 
-import synalp.commons.utils.configuration.GeneratorConfiguration;
 import synalp.commons.utils.console.ConsoleUtils;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 
 /**

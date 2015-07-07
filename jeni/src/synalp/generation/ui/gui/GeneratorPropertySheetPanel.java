@@ -6,8 +6,8 @@ import java.beans.PropertyChangeListener;
 import java.util.List;
 import java.util.logging.Logger;
 
-import synalp.commons.utils.configuration.GeneratorOptions;
 import synalp.generation.morphology.MissingLexemPolicy;
+import synalp.generation.ui.configuration.GeneratorOptions;
 import synalp.generation.ui.gui.GeneratorOptionsProperty.MissingLexemPolicyEditor;
 
 import com.l2fprod.common.propertysheet.Property;

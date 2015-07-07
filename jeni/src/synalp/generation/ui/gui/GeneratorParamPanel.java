@@ -38,7 +38,7 @@ import javax.swing.JToolBar;
 
 import org.xml.sax.SAXException;
 
-import synalp.commons.utils.configuration.GeneratorConfiguration;
+import synalp.generation.ui.configuration.GeneratorConfiguration;
 
 import com.l2fprod.common.demo.TaskPaneMain;
 import com.l2fprod.common.swing.JButtonBar;
@@ -47,7 +47,6 @@ import com.l2fprod.common.swing.JTaskPaneGroup;
 import com.l2fprod.common.swing.LookAndFeelTweaks;
 import com.l2fprod.common.swing.plaf.blue.BlueishButtonBarUI;
 import com.l2fprod.common.swing.plaf.misc.IconPackagerButtonBarUI;
-
 
 import javax.swing.UIManager;
 import javax.swing.border.Border;

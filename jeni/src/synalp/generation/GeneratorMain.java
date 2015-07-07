@@ -17,6 +17,7 @@ import synalp.generation.configuration.*;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.ranker.NgramRanker;
+import synalp.generation.ui.configuration.GeneratorOptions;
 import static org.kohsuke.args4j.ExampleMode.ALL;
 
 /**
