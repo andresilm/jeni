@@ -59,6 +59,9 @@ public class FeatureStructure extends FeatureValue
 					if (feat.getValue().equals(variable))
 						feat.setValue(value);
 					break;
+					
+				case CONSTANT:
+					break;
 			}
 	}
 
