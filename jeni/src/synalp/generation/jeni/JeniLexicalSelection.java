@@ -10,7 +10,6 @@ import synalp.commons.lexicon.*;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.*;
 import synalp.commons.utils.*;
-import synalp.commons.utils.ResourceBundle;
 import synalp.generation.configuration.GeneratorOption;
 import synalp.generation.jeni.filtering.*;
 import synalp.generation.jeni.filtering.dlx.DLXFiltering;
@@ -40,17 +39,6 @@ public class JeniLexicalSelection implements LexicalSelection
 
 	private Grammar grammar;
 	private SyntacticLexicon lexicon;
-
-
-	/**
-	 * Creates a new JeniLexicalSelection based on given ResourceBundle.
-	 * @param bundle
-	 */
-	public JeniLexicalSelection(ResourceBundle bundle)
-	{
-		this.grammar = bundle.getGrammar();
-		this.lexicon = bundle.getSyntacticLexicon();
-	}
 
 
 	/**

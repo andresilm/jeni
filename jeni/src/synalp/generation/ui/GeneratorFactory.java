@@ -2,7 +2,6 @@ package synalp.generation.ui;
 
 import synalp.commons.grammar.Grammar;
 import synalp.commons.lexicon.SyntacticLexicon;
-import synalp.commons.utils.ResourceBundle;
 import synalp.generation.*;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.morphology.MorphRealizer;
@@ -78,32 +77,6 @@ public final class GeneratorFactory
 		return algorithm;
 	}
 	
-	/**
-	 * Build the chosen tree combining algorithm based on given ResourceBundle. It uses a DefaultRanker.
-	 * @param type of the algorithm to use ({@link GeneratorType#RTGEN}, or {@link GeneratorType#JENI_DEFAULT}, ...)
-	 * @param bundle a loaded bundle
-	 * @return the instance of the class built
-	 * @throws IllegalArgumentException
-	 */
-	public Generator buildAlgorithm(GeneratorType type, ResourceBundle bundle)
-	{
-		Generator algorithm = null;
-		switch (type)
-		{
-			case JENI_DEFAULT:
-				algorithm = buildJeniDefaultAlgorithm(bundle);
-				break;
-
-			case RTGEN: //currently disabled
-				//algorithm = buildRTGenAlgorithm(bundle);
-				//break;
-				throw new IllegalArgumentException( "RTGEN algorithm not yet plugged to Generator GUI." );
-
-			default:
-				throw new IllegalArgumentException( "Unknown tree combining algorithm type." );
-		}
-		return algorithm;
-	}
 	
 	/**
 	 * Build the chosen tree combining algorithm based on given grammar and lexicon and Ranker.
@@ -134,33 +107,6 @@ public final class GeneratorFactory
 		return algorithm;
 	}
 	
-	/**
-	 * Build the chosen tree combining algorithm based on given ResourceBundle and Ranker.
-	 * @param type of the algorithm to use ({@link GeneratorType#RTGEN}, or {@link GeneratorType#JENI_DEFAULT}, ...)
-	 * @param bundle a loaded bundle
-	 * @param ranker
-	 * @return the instance of the class built
-	 * @throws IllegalArgumentException
-	 */
-	public Generator buildAlgorithm(GeneratorType type, ResourceBundle bundle, Ranker ranker)
-	{
-		Generator algorithm = null;
-		switch (type)
-		{
-			case JENI_DEFAULT:
-				algorithm = buildJeniDefaultAlgorithm(bundle, ranker);
-				break;
-
-			case RTGEN: //currently disabled
-				//algorithm = buildRTGenAlgorithm(bundle);
-				//break;
-				throw new IllegalArgumentException( "RTGEN algorithm not yet plugged to Generator GUI." );
-
-			default:
-				throw new IllegalArgumentException( "Unknown tree combining algorithm type." );
-		}
-		return algorithm;
-	}
 	
 	/*
 	 * BUILD JENI
@@ -188,22 +134,11 @@ public final class GeneratorFactory
 	 */
 	public static Generator buildJeniDefaultAlgorithm(Grammar grammar, SyntacticLexicon lexicon, MorphRealizer morphRealizer)
 	{
-		Generator algorithm = null;
-		algorithm = new JeniGenerator(grammar, lexicon, morphRealizer);
+		JeniGenerator algorithm = new JeniGenerator(grammar, lexicon);
+		algorithm.setMorphRealizer(morphRealizer);
 		return algorithm;
 	}
 	
-	/**
-	 * Build the {@link GeneratorType#JENI_DEFAULT} algorithm based on given ResourceBundle. It uses a DefaultRanker.
-	 * @param bundle a loaded bundle
-	 * @return the instance of the class built
-	 */
-	public static Generator buildJeniDefaultAlgorithm(ResourceBundle bundle)
-	{
-		Generator algorithm = null;
-		algorithm = new JeniGenerator(bundle);
-		return algorithm;
-	}
 	
 	/**
 	 * Build the {@link GeneratorType#JENI_DEFAULT} algorithm based on given grammar and lexicon and Ranker.
@@ -214,23 +149,11 @@ public final class GeneratorFactory
 	 */
 	public static Generator buildJeniDefaultAlgorithm(Grammar grammar, SyntacticLexicon lexicon, Ranker ranker)
 	{
-		Generator algorithm = null;
-		algorithm = new JeniGenerator(grammar, lexicon, ranker);
+		JeniGenerator algorithm = new JeniGenerator(grammar, lexicon);
+		algorithm.setRanker(ranker);
 		return algorithm;
 	}
 	
-	/**
-	 * Build the {@link GeneratorType#JENI_DEFAULT} algorithm based on given ResourceBundle and Ranker.
-	 * @param bundle a loaded bundle
-	 * @param ranker
-	 * @return the instance of the class built
-	 */
-	public static Generator buildJeniDefaultAlgorithm(ResourceBundle bundle, Ranker ranker)
-	{
-		Generator algorithm = null;
-		algorithm = new JeniGenerator(bundle, ranker);
-		return algorithm;
-	}
 	
 	/*
 	 * BUILD RTGEN

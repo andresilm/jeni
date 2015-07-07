@@ -7,7 +7,6 @@ import synalp.commons.input.TestSuite;
 import synalp.commons.lexicon.SyntacticLexicon;
 import synalp.commons.unification.FeatureConstant;
 import synalp.generation.configuration.GeneratorConfiguration;
-import static synalp.commons.utils.Resources.*;
 
 /**
  * Shows some requests on the Resources.
@@ -32,15 +31,15 @@ public class ResourceInfo
 
 
 	/**
-	 * Prints general info about the given bundle.
+	 * Prints general info about the given config.
 	 * @param bundle
 	 */
-	public static void printInfo(ResourceBundle bundle)
+	public static void printInfo(GeneratorConfiguration config)
 	{
-		loadBundle(bundle);
-		printNbOfTrees(bundle.getGrammar());
-		printNbOfEntries(bundle.getSyntacticLexicon());
-		printNbOfEntries(bundle.getTestSuite());
+		config.load();
+		printNbOfTrees(config.getGrammar());
+		printNbOfEntries(config.getSyntacticLexicon());
+		printNbOfEntries(config.getTestSuite());
 	}
 
 

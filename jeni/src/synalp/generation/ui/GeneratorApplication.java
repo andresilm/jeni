@@ -12,7 +12,6 @@ import synalp.commons.input.*;
 import synalp.commons.lexicon.*;
 import synalp.commons.output.SyntacticRealization;
 import synalp.commons.semantics.Semantics;
-import synalp.commons.utils.ResourceBundle;
 import synalp.generation.*;
 import synalp.generation.morphology.*;
 import synalp.generation.ranker.Ranker;
@@ -25,7 +24,6 @@ import synalp.generation.ui.configuration.GeneratorConfiguration;
  */
 public class GeneratorApplication
 {
-	private ResourceBundle resources;
 	private Grammar grammar;
 	private SyntacticLexicon lexicon;
 	private MorphLexicon morphoLexicon;
