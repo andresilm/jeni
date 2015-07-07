@@ -1,6 +1,5 @@
 package synalp.generation.configuration;
 
-
 import java.lang.annotation.Documented;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
@@ -11,7 +10,10 @@ import java.lang.annotation.RetentionPolicy;
  */
 @Documented
 @Retention(RetentionPolicy.RUNTIME)
-public @interface OptionMessage {
-	/** Name of the package used */
+public @interface OptionMessage
+{
+	/** 
+	 * Name of the package used 
+	 */
 	public String value();
 }
