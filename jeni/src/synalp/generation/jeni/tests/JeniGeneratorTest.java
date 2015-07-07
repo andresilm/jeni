@@ -1,23 +1,15 @@
 package synalp.generation.jeni.tests;
 
-import java.util.Arrays;
-
 import org.junit.*;
 import org.junit.runners.MethodSorters;
 
-import synalp.commons.grammar.*;
-import synalp.commons.input.TestSuite;
-import synalp.commons.lexicon.*;
 import synalp.commons.semantics.*;
 import synalp.commons.tests.GeneratorTest;
 import synalp.commons.utils.*;
 import synalp.commons.utils.configuration.ResourcesBundleType;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
-import synalp.generation.jeni.semantics.*;
-import synalp.generation.jeni.semantics.rules.RuleReader;
-import synalp.generation.morphology.*;
+
 
 import static synalp.commons.utils.Resources.*;
 
@@ -57,7 +49,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	public void test1_Bill_sleep()
 	{
 		System.out.println("\n**** Bill sleep");
-		test(new JeniGenerator(loadBundle(ResourcesBundleType.MINIMAL_BUNDLE.getBundle())),
+		test(new JeniGenerator(GeneratorConfigurations.getConfig("minimal")),
 				Semantics.readSemantics("A0_1:sleep(e0 a0) A0_1:bill(a0)"), "Bill sleep");
 	}
 	
@@ -65,7 +57,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	public void test1_probabilistic()
 	{
 		System.out.println("\n**** Test Probabilistic");
-		test(new JeniGenerator(loadBundle(ResourcesBundleType.PROBABILISTIC_BUNDLE.getBundle())),
+		test(new JeniGenerator(GeneratorConfigurations.getConfig("probabilistic")),
 				Semantics.readSemantics("birthPlace(e x y) Yury_Usachov(x) Russia(y)"));
 	}
 
@@ -98,7 +90,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	@SuppressWarnings("javadoc")
 	public void test5_SuiteSemXTAG2AutoIdx()
 	{
-		Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
+		/*Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
 		FamiliesSemantics traces = FamilySemanticsReader.readFamiliesSemanticsNoException(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
 
 		SemanticsBuilder builder = new SemanticsBuilder(traces);
@@ -112,7 +104,7 @@ public class JeniGeneratorTest extends GeneratorTest
 		JeniGenerator generator = new JeniGenerator(grammar, lexicon, morphRealizer);
 		generator.setRules(RuleReader.readRulesNoException(ResourcesBundleFile.SEMXTAG2_AUTO_RULES.getFile()));
 
-		test(generator, loadTestSuite(ResourcesBundleFile.SEMXTAG2_AUTO_TESTSUITE.getFile()));
+		test(generator, loadTestSuite(ResourcesBundleFile.SEMXTAG2_AUTO_TESTSUITE.getFile()));*/
 	}
 
 
@@ -120,7 +112,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	@SuppressWarnings("javadoc")
 	public void test7_Performance()
 	{
-		Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
+		/*Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
 		FamiliesSemantics traces = FamilySemanticsReader.readFamiliesSemanticsNoException(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
 
 		SemanticsBuilder builder = new SemanticsBuilder(traces);
@@ -164,7 +156,7 @@ public class JeniGeneratorTest extends GeneratorTest
 		for(int i = 0; i < n; i++)
 			sum += times[i];
 
-		System.out.println("Median: " + Perf.formatTime(median) + " Avg: " + Perf.formatTime(sum / n));
+		System.out.println("Median: " + Perf.formatTime(median) + " Avg: " + Perf.formatTime(sum / n));*/
 	}
 
 
