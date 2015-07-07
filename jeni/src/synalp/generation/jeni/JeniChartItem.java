@@ -63,7 +63,7 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 	 * @param context
 	 * @param probability
 	 */
-	public JeniChartItem(Tree tree, Semantics semantics, InstantiationContext context,  float probability)
+	public JeniChartItem(Tree tree, Semantics semantics, InstantiationContext context, float probability)
 	{
 		this.id = createNewId();
 		this.tree = tree;
@@ -101,10 +101,9 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 		this.parentOperationType = type;
 		this.parentItemSource = itemSource;
 		this.parentItemTarget = itemTarget;
-		
-		
+	
 		this.probability = itemSource.getProbability() * itemTarget.getProbability();
-		System.out.println("P(new item) = " +this.probability);
+		//System.out.println("P(new item) = " +this.probability);
 	}
 
 
