@@ -1,6 +1,5 @@
 package synalp.generation.jeni.tests;
 
-import java.io.File;
 import java.util.Arrays;
 
 import org.junit.*;
@@ -16,7 +15,6 @@ import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.commons.utils.configuration.ResourcesBundleFile;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
-import synalp.generation.jeni.selection.families.*;
 import synalp.generation.jeni.semantics.*;
 import synalp.generation.jeni.semantics.rules.RuleReader;
 import synalp.generation.morphology.*;
