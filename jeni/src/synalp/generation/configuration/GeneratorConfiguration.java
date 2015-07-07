@@ -60,6 +60,18 @@ public class GeneratorConfiguration
 
 
 	/**
+	 * Returns the syntactic lexicon found for given configuration name. If it has not been loaded
+	 * before, loads it.
+	 * @param configuration
+	 * @return
+	 */
+	public static SyntacticLexicon getSyntacticLexicon(String configuration)
+	{
+		return GeneratorConfigurations.getConfig(configuration).getSyntacticLexicon();
+	}
+
+
+	/**
 	 * Loads the given grammar file in XML. If the given File is not a grammar or is not found an
 	 * exception is caught and print to stderr.
 	 * @param file a grammar file in XML format.
@@ -465,9 +477,20 @@ public class GeneratorConfiguration
 	 */
 	public SyntacticLexicon getSyntacticLexicon()
 	{
+		return loadSynLexicon(getSyntacticLexiconFile(), false);
+	}
+
+
+	/**
+	 * Returns the syntactic lexicon file of this configuration. Throws a ConfigurationException if
+	 * not found.
+	 * @return the syntactic lexicon file of this configuration if it exists
+	 */
+	public File getSyntacticLexiconFile()
+	{
 		if (!resources.containsKey(SYN_LEXICON_KEY))
 			throwMissingResource(SYN_LEXICON_KEY);
-		return loadSynLexicon(resources.get(SYN_LEXICON_KEY), false);
+		return resources.get(SYN_LEXICON_KEY);
 	}
 
 

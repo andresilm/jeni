@@ -1,7 +1,5 @@
 package synalp.generation.ranker;
 
-import static synalp.commons.utils.Resources.*;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -12,10 +10,9 @@ import java.util.Calendar;
 import synalp.commons.input.*;
 import synalp.commons.tests.GeneratorTest;
 import synalp.commons.utils.*;
-import synalp.commons.utils.configuration.*;
 import synalp.commons.utils.exceptions.*;
 import synalp.commons.utils.loggers.LoggerConfiguration;
-import synalp.generation.configuration.GeneratorOption;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
 
 /**
@@ -67,14 +64,19 @@ public class NgramRankerTest extends GeneratorTest
 			GeneratorOption.USE_FILTERING=false;
 			GeneratorOption.USE_BIT_SEMANTICS=false;
 		}
-		ResourceBundle bundle = loadBundle(ResourcesBundleType.KBGEN_BUNDLE.getBundle());
 		
-		System.out.println("Grammar: "+bundle.getGrammarFile()+" "+bundle.getGrammar().values().size()+" trees");
-		System.out.println("Lexicon: "+bundle.getSyntacticLexiconFile()+" "+bundle.getSyntacticLexicon().size()+" entries");
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig("kbgen");
 		
-		JeniGenerator generator1 = new JeniGenerator(bundle, new DefaultRanker());
-		JeniGenerator generator2 = new JeniGenerator(bundle, new NgramRanker("resources/ranking/lm-genia-lemma.bin", beamsize, ngramtype));
-		TestSuite testsuite = bundle.getTestSuite();
+		
+		//ResourceBundle bundle = loadBundle(ResourcesBundleType.KBGEN_BUNDLE.getBundle());
+		
+		System.out.println("Grammar: "+config.getGrammarFile()+" "+config.getGrammar().values().size()+" trees");
+		System.out.println("Lexicon: "+config.getSyntacticLexiconFile()+" "+config.getSyntacticLexicon().size()+" entries");
+		
+		JeniGenerator generator1 = new JeniGenerator(config);
+		JeniGenerator generator2 = new JeniGenerator(config);
+		generator2.setRanker(new NgramRanker("resources/ranking/lm-genia-lemma.bin", beamsize, ngramtype));
+		TestSuite testsuite = config.getTestSuite();
 		try
 		{
 			BufferedWriter summary = new BufferedWriter(new FileWriter("resources/ranking/summary_"+beamsize+".txt"));
@@ -86,11 +88,11 @@ public class NgramRankerTest extends GeneratorTest
 			summary.newLine();
 			summary.newLine();
 			
-			summary.write("Grammar: "+bundle.getGrammarFile()+"  "+bundle.getGrammar().values().size()+" trees");
+			summary.write("Grammar: "+config.getGrammarFile()+"  "+config.getGrammar().values().size()+" trees");
 			summary.newLine();
 			summary.newLine();
 			
-			summary.write("Lexicon: "+bundle.getSyntacticLexiconFile()+"  "+bundle.getSyntacticLexicon().size()+" entries");
+			summary.write("Lexicon: "+config.getSyntacticLexiconFile()+"  "+config.getSyntacticLexicon().size()+" entries");
 			summary.newLine();
 			summary.newLine();
 			

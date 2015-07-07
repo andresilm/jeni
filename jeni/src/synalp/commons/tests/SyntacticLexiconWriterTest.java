@@ -5,8 +5,7 @@ import java.io.*;
 import org.junit.Test;
 
 import synalp.commons.lexicon.*;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
-
+import synalp.generation.configuration.GeneratorConfiguration;
 import static org.junit.Assert.fail;
 
 /**
@@ -23,8 +22,7 @@ public class SyntacticLexiconWriterTest
 	{
 		try
 		{
-			// it uses directly the SyntacticLexiconReader instead of Resources.loadLexicon to enable the exception
-			SyntacticLexicon lexicon = SyntacticLexiconReader.readLexicon(ResourcesBundleFile.FRENCH_LEXICON.getFile());
+			SyntacticLexicon lexicon = GeneratorConfiguration.getSyntacticLexicon("french");
 			File tmp = File.createTempFile("test", ".xml");
 			System.out.println("Writing on "+tmp);
 			//tmp.deleteOnExit();
