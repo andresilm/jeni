@@ -105,24 +105,26 @@ public class ResourceTypeGuesser
 					Utils.addN(3, type, ret);
 		
 		Perf.logTime();
-		RandomAccessFile input = new RandomAccessFile(file, "r");
-		String line;
-		int i = 0;
-		while(i < 5 && ((line = input.readLine()) != null))
+		try(RandomAccessFile input = new RandomAccessFile(file, "r");)
 		{
-			line = line.trim();
-			if (!line.isEmpty())
-				for(ResourceType type : ResourceType.values())
-					for(String tag : type.tags)
-						if (line.matches(tag) || line.indexOf(tag) != -1)
-							Utils.addOne(type, ret);
+			String line;
+			int i = 0;
+			while(i < 5 && ((line = input.readLine()) != null))
+			{
+				line = line.trim();
+				if (!line.isEmpty())
+					for(ResourceType type : ResourceType.values())
+						for(String tag : type.tags)
+							if (line.matches(tag) || line.indexOf(tag) != -1)
+								Utils.addOne(type, ret);
+			}
+			System.out.println(file+" "+Perf.logTime());
+			for(ResourceType type : ret.keySet().toArray(new ResourceType[ret.size()]))
+				if (ret.get(type) < 3)
+					ret.remove(type);
+			if (ret.isEmpty())
+				ret.put(ResourceType.UNKNOWN, 1);
+			return ret;
 		}
-		System.out.println(file+" "+Perf.logTime());
-		for(ResourceType type : ret.keySet().toArray(new ResourceType[ret.size()]))
-			if (ret.get(type) < 3)
-				ret.remove(type);
-		if (ret.isEmpty())
-			ret.put(ResourceType.UNKNOWN, 1);
-		return ret;
 	}
 }
