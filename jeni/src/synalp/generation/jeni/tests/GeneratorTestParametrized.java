@@ -4,7 +4,6 @@ import static org.junit.Assert.*;
 import static synalp.commons.utils.Resources.*;
 
 import java.util.*;
-import java.util.logging.Level;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -19,7 +18,6 @@ import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.Generator;
 import synalp.generation.jeni.*;
-import synalp.generation.jeni.filtering.kow.PolarityAutomaton;
 
 
 /**
