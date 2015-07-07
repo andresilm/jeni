@@ -5,8 +5,7 @@ import java.io.*;
 import org.junit.Test;
 
 import synalp.commons.grammar.*;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
-
+import synalp.generation.configuration.GeneratorConfiguration;
 import static org.junit.Assert.fail;
 
 /**
@@ -24,7 +23,7 @@ public class GrammarWriterTest
 		try
 		{
 			// it uses directly the GrammarReader instead of Resources.loadGrammar to enable the exception
-			Grammar grammar = GrammarReader.readGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
+			Grammar grammar = GeneratorConfiguration.getGrammar("semxtag");
 			File tmp = File.createTempFile("test", ".xml");
 			//tmp.deleteOnExit();
 			GrammarWriter.write(grammar, tmp);

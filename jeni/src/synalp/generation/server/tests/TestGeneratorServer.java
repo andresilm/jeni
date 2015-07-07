@@ -7,9 +7,8 @@ import java.util.Date;
 import org.junit.Test;
 
 import synalp.commons.semantics.Semantics;
-import synalp.commons.utils.ResourceBundle;
-import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.generation.*;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.server.GeneratorServer;
 
@@ -35,9 +34,9 @@ public class TestGeneratorServer
 	@Test
 	public void testServer()
 	{
-		ResourceBundle bundle = ResourcesBundleType.MINIMAL_BUNDLE.getBundle();
-		Generator generator = new JeniGenerator(bundle);
-		GeneratorServer server = new GeneratorServer(generator, bundle, 2000);
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig("minimal");
+		Generator generator = new JeniGenerator(config);
+		GeneratorServer server = new GeneratorServer(generator, config, 2000);
 		server.start();
 
 		Gson gson = new Gson();

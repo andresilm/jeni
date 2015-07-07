@@ -9,7 +9,6 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.logging.Logger;
 
-import synalp.commons.utils.configuration.*;
 import synalp.generation.morphology.MissingLexemPolicy;
 import synalp.generation.ui.configuration.*;
 

@@ -5,13 +5,9 @@ import org.junit.runners.MethodSorters;
 
 import synalp.commons.semantics.*;
 import synalp.commons.tests.GeneratorTest;
-import synalp.commons.utils.*;
-import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
 
-
-import static synalp.commons.utils.Resources.*;
 
 /**
  * Tests JeniGenerator.
@@ -20,25 +16,27 @@ import static synalp.commons.utils.Resources.*;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class JeniGeneratorTest extends GeneratorTest
 {
+
 	/**
-	 * Tests Jeni on the given resource bundle (includes grammar, lexicon and test suite).
+	 * Tests Jeni on the given configuration (includes grammar, lexicon and test suite).
 	 * @param bundle
 	 */
-	private void testJeni(ResourceBundle bundle)
+	private void testJeni(GeneratorConfiguration config)
 	{
-		testJeni(bundle, false);
+		testJeni(config, false);
 	}
 
 
 	/**
-	 * Tests Jeni on the given resource bundle (includes grammar, lexicon and test suite).
+	 * Tests Jeni on the given configuration (includes grammar, lexicon and test suite).
 	 * @param bundle
 	 * @param catchTimeout
 	 */
-	private void testJeni(ResourceBundle bundle, boolean catchTimeout)
+	private void testJeni(GeneratorConfiguration config, boolean catchTimeout)
 	{
-		loadBundle(bundle);
-		test(new JeniGenerator(bundle), bundle.getTestSuite(), catchTimeout);
+		config.load();
+
+		test(new JeniGenerator(config), config.getTestSuite(), catchTimeout);
 	}
 
 
@@ -52,7 +50,8 @@ public class JeniGeneratorTest extends GeneratorTest
 		test(new JeniGenerator(GeneratorConfigurations.getConfig("minimal")),
 				Semantics.readSemantics("A0_1:sleep(e0 a0) A0_1:bill(a0)"), "Bill sleep");
 	}
-	
+
+
 	@Test
 	public void test1_probabilistic()
 	{
@@ -66,7 +65,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	@SuppressWarnings("javadoc")
 	public void test2_SuiteTranssem()
 	{
-		testJeni(ResourcesBundleType.TRANSSEM_BUNDLE.getBundle());
+		testJeni(GeneratorConfigurations.getConfig("transsem"));
 	}
 
 
@@ -74,7 +73,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	@SuppressWarnings("javadoc")
 	public void test3_SuiteFrench()
 	{
-		testJeni(ResourcesBundleType.FRENCH_BUNDLE.getBundle());
+		testJeni(GeneratorConfigurations.getConfig("french"));
 	}
 
 
@@ -82,7 +81,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	@SuppressWarnings("javadoc")
 	public void test4_SuiteSemXTAG2()
 	{
-		testJeni(ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle());
+		testJeni(GeneratorConfigurations.getConfig("semxtag"));
 	}
 
 
@@ -162,19 +161,9 @@ public class JeniGeneratorTest extends GeneratorTest
 
 	@Test
 	@SuppressWarnings("javadoc")
-	public void test8_PatternLexicalSelection()
-	{
-		GeneratorConfiguration config = GeneratorConfigurations.getConfig("semxtag");
-		JeniGenerator generator = new JeniGenerator(config);
-		test(generator, config.getTestSuite());
-	}
-
-
-	@Test
-	@SuppressWarnings("javadoc")
 	public void test6_KBGen()
 	{
 		//GeneratorOptions.USE_FILTERING = false;
-		testJeni(ResourcesBundleType.KBGEN_BUNDLE.getBundle(), true);
+		testJeni(GeneratorConfigurations.getConfig("kbgen"), true);
 	}
 }

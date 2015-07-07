@@ -1,7 +1,6 @@
 package synalp.generation.jeni.tests;
 
 import static org.junit.Assert.*;
-import static synalp.commons.utils.Resources.*;
 
 import java.util.*;
 
@@ -13,10 +12,9 @@ import org.junit.runners.Parameterized.Parameters;
 import synalp.commons.input.*;
 import synalp.commons.output.SyntacticRealization;
 import synalp.commons.semantics.*;
-import synalp.commons.utils.ResourceBundle;
-import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.Generator;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
 
 
@@ -32,8 +30,8 @@ public class GeneratorTestParametrized
 {
 	private Semantics input;
 	private List<? extends SyntacticRealization> expected;
-	public static ResourceBundle bundle = loadBundle(ResourcesBundleType.TRANSSEM_BUNDLE.getBundle());
-	public static Generator generator = new JeniGenerator(bundle);
+	public static GeneratorConfiguration config = GeneratorConfigurations.getConfig("transsem");
+	public static Generator generator = new JeniGenerator(config);
 
 	static
 	{
@@ -65,7 +63,7 @@ public class GeneratorTestParametrized
 	public static Collection<Object[]> data()
 	{
 		List<Object[]> ret = new ArrayList<Object[]>();
-		for(TestSuiteEntry entry : bundle.getTestSuite())
+		for(TestSuiteEntry entry : config.getTestSuite())
 		{
 			Object[] array = new Object[3];
 			array[0] = entry.getSemantics();

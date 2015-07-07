@@ -1,6 +1,5 @@
 package synalp.generation.server;
 
-import java.io.File;
 import java.util.*;
 
 import synalp.commons.grammar.*;
@@ -10,11 +9,9 @@ import synalp.commons.output.SyntacticRealization;
 import synalp.commons.semantics.Semantics;
 import synalp.commons.unification.InstantiationContext;
 import synalp.commons.utils.*;
-import synalp.commons.utils.ResourceBundle;
-import synalp.commons.utils.configuration.ResourcesBundleType;
 import synalp.generation.*;
+import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
-import synalp.generation.jeni.selection.families.*;
 import synalp.generation.selection.LexicalSelectionResult;
 
 import com.google.gson.*;
@@ -28,7 +25,7 @@ import com.google.gson.*;
 public class GeneratorServer extends SimpleServer
 {
 	private Generator generator;
-	private ResourceBundle bundle;
+	private GeneratorConfiguration config;
 	private static Gson gson = new Gson();
 
 
@@ -38,37 +35,16 @@ public class GeneratorServer extends SimpleServer
 	 */
 	public static void main(String[] args)
 	{
-		ResourceBundle bundle = ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle();
-		JeniGenerator generator = new JeniGenerator(ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle());
-		FamilySemanticsBuilder.setGrammarSemantics(	ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle().getGrammarFile(),
-													new File("resources/sem-xtag2/semantics.sem"), true);
-		generator.setLexicalSelection(FamilyLexicalSelection.newInstance(	new File("resources/sem-xtag2/lexicon.sem"),
-																			new File("resources/sem-xtag2/semantics.sem"),
-																			ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle().getGrammar()));
-
-		//Generator generator = new JeniGenerator(bundle);*/
-
-		//ResourceBundle bundle = ResourcesBundleType.MINIMAL_BUNDLE.getBundle();
-		//ResourceBundle bundle = ResourcesBundleType.KBGEN_BUNDLE.getBundle();
-		//Generator generator = new JeniGenerator(bundle);
-		GeneratorServer server = new GeneratorServer(generator, bundle, 2000);
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig("semxtag");
+		GeneratorServer server = new GeneratorServer(new JeniGenerator(config), config, 2000);
 		server.start();
 	}
 
 
 	private void createGenerator()
 	{
-		JeniGenerator generator = new JeniGenerator(ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle());
-		generator.setLexicalSelection(FamilyLexicalSelection.newInstance(	new File("resources/sem-xtag2/lexicon.sem"),
-																			new File("resources/sem-xtag2/semantics.sem"),
-																			ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle().getGrammar()));
-		this.generator = generator;
-		this.bundle = ResourcesBundleType.SEMXTAG2_BUNDLE.getBundle();
-
-		//ResourceBundle bundle = ResourcesBundleType.MINIMAL_BUNDLE.getBundle();
-		//ResourceBundle bundle = ResourcesBundleType.KBGEN_BUNDLE.getBundle();
-		//generator = new JeniGenerator(bundle, new NgramRanker("resources/ranking/lm-genia-lemma", 2, "jni"));
-		
+		this.config = GeneratorConfigurations.getConfig("semxtag");
+		this.generator = new JeniGenerator(config);
 	}
 
 
@@ -78,10 +54,10 @@ public class GeneratorServer extends SimpleServer
 	 * @param bundle TODO
 	 * @param port
 	 */
-	public GeneratorServer(Generator generator, ResourceBundle bundle, int port)
+	public GeneratorServer(Generator generator, GeneratorConfiguration config, int port)
 	{
 		super(port);
-		this.bundle = bundle;
+		this.config = config;
 		this.generator = generator;
 	}
 
@@ -152,7 +128,7 @@ public class GeneratorServer extends SimpleServer
 	{
 		JsonObject ret = new JsonObject();
 		JsonArray tests = new JsonArray();
-		for(TestSuiteEntry entry : bundle.getTestSuite())
+		for(TestSuiteEntry entry : config.getTestSuite())
 			tests.add(new JsonPrimitive(formatTestId(entry.getId())));
 		ret.add("tests", tests);
 		return gson.toJson(ret);
@@ -214,7 +190,7 @@ public class GeneratorServer extends SimpleServer
 	
 	private TestSuiteEntry getEntryById(String testId)
 	{
-		for(TestSuiteEntry entry : bundle.getTestSuite())
+		for(TestSuiteEntry entry : config.getTestSuite())
 			if (formatTestId(entry.getId()).equals(testId))
 				return entry;
 		return null;

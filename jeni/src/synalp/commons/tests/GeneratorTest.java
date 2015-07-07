@@ -26,7 +26,7 @@ public abstract class GeneratorTest
 	@SuppressWarnings("javadoc")
 	public static Logger logger = Logger.getLogger(GeneratorTest.class);
 
-
+	
 	/**
 	 * Tests all entries of the given test suite. This method may throw TimeoutExceptions.
 	 * @param generator

@@ -9,7 +9,6 @@ import org.xml.sax.SAXException;
 
 import synalp.commons.grammar.*;
 import synalp.commons.lexicon.*;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
 
 
 /**

@@ -15,7 +15,6 @@ import synalp.commons.lexicon.Equations;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.*;
 import synalp.commons.utils.*;
-import synalp.commons.utils.configuration.ResourcesBundleFile;
 
 
 /**
@@ -42,9 +41,9 @@ public class FamilySemanticsReader extends DefaultHandler
 	 */
 	public static void main(String[] args) throws SAXException, IOException
 	{
-		List<FamilySemantics> families = FamilySemanticsReader.readFamiliesSemantics(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
+		/*List<FamilySemantics> families = FamilySemanticsReader.readFamiliesSemantics(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
 		for(FamilySemantics family : families)
-			System.out.println(family + "\n");
+			System.out.println(family + "\n");*/
 	}
 
 
