@@ -13,7 +13,13 @@ public enum GeneratorType
 	/**
 	 * Tree combining algorithm used in RTGen (prolog)
 	 */
-	RTGEN("rtgen");
+	RTGEN("rtgen"),
+	
+	/**
+	 * A probabilistic generator.
+	 */
+	PROBABILISTIC("probabilistic");
+	
 
 	private String value;
 

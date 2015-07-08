@@ -13,6 +13,7 @@ import synalp.commons.utils.exceptions.TimeoutException;
 import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.JeniGenerator;
+import synalp.generation.probabilistic.ProbabilisticGenerator;
 import synalp.generation.ranker.NgramRanker;
 import static org.kohsuke.args4j.ExampleMode.ALL;
 
@@ -113,7 +114,22 @@ public class GeneratorMain
 	{
 		GeneratorConfiguration config = GeneratorConfigurations.getConfig(configName);
 		System.out.println(config.printConfiguration());
-		JeniGenerator generator = new JeniGenerator(config);
+		config.load();
+		
+		Generator generator;
+		switch(GeneratorOption.GENERATOR)
+		{
+			case JENI_DEFAULT:
+				generator = new JeniGenerator(config);
+				break;
+				
+			case PROBABILISTIC:
+				generator = new ProbabilisticGenerator(config);
+				break;
+				
+			default:
+				throw new ConfigurationException("Error: unsupported generator '"+config.getOption("generator")+"'");
+		}
 
 		if (logger.isInfoEnabled())
 			logger.info(GeneratorOption.getStatus());

@@ -4,6 +4,7 @@ import java.lang.reflect.*;
 import java.util.*;
 
 import synalp.commons.utils.Utils;
+import synalp.generation.GeneratorType;
 import synalp.generation.jeni.LexicalSelectionType;
 import synalp.generation.morphology.*;
 import synalp.generation.ranker.RankerType;
@@ -76,7 +77,10 @@ public class GeneratorOption
 	@OptionMessage("Defines the size of the beam when using ranking")
 	public static int BEAM_SIZE = 2;
 
-
+	@OptionMessage("Defines the type of generator")
+	public static GeneratorType GENERATOR = GeneratorType.JENI_DEFAULT;
+	
+	
 	/**
 	 * Setup options given a GeneratorConfiguration. May throw ConfigurationException.
 	 */
