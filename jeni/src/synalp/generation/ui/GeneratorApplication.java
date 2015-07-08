@@ -81,7 +81,7 @@ public class GeneratorApplication
 	{
 		// generator of generator to use
 		String algo = GeneratorConfiguration.getConfig().getProperty(GeneratorConfiguration.GENERATOR_ALGO);
-		GeneratorType type = GeneratorType.getGeneratorTypeByString(algo);
+		GeneratorType type = GeneratorType.valueOf(algo); //GeneratorType.pagetGeneratorTypeByString(algo);
 		// Save the generator which will be used in the process (rtgen, the default generator in geni, ...)
 		this.setAlgorithmType(type);
 
