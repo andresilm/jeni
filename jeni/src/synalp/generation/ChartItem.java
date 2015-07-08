@@ -13,9 +13,15 @@ import synalp.commons.input.Lemma;
  */
 public interface ChartItem
 {
+	
 	/**
 	 * Returns the lemmas that this ChartItem covers.
 	 * @return an ordered list of lemmas.
 	 */
 	public List<Lemma> getLemmas();
+	
+	/**
+	 * @return the probability of the ChartItem
+	 */
+	public float getProbability();
 }
