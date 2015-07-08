@@ -15,19 +15,16 @@ public class ProbabilisticRanker implements Ranker
 	private int beamWidth = 5;
 
 
+	/**
+	 * @param items: a list of elements that are an implementation of ChartItem
+	 * Ranks the element of the list using probabilities 
+	 * @return a list of CharItem elements with the higher probability 
+	 */
 	@Override
 	public List<? extends ChartItem> rank(List<? extends ChartItem> items)
 	{
-		if (items.getClass().equals(JeniChartItem.class))
-		{
-			List<JeniChartItem> jeniChartItemList = (List<JeniChartItem>) items;
-			// order JeniChartItem list in ascending order
-			Collections.sort(jeniChartItemList, (JeniChartItem item1, JeniChartItem item2) 
-			                 					-> (int) (item2.getProbability() - item1.getProbability()
-			                 					)
-			                 );
-		}
-
+		// order JeniChartItem list in ascending order
+		Collections.sort(items, (item1, item2) -> (int) (item2.getProbability() - item1.getProbability()));
 		int maxItems = (beamWidth > items.size()) ? items.size() - 1
 				: beamWidth - 1;
 		return items.subList(0, maxItems);
