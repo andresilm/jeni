@@ -240,16 +240,25 @@ public class JeniGenerator implements Generator
 
 		print("results before filtering", ret);
 		ruleOutNonUnifyingTopBotTrees(ret);
-
-		// eventually, makes sure that each lemma as a valid fs
-		for(JeniChartItem item : ret)
-			item.getTree().setupLemmaFeatures(item.getContext());
+		setupLemmaFeatures(ret);
 
 		logResults(ret);
 
 		return ret;
 	}
 
+	
+	/**
+	 * Prepares the lemmas of all trees for the morphology.
+	 * It unifies the top and bot fs for all lemmas.
+	 * @param chart
+	 */
+	protected static void setupLemmaFeatures(JeniChartItems chart)
+	{
+		for(JeniChartItem item : chart)
+			item.getTree().setupLemmaFeatures(item.getContext());
+	}
+	
 
 	/**
 	 * Remove items whose tree contain nodes that do not unify top and bot fs.
