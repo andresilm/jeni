@@ -9,7 +9,6 @@ import synalp.commons.semantics.Semantics;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.jeni.*;
 
-
 public class ProbabilisticGenerator extends JeniGenerator
 {
 	private static Logger logger = Logger.getLogger(ProbabilisticGenerator.class);
@@ -20,6 +19,7 @@ public class ProbabilisticGenerator extends JeniGenerator
 		super(config);
 		setRanker(new ProbabilisticRanker());
 	}
+
 
 	/**
 	 * Generates the given semantics with a priori list of selected items.
@@ -39,49 +39,50 @@ public class ProbabilisticGenerator extends JeniGenerator
 		int inputSize = semantics.size();
 
 		logInitialAgenda(agenda);
-		
+
 		//initial tree set, step i=0
 		generatedTrees.add(agenda);
 
 		logger.info("*** Starting ProbabilisticGenerator main loop");
 
-		for(int i = 1; i < inputSize; ++i)
+		for(int step = 1; step < inputSize; ++step)
 		{
-			logger.info("*** ProbabilisticGenerator step: " + i);
+			logger.info("*** ProbabilisticGenerator step: " + step);
 			//create empty list for step i
-			generatedTrees.add(new ArrayList<JeniChartItem>());
+			List<JeniChartItem> genTreeInStep = new ArrayList<JeniChartItem>();
 
-			for(int j = 0; j < java.lang.Math.floor(i / 2); ++j)
+			for(int j = 0; j < java.lang.Math.floor(step / 2); ++j)
 			{
 				//choose trees of size j and (i-j) to build new trees of size j+(i-j)=i
 				List<JeniChartItem> treeSet1 = generatedTrees.get(j);
-				List<JeniChartItem> treeSet2 = generatedTrees.get(i - j);
+				List<JeniChartItem> treeSet2 = generatedTrees.get(step - j);
 
 				for(JeniChartItem item1 : treeSet1)
 				{
 					for(JeniChartItem item2 : treeSet2)
 					{
 						//generate new trees
-						List<JeniChartItem> genTreeInStep = combiner.getSubstitutionCombinations(item1, item2, agenda);
+						genTreeInStep.addAll(combiner.getSubstitutionCombinations(item1, item2, agenda));
 						genTreeInStep.addAll(combiner.getAdjunctionCombinations(item1, item2));
-						//rank the obtained trees
-						List<JeniChartItem> ranked = (List<JeniChartItem>) this.getRanker().rank(genTreeInStep);
-						//add the new trees to the tree list of step i
-						generatedTrees.get(i).addAll(ranked);
-
 					}
 				}
 
 			}
+
+			//rank the obtained trees in this step i
+			logger.info("*** Will rank trees obtained in step: " + step + " and store them");
+			List<JeniChartItem> ranked = (List<JeniChartItem>) this.getRanker().rank(genTreeInStep);
+			//add the new trees to the tree list of step i
+			generatedTrees.add(ranked);
 		}
 
 		/*finally, we rank the last list of tree we obtained 
 		 * and return that list as the result of the generation process
 		 */
 
-		logger.info("*** Ranking obtained trees");
+		logger.info("*** Ranking final set of trees");
 		JeniChartItems ret = new JeniChartItems(getRanker().rank(generatedTrees.get(inputSize - 1)));
-		
+
 		ruleOutNonUnifyingTopBotTrees(ret);
 
 		// eventually, makes sure that each lemma as a valid fs
@@ -92,7 +93,5 @@ public class ProbabilisticGenerator extends JeniGenerator
 
 		return ret;
 	}
-	
-	
 
 }
