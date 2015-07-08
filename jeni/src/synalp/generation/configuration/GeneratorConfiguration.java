@@ -285,6 +285,81 @@ public class GeneratorConfiguration
 
 
 	/**
+	 * Returns an option given its name.
+	 * @param name
+	 * @return the value of the option
+	 * @throw ConfigurationException if not found
+	 */
+	public String getOption(String name)
+	{
+		if (options.containsKey(name))
+			return options.get(name);
+		else throw new ConfigurationException("Error: option '"+name+"' not found; defined options are: "+options.keySet());
+	}
+	
+	
+	/**
+	 * Returns an option given its name cast as a float
+	 * @param name
+	 * @return the value of the option
+	 * @throw ConfigurationException if not found or if not a float
+	 */
+	public float getFloatOption(String name)
+	{
+		if (options.containsKey(name))
+		{
+			try
+			{
+				return Float.parseFloat(options.get(name));
+			}
+			catch(NumberFormatException e)
+			{
+				throw new ConfigurationException("Error: wrong type of option '"+name+"' with value '"+options.get(name)+"' (expecting float)");
+			}
+		}
+		else throw new ConfigurationException("Error: option '"+name+"' not found; defined options are: "+options.keySet());
+	}
+	
+	
+	/**
+	 * Returns an option given its name cast as an integer.
+	 * @param name
+	 * @return the value of the option
+	 * @throw ConfigurationException if not found or if not an integer
+	 */
+	public int getIntOption(String name)
+	{
+		if (options.containsKey(name))
+		{
+			try
+			{
+				return Integer.parseInt(options.get(name));
+			}
+			catch(NumberFormatException e)
+			{
+				throw new ConfigurationException("Error: wrong type of option '"+name+"' with value '"+options.get(name)+"' (expecting integer)");
+			}
+		}
+		else throw new ConfigurationException("Error: option '"+name+"' not found; defined options are: "+options.keySet());
+	}
+	
+	
+	/**
+	 * Returns an option given its name cast as a boolean.
+	 * If the option has a value different from "true", this method returns false.
+	 * @param name
+	 * @return the value of the option
+	 * @throw ConfigurationException if not found
+	 */
+	public boolean getBooleanOption(String name)
+	{
+		if (options.containsKey(name))
+			return Boolean.parseBoolean(options.get(name));
+		else throw new ConfigurationException("Error: option '"+name+"' not found; defined options are: "+options.keySet());
+	}
+	
+	
+	/**
 	 * @return the options
 	 */
 	public Map<String, String> getOptions()
