@@ -138,7 +138,7 @@ public class JeniGenerator implements Generator
 		}
 		catch (Exception e)
 		{
-			logger.warn(e.getMessage());
+			logger.error(e.getMessage());
 			generationReport.setErrorMessage("Exception: " + e.getMessage());
 		}
 
