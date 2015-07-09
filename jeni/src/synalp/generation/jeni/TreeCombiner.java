@@ -50,13 +50,40 @@ public class TreeCombiner
 
 	/**
 	 * Returns all combinations by substitutions of item1 and item2.
+	 * This method does not test early semantic failure at all.
 	 * @param item1
 	 * @param item2
-	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early
-	 *            semantic failure
+	 * @return items resulting from combinations
+	 */
+	public List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2)
+	{
+		return getSubstitutionCombinations(item1, item2, false, null);
+	}
+	
+	
+	/**
+	 * Returns all combinations by substitutions of item1 and item2.
+	 * @param item1
+	 * @param item2
+	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early semantic failure if the option GeneratorOption.EARLY_SEMANTIC_FAILURE is
+	 * set to true.
 	 * @return items resulting from combinations
 	 */
 	public List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, JeniChartItems allItems)
+	{
+		return getSubstitutionCombinations(item1, item2, GeneratorOption.EARLY_SEMANTIC_FAILURE, allItems);
+	}
+	
+	
+	/**
+	 * Returns all combinations by substitutions of item1 and item2.
+	 * @param item1
+	 * @param item2
+	 * @param useEarlyFailure, if true tests early semantic failure
+	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early semantic failure
+	 * @return items resulting from combinations
+	 */
+	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, boolean useEarlyFailure, JeniChartItems allItems)
 	{
 		List<JeniChartItem> ret = new ArrayList<JeniChartItem>();
 		boolean subItem1InItem2 = couldSubstitute(item1, item2);
@@ -78,9 +105,9 @@ public class TreeCombiner
 		else
 		{
 			if (subItem1InItem2)
-				ret.addAll(getSubstitutionCombinations(item1, item2, allItems, context));
+				ret.addAll(getSubstitutionCombinations(item1, item2, context, useEarlyFailure, allItems));
 			if (subItem2InItem1)
-				ret.addAll(getSubstitutionCombinations(item2, item1, allItems, context));
+				ret.addAll(getSubstitutionCombinations(item2, item1, context, useEarlyFailure, allItems));
 			return ret;
 		}
 	}
@@ -115,12 +142,12 @@ public class TreeCombiner
 	 * same time in the future.
 	 * @param item1
 	 * @param item2
+	 * @param context
 	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early
 	 *            semantic failure
-	 * @param context
 	 * @return all the new trees that may be built by such substitution
 	 */
-	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, JeniChartItems allItems, InstantiationContext context)
+	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, InstantiationContext context, boolean useEarlyFailure, JeniChartItems allItems)
 	{
 		logSubstitutionTest(item1, item2, context);
 
@@ -165,7 +192,7 @@ public class TreeCombiner
 		}
 
 		// the early semantic failure for substitution only works if we can guarantee that there is no auxiliary tree that is able to alter the idx features
-		if (GeneratorOption.EARLY_SEMANTIC_FAILURE)
+		if (useEarlyFailure)
 			if (!unifyIdx(top, bot, newContext))
 			{
 				JeniChartItem alteringItem = allItems.getIdxAlteringItem(cat);
