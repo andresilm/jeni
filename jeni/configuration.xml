@@ -9,13 +9,36 @@
 
 <configurations>
 
+	<!-- the full default configuration, see GeneratorOption to have a description of each option  -->
 	<config name="default">
 		<option name="generator" value="jeni"/>
+		
 		<option name="timeout" value="0"/>
-		<option name="use_filtering" value="true"/>
+		
+		<option name="use_filtering" value="false">
+			<option name="filtering_categories" value="s"/>
+		</option>
+		
+		<option name="ignore_labels" value="false"/>
+		<option name="case_dependent" value="false"/>
+		<option name="assign_node_ids" value="true"/>
+		<option name="rename_variables" value="true"/>
+		<option name="rewrite_lex_nodes" value="true"/>
+		<option name="rewrite_lemanchor" value="true"/>
+		<option name="allow_duplicates" value="false"/>
 		<option name="use_bit_semantics" value="true"/>
+		<option name="allow_empty_lemmas" value="true"/>
+		<option name="rewrite_lex_as_lemma" value="true"/>
+		<option name="early_semantic_failure" value="true"/>
 		<option name="selection" value="classical_selection"/>
-		<option name="missing_lexem_policy" value="output_missing_detailed"/>
+		<option name="allow_missing_coanchors" value="false"/>
+		<option name="morph_lexicon_order" value="lemma_first"/>
+		<option name="missing_lexem_policy" value="output_missing"/>
+		
+		<option name="ranker" value="default_ranker">
+			<option name="beam_size" value="2"/>
+		</option>
+		
 	</config>
 
 
@@ -38,6 +61,8 @@
 		<resource name="grammar" file="grammar.xml"/>
 		<resource name="lexicon" file="lexicon.lex"/>
 		<resource name="testsuite" file="test.jeni"/>
+		<option name="use_filtering" value="false"/>
+		<option name="early_semantic_failure" value="true"/>
 	</config>
 	
 
@@ -58,9 +83,9 @@
 		<resource name="testsuite" file="test.geni"/>
 		<resource name="lexicon" file="koda-lexicon.lex"/>
 		<option name="generator" value="probabilistic"/>
-		<option name="use_filtering" value="true"/>
+		<option name="use_filtering" value="false"/>
 		<option name="early_semantic_failure" value="false"/>
-		<option name="use_bit_semantics" value="false"/>
+		<option name="use_bit_semantics" value="true"/>
 		<option name="missing_lexem_policy" value="output_lemma"/>
 		<option name="beam_size" value="5"/>
 	</config>
