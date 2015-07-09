@@ -59,7 +59,7 @@ public class JeniGeneratorTest extends GeneratorTest
 		GeneratorConfiguration config = GeneratorConfigurations.getConfig("probabilistic");
 		for(int i=0; i<20; i++)
 		{
-			System.out.println("==== Beam size: "+i+" ====");
+			System.out.println("\n==== Beam size: "+i+" ====");
 			config.setOption("beam_size", String.valueOf(i));
 			testJeni(config);	
 		}
