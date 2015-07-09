@@ -22,7 +22,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	 * Tests Jeni on the given configuration (includes grammar, lexicon and test suite).
 	 * @param bundle
 	 */
-	private void testJeni(GeneratorConfiguration config)
+	public void testJeni(GeneratorConfiguration config)
 	{
 		testJeni(config, false);
 	}
@@ -56,7 +56,13 @@ public class JeniGeneratorTest extends GeneratorTest
 	public void test1_probabilistic()
 	{
 		System.out.println("\n**** Test Probabilistic");
-		testJeni(GeneratorConfigurations.getConfig("probabilistic"));
+		GeneratorConfiguration config = GeneratorConfigurations.getConfig("probabilistic");
+		for(int i=0; i<20; i++)
+		{
+			System.out.println("==== Beam size: "+i+" ====");
+			config.setOption("beam_size", String.valueOf(i));
+			testJeni(config);	
+		}
 	}
 
 
