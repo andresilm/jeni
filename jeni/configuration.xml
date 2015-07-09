@@ -14,6 +14,7 @@
 		<option name="timeout" value="0"/>
 		<option name="use_filtering" value="true"/>
 		<option name="use_bit_semantics" value="true"/>
+		<option name="selection" value="classical_selection"/>
 		<option name="missing_lexem_policy" value="output_missing_detailed"/>
 	</config>
 
