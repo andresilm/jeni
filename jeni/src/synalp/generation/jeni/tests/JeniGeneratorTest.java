@@ -83,87 +83,12 @@ public class JeniGeneratorTest extends GeneratorTest
 	{
 		testJeni(GeneratorConfigurations.getConfig("semxtag"));
 	}
-
-
-	@Test
-	@SuppressWarnings("javadoc")
-	public void test5_SuiteSemXTAG2AutoIdx()
-	{
-		/*Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
-		FamiliesSemantics traces = FamilySemanticsReader.readFamiliesSemanticsNoException(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
-
-		SemanticsBuilder builder = new SemanticsBuilder(traces);
-		builder.setSemantics(grammar);
-		GrammarWriter.write(grammar, ResourcesBundleFile.SEMXTAG2_AUTO_GRAMMAR.getFile());
-
-		SyntacticLexicon lexicon = builder.createLexicon(grammar);
-		SyntacticLexiconWriter.write(lexicon, ResourcesBundleFile.SEMXTAG2_AUTO_LEXICON.getFile());
-
-		MorphRealizer morphRealizer = new DefaultMorphRealizer(loadMorphLexicon(ResourcesBundleFile.SEMXTAG2_MORPH.getFile()));
-		JeniGenerator generator = new JeniGenerator(grammar, lexicon, morphRealizer);
-		generator.setRules(RuleReader.readRulesNoException(ResourcesBundleFile.SEMXTAG2_AUTO_RULES.getFile()));
-
-		test(generator, loadTestSuite(ResourcesBundleFile.SEMXTAG2_AUTO_TESTSUITE.getFile()));*/
-	}
-
-
-	@Test
-	@SuppressWarnings("javadoc")
-	public void test7_Performance()
-	{
-		/*Grammar grammar = loadGrammar(ResourcesBundleFile.SEMXTAG2_GRAMMAR.getFile());
-		FamiliesSemantics traces = FamilySemanticsReader.readFamiliesSemanticsNoException(ResourcesBundleFile.SEMXTAG2_AUTO_SEM.getFile());
-
-		SemanticsBuilder builder = new SemanticsBuilder(traces);
-		builder.setSemantics(grammar);
-		GrammarWriter.write(grammar, ResourcesBundleFile.SEMXTAG2_AUTO_GRAMMAR.getFile());
-
-		SyntacticLexicon lexicon = builder.createLexicon(grammar);
-		SyntacticLexiconWriter.write(lexicon, ResourcesBundleFile.SEMXTAG2_AUTO_LEXICON.getFile());
-
-		MorphRealizer morphRealizer = new DefaultMorphRealizer(loadMorphLexicon(ResourcesBundleFile.SEMXTAG2_AUTO_MORPH.getFile()));
-		JeniGenerator generator = new JeniGenerator(grammar, lexicon, morphRealizer);
-		generator.setRules(RuleReader.readRulesNoException(ResourcesBundleFile.SEMXTAG2_AUTO_RULES.getFile()));
-
-		TestSuite testSuite = loadTestSuite(ResourcesBundleFile.SEMXTAG2_AUTO_TESTSUITE.getFile());
-
-		int n = 100;
-		long[] times = new long[n];
-		for(int i = 0; i < n; i++)
-		{
-			Perf.logStart("test");
-			//test(generator, testSuite);
-			//test5_SuiteSemXTAG2AutoIdx();
-
-			test(generator, testSuite);
-
-			times[i] = Perf.logEnd("test");
-		}
-
-		long median = 0;
-		Arrays.sort(times);
-		int middle = ((times.length) / 2);
-		if (times.length % 2 == 0)
-		{
-			long medianA = times[middle];
-			long medianB = times[middle - 1];
-			median = (medianA + medianB) / 2;
-		}
-		else median = times[middle + 1];
-
-		long sum = 0;
-		for(int i = 0; i < n; i++)
-			sum += times[i];
-
-		System.out.println("Median: " + Perf.formatTime(median) + " Avg: " + Perf.formatTime(sum / n));*/
-	}
-
+	
 
 	@Test
 	@SuppressWarnings("javadoc")
 	public void test6_KBGen()
 	{
-		//GeneratorOptions.USE_FILTERING = false;
 		testJeni(GeneratorConfigurations.getConfig("kbgen"), true);
 	}
 }
