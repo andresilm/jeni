@@ -169,6 +169,13 @@ public class BitSemantics extends Semantics
 
 
 	@Override
+	public int size()
+	{
+		return target.size();
+	}
+
+
+	@Override
 	public String toString()
 	{
 		return coverage + ":" + asList();
