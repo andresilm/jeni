@@ -57,6 +57,9 @@
 		<resource name="testsuite" file="test.geni"/>
 		<resource name="lexicon" file="koda-lexicon.lex"/>
 		<option name="generator" value="probabilistic"/>
+		<option name="use_filtering" value="true"/>
+		<option name="early_semantic_failure" value="false"/>
+		<option name="use_bit_semantics" value="false"/>
 		<option name="missing_lexem_policy" value="output_lemma"/>
 		<option name="beam_size" value="5"/>
 	</config>
