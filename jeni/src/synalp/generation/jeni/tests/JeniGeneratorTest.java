@@ -5,6 +5,7 @@ import org.junit.runners.MethodSorters;
 
 import synalp.commons.semantics.*;
 import synalp.commons.tests.GeneratorTest;
+import synalp.generation.Generator;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
 
@@ -35,8 +36,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	private void testJeni(GeneratorConfiguration config, boolean catchTimeout)
 	{
 		config.load();
-
-		test(new JeniGenerator(config), config.getTestSuite(), catchTimeout);
+		test(Generator.createGenerator(config), config.getTestSuite(), catchTimeout);
 	}
 
 
@@ -56,8 +56,7 @@ public class JeniGeneratorTest extends GeneratorTest
 	public void test1_probabilistic()
 	{
 		System.out.println("\n**** Test Probabilistic");
-		test(new JeniGenerator(GeneratorConfigurations.getConfig("probabilistic")),
-				Semantics.readSemantics("birthPlace(e x y) Yury_Usachov(x) Russia(y)"));
+		testJeni(GeneratorConfigurations.getConfig("probabilistic"));
 	}
 
 
