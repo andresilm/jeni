@@ -11,6 +11,7 @@ import synalp.commons.output.*;
 import synalp.commons.semantics.Semantics;
 import synalp.commons.utils.*;
 import synalp.commons.utils.exceptions.TimeoutException;
+import synalp.commons.utils.loggers.LoggerConfiguration;
 import synalp.generation.Generator;
 import synalp.generation.jeni.JeniRealization;
 
@@ -26,6 +27,11 @@ public abstract class GeneratorTest
 	@SuppressWarnings("javadoc")
 	public static Logger logger = Logger.getLogger(GeneratorTest.class);
 
+	static
+	{
+		LoggerConfiguration.init();
+	}
+	
 	
 	/**
 	 * Tests all entries of the given test suite. This method may throw TimeoutExceptions.
