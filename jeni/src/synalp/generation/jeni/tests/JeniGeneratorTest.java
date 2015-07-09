@@ -83,14 +83,12 @@ public class JeniGeneratorTest extends GeneratorTest
 	{
 		testJeni(GeneratorConfigurations.getConfig("semxtag"));
 	}
-
 	
 
 	@Test
 	@SuppressWarnings("javadoc")
 	public void test6_KBGen()
 	{
-		//GeneratorOptions.USE_FILTERING = false;
 		testJeni(GeneratorConfigurations.getConfig("kbgen"), true);
 	}
 }
