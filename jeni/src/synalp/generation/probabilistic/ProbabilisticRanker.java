@@ -1,10 +1,9 @@
 package synalp.generation.probabilistic;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 import synalp.generation.ChartItem;
-import synalp.generation.jeni.JeniChartItem;
+import synalp.generation.configuration.GeneratorOption;
 import synalp.generation.ranker.Ranker;
 
 /**
@@ -12,8 +11,6 @@ import synalp.generation.ranker.Ranker;
  */
 public class ProbabilisticRanker implements Ranker
 {
-	private int beamWidth = 5;
-
 
 	/**
 	 * @param items: a list of elements that are an implementation of ChartItem
@@ -24,28 +21,24 @@ public class ProbabilisticRanker implements Ranker
 	public List<? extends ChartItem> rank(List<? extends ChartItem> items)
 	{
 		// order JeniChartItem list in ascending order
-		Collections.sort(items, (item1, item2) -> (int) (item2.getProbability() - item1.getProbability()));
+		/*Collections.sort(items, (item1, item2) -> (int) (item2.getProbability() - item1.getProbability()));
 		int maxItems = (beamWidth > items.size()) ? items.size() - 1
 				: beamWidth - 1;
-		return items.subList(0, maxItems);
+		return items.subList(0, maxItems);*/
+		
+		Collections.sort(items, Comparator.comparing(ChartItem::getProbability).reversed());
+		int index=0;
+		float proba=Float.MAX_VALUE;
+		int nbOfDiffBeamSizes=0;
+		for(index=0; index<items.size(); index++)
+		{
+			if (items.get(index).getProbability()<proba)
+				nbOfDiffBeamSizes++;
+			if (nbOfDiffBeamSizes > GeneratorOption.BEAM_SIZE)
+				return items.subList(0, index);
+			proba = items.get(index).getProbability();
+		}
+		
+		return items;
 	}
-
-
-	/**
-	 * @return the beamWidth
-	 */
-	public int getBeamWidth()
-	{
-		return beamWidth;
-	}
-
-
-	/**
-	 * set the beamWidth
-	 */
-	public void setBeamWidth(int beamWidth)
-	{
-		this.beamWidth = beamWidth;
-	}
-
 }
