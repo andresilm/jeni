@@ -28,13 +28,15 @@ public class ProbabilisticGenerator extends JeniGenerator
 	public ProbabilisticGenerator(GeneratorConfiguration config)
 	{
 		super(config);
-		setRanker(l -> l.stream().sorted(comparing(ChartItem::getProbability).reversed()).limit(GeneratorOption.BEAM_SIZE).collect(toList()));
+		//setRanker(l -> l.stream().sorted(comparing(ChartItem::getProbability).reversed()).limit(GeneratorOption.BEAM_SIZE).collect(toList()));
+		setRanker(new ProbabilisticRanker());
 	}
 
 
 	@Override
 	protected JeniChartItems generate(Semantics semantics, JeniChartItems agenda)
 	{
+		logger.info("Generating with beam size="+GeneratorOption.BEAM_SIZE);
 		Map<Integer, JeniChartItems> itemsPerSize = new HashMap<>();
 		itemsPerSize.put(1, agenda);
 		for(int n = 2; n <= semantics.size(); n++)
@@ -49,12 +51,14 @@ public class ProbabilisticGenerator extends JeniGenerator
 							tmpItems.addAll(getCombiner().getSubstitutionCombinations(it1, it2));
 						}
 			itemsPerSize.put(n, new JeniChartItems(getRanker().rank(tmpItems)));
+			logger.debug("Reducing from "+tmpItems.size()+" to "+itemsPerSize.get(n).size());
 		}
 
 		JeniChartItems ret = itemsPerSize.get(semantics.size());
 		ruleOutNonUnifyingTopBotTrees(ret);
 		setupLemmaFeatures(ret);
 		logResults(ret);
+		
 		return ret;
 	}
 
