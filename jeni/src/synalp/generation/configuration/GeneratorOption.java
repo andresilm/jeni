@@ -7,6 +7,7 @@ import synalp.commons.utils.Utils;
 import synalp.generation.GeneratorType;
 import synalp.generation.jeni.LexicalSelectionType;
 import synalp.generation.morphology.*;
+import synalp.generation.probabilistic.*;
 import synalp.generation.ranker.RankerType;
 
 /**
@@ -79,6 +80,9 @@ public class GeneratorOption
 
 	@OptionMessage("Defines the type of generator")
 	public static GeneratorType GENERATOR = GeneratorType.JENI_DEFAULT;
+	
+	@OptionMessage("A type of strategy for computing the probability of new items based on their operation")
+	public static ProbabilityStrategy.StrategyType PROBA_STRATEGY_TYPE = ProbabilityStrategy.StrategyType.DEFAULT;
 	
 	
 	/**

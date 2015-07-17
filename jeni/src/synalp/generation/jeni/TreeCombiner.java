@@ -9,6 +9,7 @@ import synalp.commons.grammar.*;
 import synalp.commons.semantics.*;
 import synalp.commons.unification.*;
 import synalp.generation.configuration.GeneratorOption;
+import synalp.generation.probabilistic.ProbabilityStrategy;
 
 /**
  * A TreeCombiner combines trees according to substitution and adjunction.
@@ -45,12 +46,35 @@ public class TreeCombiner
 		}
 	}
 
+	private ProbabilityStrategy probabilityStrategy;
+
+
+	/**
+	 * Creates a default TreeCombiner. By default, all items that are created will have
+	 * probability=1.
+	 */
+	public TreeCombiner()
+	{
+		probabilityStrategy = p -> 1;
+	}
+
+
+	/**
+	 * Creates a TreeCombiner that will use the given probability strategy to compute the
+	 * probability of new items.
+	 * @param probabilityStrategy
+	 */
+	public TreeCombiner(ProbabilityStrategy probabilityStrategy)
+	{
+		this.probabilityStrategy = probabilityStrategy;
+	}
+
 
 ///////// SUBSTITUTIONS	/////////
 
 	/**
-	 * Returns all combinations by substitutions of item1 and item2.
-	 * This method does not test early semantic failure at all.
+	 * Returns all combinations by substitutions of item1 and item2. This method does not test early
+	 * semantic failure at all.
 	 * @param item1
 	 * @param item2
 	 * @return items resulting from combinations
@@ -59,28 +83,30 @@ public class TreeCombiner
 	{
 		return getSubstitutionCombinations(item1, item2, false, null);
 	}
-	
-	
+
+
 	/**
 	 * Returns all combinations by substitutions of item1 and item2.
 	 * @param item1
 	 * @param item2
-	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early semantic failure if the option GeneratorOption.EARLY_SEMANTIC_FAILURE is
-	 * set to true.
+	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early
+	 *            semantic failure if the option GeneratorOption.EARLY_SEMANTIC_FAILURE is set to
+	 *            true.
 	 * @return items resulting from combinations
 	 */
 	public List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, JeniChartItems allItems)
 	{
 		return getSubstitutionCombinations(item1, item2, GeneratorOption.EARLY_SEMANTIC_FAILURE, allItems);
 	}
-	
-	
+
+
 	/**
 	 * Returns all combinations by substitutions of item1 and item2.
 	 * @param item1
 	 * @param item2
 	 * @param useEarlyFailure, if true tests early semantic failure
-	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early semantic failure
+	 * @param allItems all items of agenda, chart and auxiliary tree, required to test the early
+	 *            semantic failure
 	 * @return items resulting from combinations
 	 */
 	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, boolean useEarlyFailure, JeniChartItems allItems)
@@ -147,7 +173,8 @@ public class TreeCombiner
 	 *            semantic failure
 	 * @return all the new trees that may be built by such substitution
 	 */
-	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, InstantiationContext context, boolean useEarlyFailure, JeniChartItems allItems)
+	private List<JeniChartItem> getSubstitutionCombinations(JeniChartItem item1, JeniChartItem item2, InstantiationContext context, boolean useEarlyFailure,
+			JeniChartItems allItems)
 	{
 		logSubstitutionTest(item1, item2, context);
 
@@ -166,7 +193,7 @@ public class TreeCombiner
 		// by imposing a strict order on the operations: it is necessary to fill the substitutions in
 		// the order they appear in the tree, hence we can only test the first found substitution node
 		// this was our previous EARLY_SUCCESS global option, which is now acknowledged to be mandatory
-		
+
 		List<Node> substNodes = tree2.getSubstitutions();
 		if (substNodes.isEmpty())
 			return ret;
@@ -208,11 +235,14 @@ public class TreeCombiner
 
 		TreeOperation treeOperation = createSubstitution(substNode, item2, item1, top, bot);
 		DerivationTree derivationTree = createDerivationTree(treeOperation, item1, item2);
-		JeniChartItem newItem = new JeniChartItem(treeOperation.derivedTree, joinedSemantics, newContext, derivationTree, DerivationNodeType.SUBSTITUTION, item1, item2);
+		JeniChartItem newItem = new JeniChartItem(treeOperation.derivedTree, joinedSemantics, newContext, derivationTree, DerivationNodeType.SUBSTITUTION,
+													item1, item2);
 
 		renameCoIndexedVariable(newItem, top, substNode.getFsTop());
 		renameCoIndexedVariable(newItem, bot, substNode.getFsBot());
 
+		newItem.setProbability(probabilityStrategy.getProbability(newItem));
+		
 		ret.add(newItem);
 		logSubstitutionSuccess(item1, item2, newItem, newContext);
 
@@ -389,11 +419,14 @@ public class TreeCombiner
 				TreeOperation treeOperation = createAdjunction(foot, item1, node, item2, top, bot);
 				DerivationTree derivationTree = createDerivationTree(treeOperation, item1, item2);
 
-				JeniChartItem newItem = new JeniChartItem(treeOperation.derivedTree, joinedSemantics, newContext, derivationTree, DerivationNodeType.ADJUNCTION, item1, item2);
+				JeniChartItem newItem = new JeniChartItem(treeOperation.derivedTree, joinedSemantics, newContext, derivationTree,
+															DerivationNodeType.ADJUNCTION, item1, item2);
 				ret.add(newItem);
 
 				renameCoIndexedVariable(newItem, top, auxRoot.getFsTop());
 				renameCoIndexedVariable(newItem, bot, foot.getFsBot());
+				
+				newItem.setProbability(probabilityStrategy.getProbability(newItem));
 
 				logAdjunctionSuccess(item2, item1, newItem, newContext);
 

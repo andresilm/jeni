@@ -86,7 +86,20 @@ public class JeniGenerator implements Generator
 				ranker = new NgramRanker(lmFile.getPath(), BEAM_SIZE, "");
 				break;
 		}
-
+		
+		
+		switch(PROBA_STRATEGY_TYPE)
+		{
+			case DEFAULT:
+				combiner = new TreeCombiner(p -> 1);
+				break;
+				
+			case SIMPLE:
+				combiner = new TreeCombiner(p -> p.getParentItemSource().getProbability() * p.getParentItemTarget().getProbability());
+				break;
+		}
+		
+		
 		if (config.hasMorphLexicon())
 			morphRealizer = new DefaultMorphRealizer(config.getMorphLexicon());
 		else morphRealizer = new DefaultMorphRealizer();
@@ -124,7 +137,7 @@ public class JeniGenerator implements Generator
 		List<JeniRealization> ret = new ArrayList<JeniRealization>();
 		try
 		{
-			combiner = new TreeCombiner();
+			
 			ret = generateItems(semantics).getRealizations();
 			for(JeniRealization real : ret)
 				morphRealizer.setMorphRealizations(real);

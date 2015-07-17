@@ -100,10 +100,7 @@ public final class JeniChartItem implements ChartItem, UnifiableComponent
 		this.derivation = derivationTree;
 		this.parentOperationType = type;
 		this.parentItemSource = itemSource;
-		this.parentItemTarget = itemTarget;
-	
-		this.probability = itemSource.getProbability() * itemTarget.getProbability();
-		
+		this.parentItemTarget = itemTarget;	
 	}
 
 
