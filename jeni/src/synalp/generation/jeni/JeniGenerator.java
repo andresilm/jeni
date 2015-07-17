@@ -47,7 +47,7 @@ public class JeniGenerator implements Generator
 	 */
 	public JeniGenerator(Grammar grammar, SyntacticLexicon lexicon)
 	{
-		init(grammar, lexicon, new JeniLexicalSelection(grammar, lexicon), new DefaultMorphRealizer(), new DefaultRanker());
+		init(grammar, lexicon, new JeniLexicalSelection(grammar, lexicon), new DefaultMorphRealizer(), new DefaultRanker(), new TreeCombiner());
 	}
 
 
@@ -115,13 +115,14 @@ public class JeniGenerator implements Generator
 	 * @param morphRealizer
 	 * @param ranker
 	 */
-	private void init(Grammar grammar, SyntacticLexicon lexicon, LexicalSelection selection, MorphRealizer morphRealizer, Ranker ranker)
+	private void init(Grammar grammar, SyntacticLexicon lexicon, LexicalSelection selection, MorphRealizer morphRealizer, Ranker ranker, TreeCombiner combiner)
 	{
 		this.grammar = grammar;
 		this.lexicon = lexicon;
 		this.lexicalSelection = selection;
 		this.morphRealizer = morphRealizer;
 		this.ranker = ranker;
+		this.combiner = combiner;
 	}
 
 
