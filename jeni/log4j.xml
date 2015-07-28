@@ -37,6 +37,10 @@
 	<logger name="synalp.generation.jeni.selection.families">
 		<level value="debug"/>
 	</logger>
+	
+	<logger name="synalp.generation.jeni.generation.probabilistic">
+		<level value="trace"/>
+	</logger>
 
 	<root>
 		<priority value="info"/>

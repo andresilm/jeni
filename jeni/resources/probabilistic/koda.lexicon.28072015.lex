@@ -25,7 +25,7 @@ include macros.mac
 
 
 *ENTRY: presented
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=activitySector]
 *ACC: 0.23333333
 *FAM: n0VPn1
@@ -134,7 +134,7 @@ P1 -> on/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=after]
 *ACC: 0.2
 *FAM: n0Vn1
@@ -170,7 +170,7 @@ P1 -> on/prep
 
 
 *ENTRY: payload
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency1Up]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -183,7 +183,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: payload
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency2Up]
 *ACC: 0.33333334
 *FAM: n0VPn1
@@ -208,7 +208,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: supervised
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency3Up]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -220,7 +220,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: payload
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency6Up]
 *ACC: 0.33333334
 *FAM: n0VPn1
@@ -233,7 +233,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency6Up]
 *ACC: 0.6666667
 *FAM: n0VPn1
@@ -246,7 +246,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: payload
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency7Up]
 *ACC: 0.33333334
 *FAM: n0VPn1
@@ -259,7 +259,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=agency7Up]
 *ACC: 0.6666667
 *FAM: n0VPn1
@@ -442,7 +442,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: called
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=author]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -454,7 +454,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: received
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=awardedBy]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -553,7 +553,7 @@ P1 -> for/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=before]
 *ACC: 0.22222222
 *FAM: n0Vn1
@@ -605,7 +605,7 @@ V_a -> be/v
 
 
 *ENTRY: landed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -731,7 +731,7 @@ V_a -> be/v
 
 
 *ENTRY: started
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -820,7 +820,7 @@ V_a -> be/v
 
 
 *ENTRY: worked
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -872,7 +872,7 @@ V_a -> be/v
 
 
 *ENTRY: continued
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0Vn1
@@ -884,7 +884,7 @@ V_a -> be/v
 
 
 *ENTRY: grew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -897,7 +897,7 @@ P1 -> in/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -923,7 +923,7 @@ P1 -> in/prep
 
 
 *ENTRY: finished
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -949,7 +949,7 @@ P1 -> of/prep
 
 
 *ENTRY: participated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.010600707
 *FAM: n0VPn1
@@ -962,7 +962,7 @@ P1 -> with/prep
 
 
 *ENTRY: died
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -1000,7 +1000,7 @@ P1 -> of/prep
 
 
 *ENTRY: graduated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.010600707
 *FAM: n0VPn1
@@ -1026,7 +1026,7 @@ V_a -> be/v
 
 
 *ENTRY: touched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0Vn1
@@ -1065,7 +1065,7 @@ P1 -> of/prep
 
 
 *ENTRY: received
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.010600707
 *FAM: n0VPn1
@@ -1078,7 +1078,7 @@ P1 -> on/prep
 
 
 *ENTRY: took
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -1104,7 +1104,7 @@ V_a -> be/v
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.010600707
 *FAM: n0VPn1
@@ -1130,7 +1130,7 @@ P1 -> in/prep
 
 
 *ENTRY: went
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.007067138
 *FAM: n0VPn1
@@ -1156,7 +1156,7 @@ P1 -> in/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=birthPlace]
 *ACC: 0.017667845
 *FAM: n0VPn1
@@ -1395,7 +1395,7 @@ P1 -> of/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=city]
 *ACC: 0.014084507
 *FAM: n0VPn1
@@ -1493,7 +1493,7 @@ P1 -> over/prep
 
 
 *ENTRY: supported
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=colour]
 *ACC: 0.33333334
 *FAM: n0Vn1
@@ -1602,7 +1602,7 @@ P1 -> to/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=country]
 *ACC: 0.01904762
 *FAM: n0VPn1
@@ -1729,7 +1729,7 @@ V_a -> be/v
 
 
 *ENTRY: embarked
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=country]
 *ACC: 0.028571429
 *FAM: n0VPn1
@@ -1768,7 +1768,7 @@ V_a -> be/v
 
 
 *ENTRY: were
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=country]
 *ACC: 0.01904762
 *FAM: n0VPn1
@@ -1820,7 +1820,7 @@ V_a -> be/v
 
 
 *ENTRY: met
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=country]
 *ACC: 0.01904762
 *FAM: n0VPn1
@@ -1833,7 +1833,7 @@ P1 -> in/prep
 
 
 *ENTRY: attended
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=country]
 *ACC: 0.01904762
 *FAM: n0Vn1
@@ -1981,7 +1981,7 @@ P1 -> to/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.022727273
 *FAM: n0Vn1
@@ -2006,7 +2006,7 @@ P1 -> of/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.03409091
 *FAM: n0VPn1
@@ -2019,7 +2019,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.06818182
 *FAM: n0VPn1
@@ -2032,7 +2032,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: traveled
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -2081,7 +2081,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.03409091
 *FAM: n0VPn1
@@ -2094,7 +2094,7 @@ P1 -> on/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.045454547
 *FAM: n0Vn1
@@ -2131,7 +2131,7 @@ P1 -> in/prep
 
 
 *ENTRY: spent
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -2144,7 +2144,7 @@ P1 -> on/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew1Up]
 *ACC: 0.03409091
 *FAM: n0Vn1
@@ -2274,7 +2274,7 @@ P1 -> for/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.029850746
 *FAM: n0Vn1
@@ -2337,7 +2337,7 @@ P1 -> on/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.029850746
 *FAM: n0VPn1
@@ -2350,7 +2350,7 @@ P1 -> on/prep
 
 
 *ENTRY: lived
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.029850746
 *FAM: n0VPn1
@@ -2387,7 +2387,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.07462686
 *FAM: n0VPn1
@@ -2438,7 +2438,7 @@ P1 -> for/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.029850746
 *FAM: n0VPn1
@@ -2451,7 +2451,7 @@ P1 -> on/prep
 
 
 *ENTRY: placed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew2Up]
 *ACC: 0.029850746
 *FAM: n0Vn1
@@ -2487,7 +2487,7 @@ P1 -> on/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Down]
 *ACC: 0.33333334
 *FAM: n0VPn1
@@ -2500,7 +2500,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: boarded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Down]
 *ACC: 0.6666667
 *FAM: n0Vn1
@@ -2577,7 +2577,7 @@ P1 -> on/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0Vn1
@@ -2615,7 +2615,7 @@ P1 -> of/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.093023255
 *FAM: n0VPn1
@@ -2628,7 +2628,7 @@ P1 -> on/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0VPn1
@@ -2641,7 +2641,7 @@ P1 -> on/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0VPn1
@@ -2654,7 +2654,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0VPn1
@@ -2667,7 +2667,7 @@ P1 -> on/prep
 
 
 *ENTRY: spent
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0VPn1
@@ -2693,7 +2693,7 @@ P1 -> on/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew3Up]
 *ACC: 0.046511628
 *FAM: n0VPn1
@@ -2795,7 +2795,7 @@ P1 -> to/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew6Down]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -2808,7 +2808,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew6Up]
 *ACC: 0.16666667
 *FAM: n0VPn1
@@ -2821,7 +2821,7 @@ P1 -> on/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew6Up]
 *ACC: 0.5
 *FAM: n0VPn1
@@ -2846,7 +2846,7 @@ P1 -> on/prep
 
 
 *ENTRY: participated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew6Up]
 *ACC: 0.16666667
 *FAM: n0VPn1
@@ -2898,7 +2898,7 @@ P1 -> to/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crew7Up]
 *ACC: 0.4
 *FAM: n0VPn1
@@ -2924,7 +2924,7 @@ P1 -> with/prep
 
 
 *ENTRY: boarded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewLanding]
 *ACC: 0.1
 *FAM: n0Vn1
@@ -2949,7 +2949,7 @@ P1 -> to/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewLaunching]
 *ACC: 0.13793103
 *FAM: n0VPn1
@@ -3038,7 +3038,7 @@ P1 -> on/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewLaunching]
 *ACC: 0.06896552
 *FAM: n0VPn1
@@ -3076,7 +3076,7 @@ P1 -> of/prep
 
 
 *ENTRY: made
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewLaunching]
 *ACC: 0.06896552
 *FAM: n0VPn1
@@ -3192,7 +3192,7 @@ P1 -> on/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.062801935
 *FAM: n0VPn1
@@ -3229,7 +3229,7 @@ P1 -> on/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.033816423
 *FAM: n0Vn1
@@ -3241,7 +3241,7 @@ P1 -> on/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.014492754
 *FAM: n0Vn1
@@ -3266,7 +3266,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.019323671
 *FAM: n0VPn1
@@ -3316,7 +3316,7 @@ V_a -> be/v
 
 
 *ENTRY: piloted
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0Vn1
@@ -3341,7 +3341,7 @@ P1 -> of/prep
 
 
 *ENTRY: participated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0VPn1
@@ -3366,7 +3366,7 @@ P1 -> in/prep
 
 
 *ENTRY: began
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0VPn1
@@ -3379,7 +3379,7 @@ P1 -> for/prep
 
 
 *ENTRY: performed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.014492754
 *FAM: n0VPn1
@@ -3392,7 +3392,7 @@ P1 -> as/prep
 
 
 *ENTRY: inspected
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0Vn1
@@ -3430,7 +3430,7 @@ P1 -> on/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.019323671
 *FAM: n0VPn1
@@ -3443,7 +3443,7 @@ P1 -> on/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0VPn1
@@ -3481,7 +3481,7 @@ P1 -> on/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.053140096
 *FAM: n0VPn1
@@ -3494,7 +3494,7 @@ P1 -> on/prep
 
 
 *ENTRY: lived
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0VPn1
@@ -3507,7 +3507,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: spent
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.019323671
 *FAM: n0VPn1
@@ -3544,7 +3544,7 @@ P1 -> on/prep
 
 
 *ENTRY: traveled
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=crewMembers]
 *ACC: 0.009661836
 *FAM: n0VPn1
@@ -3608,7 +3608,7 @@ P1 -> on/prep
 
 
 *ENTRY: issued
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=currency]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -3657,7 +3657,7 @@ V_a -> be/v
 
 
 *ENTRY: died
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=deathPlace]
 *ACC: 0.13333334
 *FAM: n0VPn1
@@ -3720,7 +3720,7 @@ V_a -> be/v
 
 
 *ENTRY: finished
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=deathPlace]
 *ACC: 0.06666667
 *FAM: n0VPn1
@@ -3871,7 +3871,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: brought
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=departureCraft]
 *ACC: 0.15
 *FAM: n0Vn1
@@ -3895,7 +3895,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: lost
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=deputy]
 *ACC: 0.5
 *FAM: n0VPn1
@@ -3920,7 +3920,7 @@ P1 -> to/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=details3Up]
 *ACC: 0.75
 *FAM: n0VPn1
@@ -3981,7 +3981,7 @@ P1 -> in/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=developer]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -4019,7 +4019,7 @@ P1 -> by/prep
 
 
 *ENTRY: remained
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=employmentField]
 *ACC: 0.14285715
 *FAM: n0VPn1
@@ -4068,7 +4068,7 @@ P1 -> in/prep
 
 
 *ENTRY: suffered
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=era]
 *ACC: 0.75
 *FAM: n0VPn1
@@ -4302,7 +4302,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: brought
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=expedition5Down]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -4314,7 +4314,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: brought
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=expedition6Down]
 *ACC: 1.0
 *FAM: n0Vn1
@@ -4326,7 +4326,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=expedition7Down]
 *ACC: 0.125
 *FAM: n0VPn1
@@ -4351,7 +4351,7 @@ P1 -> on/prep
 
 
 *ENTRY: brought
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=expedition7Down]
 *ACC: 0.5
 *FAM: n0Vn1
@@ -4363,7 +4363,7 @@ P1 -> on/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=expedition7Up]
 *ACC: 0.16666667
 *FAM: n0VPn1
@@ -4547,7 +4547,7 @@ P1 -> of/prep
 
 
 *ENTRY: moved
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=garrison]
 *ACC: 0.02247191
 *FAM: n0VPn1
@@ -4560,7 +4560,7 @@ P1 -> to/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=garrison]
 *ACC: 0.02247191
 *FAM: n0VPn1
@@ -4609,7 +4609,7 @@ P1 -> at/prep
 
 
 *ENTRY: attended
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=genre]
 *ACC: 0.08695652
 *FAM: n0Vn1
@@ -4621,7 +4621,7 @@ P1 -> at/prep
 
 
 *ENTRY: operated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=genre]
 *ACC: 0.08695652
 *FAM: n0Vn1
@@ -4633,7 +4633,7 @@ P1 -> at/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=genre]
 *ACC: 0.08695652
 *FAM: n0VPn1
@@ -4731,7 +4731,7 @@ P1 -> at/prep
 
 
 *ENTRY: received
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=headquarters]
 *ACC: 0.6666667
 *FAM: n0VPn1
@@ -4780,7 +4780,7 @@ P1 -> in/prep
 
 
 *ENTRY: spoke
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=hometown]
 *ACC: 0.5
 *FAM: n0VPn1
@@ -4867,7 +4867,7 @@ P1 -> with/prep
 
 
 *ENTRY: investigated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=inquiries]
 *ACC: 0.16666667
 *FAM: n0Vn1
@@ -4990,7 +4990,7 @@ P1 -> of/prep
 
 
 *ENTRY: retired
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=keyPeople]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -5003,7 +5003,7 @@ P1 -> from/prep
 
 
 *ENTRY: found
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=keyPerson]
 *ACC: 0.13333334
 *FAM: n0Vn1
@@ -5039,7 +5039,7 @@ P1 -> from/prep
 
 
 *ENTRY: founded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=keyPerson]
 *ACC: 0.13333334
 *FAM: n0Vn1
@@ -5112,7 +5112,7 @@ P1 -> as/prep
 
 
 *ENTRY: landed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=landingSite]
 *ACC: 0.35555556
 *FAM: n0VPn1
@@ -5125,7 +5125,7 @@ P1 -> at/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=landingSite]
 *ACC: 0.5555556
 *FAM: n0VPn1
@@ -5138,7 +5138,7 @@ P1 -> from/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=landingSite]
 *ACC: 0.08888889
 *FAM: n0VPn1
@@ -5275,7 +5275,7 @@ P1 -> from/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=launchSite]
 *ACC: 0.62608695
 *FAM: n0VPn1
@@ -5288,7 +5288,7 @@ P1 -> from/prep
 
 
 *ENTRY: landed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=launchSite]
 *ACC: 0.14782609
 *FAM: n0VPn1
@@ -5325,7 +5325,7 @@ P1 -> at/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=launchSite]
 *ACC: 0.034782607
 *FAM: n0VPn1
@@ -5826,7 +5826,7 @@ P1 -> of/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.048231512
 *FAM: n0VPn1
@@ -5929,7 +5929,7 @@ P1 -> on/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.06430868
 *FAM: n0VPn1
@@ -5966,7 +5966,7 @@ P1 -> on/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.03215434
 *FAM: n0Vn1
@@ -5991,7 +5991,7 @@ P1 -> to/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.009646302
 *FAM: n0Vn1
@@ -6003,7 +6003,7 @@ P1 -> to/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.07073955
 *FAM: n0VPn1
@@ -6028,7 +6028,7 @@ P1 -> on/prep
 
 
 *ENTRY: lived
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.01607717
 *FAM: n0VPn1
@@ -6078,7 +6078,7 @@ V_a -> be/v
 
 
 *ENTRY: piloted
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0Vn1
@@ -6131,7 +6131,7 @@ P1 -> of/prep
 
 
 *ENTRY: participated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0VPn1
@@ -6144,7 +6144,7 @@ P1 -> in/prep
 
 
 *ENTRY: began
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.009646302
 *FAM: n0VPn1
@@ -6157,7 +6157,7 @@ P1 -> for/prep
 
 
 *ENTRY: performed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.028938906
 *FAM: n0VPn1
@@ -6170,7 +6170,7 @@ P1 -> as/prep
 
 
 *ENTRY: inspected
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.012861736
 *FAM: n0Vn1
@@ -6234,7 +6234,7 @@ P1 -> on/prep
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.012861736
 *FAM: n0VPn1
@@ -6247,7 +6247,7 @@ P1 -> on/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0VPn1
@@ -6298,7 +6298,7 @@ P1 -> on/prep
 
 
 *ENTRY: boarded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0Vn1
@@ -6310,7 +6310,7 @@ P1 -> on/prep
 
 
 *ENTRY: spent
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.01607717
 *FAM: n0VPn1
@@ -6360,7 +6360,7 @@ P1 -> of/prep
 
 
 *ENTRY: made
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0VPn1
@@ -6385,7 +6385,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: traveled
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=mission]
 *ACC: 0.006430868
 *FAM: n0VPn1
@@ -6718,7 +6718,7 @@ V_a -> be/v
 
 
 *ENTRY: went
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nationality]
 *ACC: 0.008298756
 *FAM: n0VPn1
@@ -6758,7 +6758,7 @@ P1 -> to/prep
 
 
 *ENTRY: made
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nationality]
 *ACC: 0.008298756
 *FAM: n0Vn1
@@ -6925,7 +6925,7 @@ V_a -> be/v
 
 
 *ENTRY: continued
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nationality]
 *ACC: 0.008298756
 *FAM: n0Vn1
@@ -6989,7 +6989,7 @@ V_a -> be/v
 
 
 *ENTRY: performed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nationality]
 *ACC: 0.008298756
 *FAM: n0Vn1
@@ -7001,7 +7001,7 @@ V_a -> be/v
 
 
 *ENTRY: participated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nationality]
 *ACC: 0.016597511
 *FAM: n0VPn1
@@ -7063,7 +7063,7 @@ P1 -> of/prep
 
 
 *ENTRY: landed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nextMission]
 *ACC: 0.025641026
 *FAM: n0VPn1
@@ -7125,7 +7125,7 @@ P1 -> from/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=nextMission]
 *ACC: 0.051282052
 *FAM: n0Vn1
@@ -7301,7 +7301,7 @@ P1 -> from/prep
 
 
 *ENTRY: worked
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.012820513
 *FAM: n0VPn1
@@ -7353,7 +7353,7 @@ V_a -> be/v
 
 
 *ENTRY: founded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.012820513
 *FAM: n0Vn1
@@ -7365,7 +7365,7 @@ V_a -> be/v
 
 
 *ENTRY: spent
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.025641026
 *FAM: n0VPn1
@@ -7378,7 +7378,7 @@ P1 -> as/prep
 
 
 *ENTRY: obtained
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.012820513
 *FAM: n0VPn1
@@ -7417,7 +7417,7 @@ P1 -> over/prep
 
 
 *ENTRY: began
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.012820513
 *FAM: n0VPn1
@@ -7561,7 +7561,7 @@ V_a -> be/v
 
 
 *ENTRY: played
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.012820513
 *FAM: n0VPn1
@@ -7654,7 +7654,7 @@ P1 -> as/prep
 
 
 *ENTRY: performed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=occupation]
 *ACC: 0.01923077
 *FAM: n0VPn1
@@ -7741,7 +7741,7 @@ P1 -> in/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=operator]
 *ACC: 0.06666667
 *FAM: n0VPn1
@@ -7767,7 +7767,7 @@ P1 -> to/prep
 
 
 *ENTRY: named
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=operator]
 *ACC: 0.06666667
 *FAM: n0VPn1
@@ -7842,7 +7842,7 @@ V_a -> be/v
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=orbitReference]
 *ACC: 0.2857143
 *FAM: n0Vn1
@@ -7895,7 +7895,7 @@ P1 -> in/prep
 
 *ENTRY: comma
 *CAT: punct
-*SEM: binaryRel[rel=owl#differentFrom]
+*SEM: binaryRel[rel=owl_differentFrom]
 *ACC: 1.0
 *FAM: betanxPUnx
 *FILTERS: []
@@ -7907,7 +7907,7 @@ P1 -> in/prep
 
 *ENTRY: awarded
 *CAT: VBN
-*SEM: binaryRel[rel=owl#disjointWith]
+*SEM: binaryRel[rel=owl_disjointWith]
 *ACC: 1.0
 *FAM: n1VPn2
 *FILTERS: []
@@ -7993,7 +7993,7 @@ P1 -> with/prep
 
 
 *ENTRY: reported
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.375
 *FAM: n0VPn1
@@ -8044,7 +8044,7 @@ V_a -> be/v
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.03409091
 *FAM: n0VPn1
@@ -8069,7 +8069,7 @@ P1 -> aboard/prep
 
 
 *ENTRY: qualified
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -8131,7 +8131,7 @@ P1 -> to/prep
 
 
 *ENTRY: served
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -8157,7 +8157,7 @@ V_a -> be/v
 
 
 *ENTRY: nominated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -8170,7 +8170,7 @@ P1 -> on/prep
 
 
 *ENTRY: retired
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=parentAgency]
 *ACC: 0.022727273
 *FAM: n0VPn1
@@ -8346,7 +8346,7 @@ V_a -> be/v
 
 
 *ENTRY: experienced
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=place]
 *ACC: 0.18181819
 *FAM: n0Vn1
@@ -8478,7 +8478,7 @@ V_a -> be/v
 
 
 *ENTRY: lost
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=predecessor]
 *ACC: 0.2
 *FAM: n0VPn1
@@ -8516,7 +8516,7 @@ P1 -> with/prep
 
 
 *ENTRY: landed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=previousMission]
 *ACC: 0.027777778
 *FAM: n0VPn1
@@ -8578,7 +8578,7 @@ P1 -> from/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=previousMission]
 *ACC: 0.055555556
 *FAM: n0Vn1
@@ -8639,7 +8639,7 @@ V_a -> be/v
 
 
 *ENTRY: qualified
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=primaryUser]
 *ACC: 0.10526316
 *FAM: n0VPn1
@@ -8825,7 +8825,7 @@ P1 -> as/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=programme]
 *ACC: 0.029411765
 *FAM: n0Vn1
@@ -8837,7 +8837,7 @@ P1 -> as/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=programme]
 *ACC: 0.029411765
 *FAM: n0Vn1
@@ -8935,7 +8935,7 @@ P1 -> with/prep
 
 
 *ENTRY: launched
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=publisher]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -8974,7 +8974,7 @@ P1 -> as/prep
 
 
 *ENTRY: held
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01183432
 *FAM: n0VPn1
@@ -9026,7 +9026,7 @@ P1 -> in/prep
 
 
 *ENTRY: resigned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01775148
 *FAM: n0VPn1
@@ -9079,7 +9079,7 @@ V_a -> be/v
 
 
 *ENTRY: retired
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.088757396
 *FAM: n0VPn1
@@ -9117,7 +9117,7 @@ V_a -> be/v
 
 
 *ENTRY: entered
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.02366864
 *FAM: n0VPn1
@@ -9130,7 +9130,7 @@ P1 -> with/prep
 
 
 *ENTRY: received
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.03550296
 *FAM: n0VPn1
@@ -9143,7 +9143,7 @@ P1 -> in/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01775148
 *FAM: n0VPn1
@@ -9195,7 +9195,7 @@ V_a -> be/v
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01775148
 *FAM: n0Vn1
@@ -9259,7 +9259,7 @@ P1 -> in/prep
 
 
 *ENTRY: enlisted
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01183432
 *FAM: n0VPn1
@@ -9298,7 +9298,7 @@ V_a -> be/v
 
 
 *ENTRY: achieved
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=rank]
 *ACC: 0.01183432
 *FAM: n0VPn1
@@ -9311,8 +9311,8 @@ P1 -> in/prep
 
 
 *ENTRY: underwent
-*CAT: VBD
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*CAT: v
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.013513514
 *FAM: n0Vn1
 *FILTERS: []
@@ -9324,7 +9324,7 @@ P1 -> in/prep
 
 *ENTRY: Russian
 *CAT: JJ
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.054054055
 *FAM: n0N1
 *FILTERS: []
@@ -9337,7 +9337,7 @@ V_a -> be/v
 
 *ENTRY: on
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: betanxPnx
 *FILTERS: []
@@ -9349,7 +9349,7 @@ V_a -> be/v
 
 *ENTRY: Chinese
 *CAT: NNPS
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: n0N1
 *FILTERS: []
@@ -9362,7 +9362,7 @@ V_a -> be/v
 
 *ENTRY: of
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.054054055
 *FAM: betanxPnx
 *FILTERS: []
@@ -9373,8 +9373,8 @@ V_a -> be/v
 
 
 *ENTRY: graduated
-*CAT: VBD
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*CAT: v
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: n0VPn1
 *FILTERS: []
@@ -9387,7 +9387,7 @@ P1 -> from/prep
 
 *ENTRY: comma
 *CAT: punct
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.36486486
 *FAM: betanxPUnx
 *FILTERS: []
@@ -9399,7 +9399,7 @@ P1 -> from/prep
 
 *ENTRY: Italian
 *CAT: JJ
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: n0N1
 *FILTERS: []
@@ -9412,7 +9412,7 @@ V_a -> be/v
 
 *ENTRY: for
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.054054055
 *FAM: betanxPnx
 *FILTERS: []
@@ -9424,7 +9424,7 @@ V_a -> be/v
 
 *ENTRY: University
 *CAT: NNP
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: n0VPn1
 *FILTERS: []
@@ -9437,7 +9437,7 @@ P1 -> in/prep
 
 *ENTRY: in
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: betanxPnx
 *FILTERS: []
@@ -9449,7 +9449,7 @@ P1 -> in/prep
 
 *ENTRY: join
 *CAT: VB
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: n0Vn1
 *FILTERS: []
@@ -9460,8 +9460,8 @@ P1 -> in/prep
 
 
 *ENTRY: spent
-*CAT: VBD
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*CAT: v
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: n0VPn1
 *FILTERS: []
@@ -9473,8 +9473,8 @@ P1 -> on/prep
 
 
 *ENTRY: commanded
-*CAT: VBD
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*CAT: v
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.04054054
 *FAM: n0Vn1
 *FILTERS: []
@@ -9486,7 +9486,7 @@ P1 -> on/prep
 
 *ENTRY: by
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: betanxPnx
 *FILTERS: []
@@ -9498,7 +9498,7 @@ P1 -> on/prep
 
 *ENTRY: with
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: betanxPnx
 *FILTERS: []
@@ -9510,7 +9510,7 @@ P1 -> on/prep
 
 *ENTRY: modules
 *CAT: NNS
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: n0N1
 *FILTERS: []
@@ -9523,7 +9523,7 @@ V_a -> be/v
 
 *ENTRY: and
 *CAT: cj
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: betanx1CONJnx2
 *FILTERS: []
@@ -9535,7 +9535,7 @@ V_a -> be/v
 
 *ENTRY: to
 *CAT: prep
-*SEM: binaryRel[rel=rdf-schema#seeAlso]
+*SEM: binaryRel[rel=rdf-schema_seeAlso]
 *ACC: 0.027027028
 *FAM: betanxPnx
 *FILTERS: []
@@ -9547,7 +9547,7 @@ V_a -> be/v
 
 *ENTRY: highlights
 *CAT: VBZ
-*SEM: binaryRel[rel=rdf-schema#subClassOf]
+*SEM: binaryRel[rel=rdf-schema_subClassOf]
 *ACC: 0.14285715
 *FAM: n0Vn1
 *FILTERS: []
@@ -9559,7 +9559,7 @@ V_a -> be/v
 
 *ENTRY: comma
 *CAT: punct
-*SEM: binaryRel[rel=rdf-schema#subClassOf]
+*SEM: binaryRel[rel=rdf-schema_subClassOf]
 *ACC: 0.2857143
 *FAM: betanxPUnx
 *FILTERS: []
@@ -9570,8 +9570,8 @@ V_a -> be/v
 
 
 *ENTRY: took
-*CAT: VBD
-*SEM: binaryRel[rel=rdf-schema#subClassOf]
+*CAT: v
+*SEM: binaryRel[rel=rdf-schema_subClassOf]
 *ACC: 0.2857143
 *FAM: n0Vn1
 *FILTERS: []
@@ -9583,7 +9583,7 @@ V_a -> be/v
 
 *ENTRY: and
 *CAT: cj
-*SEM: binaryRel[rel=rdf-schema#subClassOf]
+*SEM: binaryRel[rel=rdf-schema_subClassOf]
 *ACC: 0.2857143
 *FAM: betanx1CONJnx2
 *FILTERS: []
@@ -9594,7 +9594,7 @@ V_a -> be/v
 
 
 *ENTRY: went
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=recordedIn]
 *ACC: 0.2
 *FAM: n0VPn1
@@ -9727,7 +9727,7 @@ P1 -> from/prep
 
 
 *ENTRY: alleged
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=relatedOccupation]
 *ACC: 0.25
 *FAM: n0Vn1
@@ -10148,7 +10148,7 @@ P1 -> of/prep
 
 
 *ENTRY: joined
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=spaceStation]
 *ACC: 0.054054055
 *FAM: n0Vn1
@@ -10347,7 +10347,7 @@ P1 -> to/prep
 
 
 *ENTRY: named
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=state]
 *ACC: 0.036363635
 *FAM: n0Vn1
@@ -10384,7 +10384,7 @@ P1 -> at/prep
 
 
 *ENTRY: graduated
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=state]
 *ACC: 0.036363635
 *FAM: n0VPn1
@@ -10498,7 +10498,7 @@ P1 -> of/prep
 
 
 *ENTRY: lost
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=successor]
 *ACC: 0.33333334
 *FAM: n0VPn1
@@ -10524,7 +10524,7 @@ P1 -> with/prep
 
 
 *ENTRY: reported
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=target]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -10550,7 +10550,7 @@ P1 -> as/prep
 
 
 *ENTRY: returned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=title]
 *ACC: 0.11111111
 *FAM: n0VPn1
@@ -10599,7 +10599,7 @@ P1 -> as/prep
 
 
 *ENTRY: ceded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=title]
 *ACC: 0.16666667
 *FAM: n0VPn1
@@ -10612,7 +10612,7 @@ P1 -> as/prep
 
 
 *ENTRY: published
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=topics]
 *ACC: 1.0
 *FAM: n0VPn1
@@ -10688,7 +10688,7 @@ P1 -> of/prep
 
 
 *ENTRY: resigned
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.020348838
 *FAM: n0VPn1
@@ -10701,7 +10701,7 @@ P1 -> from/prep
 
 
 *ENTRY: published
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.0058139535
 *FAM: n0VPn1
@@ -10764,7 +10764,7 @@ P1 -> with/prep
 
 
 *ENTRY: flew
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.008720931
 *FAM: n0Vn1
@@ -10789,7 +10789,7 @@ P1 -> of/prep
 
 
 *ENTRY: left
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.023255814
 *FAM: n0Vn1
@@ -10828,7 +10828,7 @@ P1 -> for/prep
 
 
 *ENTRY: announced
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.017441861
 *FAM: n0Vn1
@@ -10904,7 +10904,7 @@ P1 -> through/prep
 
 
 *ENTRY: made
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.0058139535
 *FAM: n0VPn1
@@ -10929,7 +10929,7 @@ P1 -> on/prep
 
 
 *ENTRY: received
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.008720931
 *FAM: n0VPn1
@@ -10993,7 +10993,7 @@ P1 -> as/prep
 
 
 *ENTRY: worked
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.017441861
 *FAM: n0VPn1
@@ -11072,7 +11072,7 @@ P1 -> as/prep
 
 
 *ENTRY: began
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.008720931
 *FAM: n0Vn1
@@ -11084,7 +11084,7 @@ P1 -> as/prep
 
 
 *ENTRY: came
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.014534884
 *FAM: n0VPn1
@@ -11162,7 +11162,7 @@ P1 -> to/prep
 
 
 *ENTRY: named
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.0058139535
 *FAM: n0Vn1
@@ -11199,7 +11199,7 @@ P1 -> of/prep
 
 
 *ENTRY: designed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.0058139535
 *FAM: n0Vn1
@@ -11250,7 +11250,7 @@ P1 -> at/prep
 
 
 *ENTRY: completed
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.014534884
 *FAM: n0VPn1
@@ -11288,7 +11288,7 @@ V_a -> be/v
 
 
 *ENTRY: became
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.008720931
 *FAM: n0VPn1
@@ -11314,7 +11314,7 @@ V_a -> be/v
 
 
 *ENTRY: awarded
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.008720931
 *FAM: n0Vn1
@@ -11352,7 +11352,7 @@ P1 -> as/prep
 
 
 *ENTRY: retired
-*CAT: VBD
+*CAT: v
 *SEM: binaryRel[rel=type]
 *ACC: 0.05232558
 *FAM: n0VPn1
