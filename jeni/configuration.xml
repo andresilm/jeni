@@ -86,6 +86,18 @@
 		<option name="missing_lexem_policy" value="output_lemma"/>
 		<option name="beam_size" value="5"/>
 	</config>
+	
+		<config name="probabilistic_demosuite" inherit="default" basedir="resources/probabilistic">
+		<resource name="grammar" file="valuation.xml"/>
+		<resource name="testsuite" file="koda.suite.28072015.geni"/>
+		<resource name="lexicon" file="koda.lexicon.28072015.lex"/>
+		<option name="generator" value="probabilistic"/>
+		<option name="proba_strategy_type" value="simple"/>
+		<option name="use_bit_semantics" value="false"/>
+		<option name="early_semantic_failure" value="false"/>
+		<option name="missing_lexem_policy" value="output_lemma"/>
+		<option name="beam_size" value="5"/>
+	</config>
 
 
 	<config name="kbgen" inherit="default">
