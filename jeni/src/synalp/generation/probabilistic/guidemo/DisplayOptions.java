@@ -53,33 +53,50 @@ public class DisplayOptions extends JDialog
 		
 		JRadioButton rdbtnFullOutput = new JRadioButton("Full output");
 		
-		JRadioButton rdbtnShowJustSentences = new JRadioButton("Show just sentences with:");
+		JRadioButton rdbtnShowJustSentences = new JRadioButton("Show sentences and info about:");
 		
 		JCheckBox chckbxProbabilities = new JCheckBox("Probabilities");
 		
-		JCheckBox chckbxTimeElapsed = new JCheckBox("Time elapsed");
+		JCheckBox chckbxTimeElapsed = new JCheckBox("Input benchmark");
 		
 	    ButtonGroup group = new ButtonGroup();
 	    group.add(rdbtnFullOutput);
 	    group.add(rdbtnShowJustSentences);
 	    
 		
-		JCheckBox chckbxDebugInfo = new JCheckBox("Debug info");
+		JCheckBox chckbxDebugInfo = new JCheckBox("Grammar & lexicon files");
+		
+		JCheckBox chckbxInputSemantics = new JCheckBox("Input semantics");
+		
+		JCheckBox chckbxTimeDay = new JCheckBox("Time & day");
+		
+		JCheckBox chckbxBeamSize = new JCheckBox("Beam size");
+		
+		JCheckBox chckbxNInitialItems = new JCheckBox("Nº initial items");
 		GroupLayout gl_contentPanel = new GroupLayout(contentPanel);
 		gl_contentPanel.setHorizontalGroup(
 			gl_contentPanel.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPanel.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
-						.addComponent(rdbtnFullOutput)
-						.addComponent(rdbtnShowJustSentences)
+						.addGroup(gl_contentPanel.createSequentialGroup()
+							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
+								.addComponent(rdbtnFullOutput)
+								.addComponent(rdbtnShowJustSentences))
+							.addContainerGap(239, Short.MAX_VALUE))
 						.addGroup(gl_contentPanel.createSequentialGroup()
 							.addGap(29)
 							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
-								.addComponent(chckbxTimeElapsed)
 								.addComponent(chckbxProbabilities)
-								.addComponent(chckbxDebugInfo))))
-					.addContainerGap(239, Short.MAX_VALUE))
+								.addComponent(chckbxTimeElapsed)
+								.addComponent(chckbxDebugInfo)
+								.addComponent(chckbxInputSemantics))
+							.addPreferredGap(ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
+							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
+								.addComponent(chckbxTimeDay)
+								.addComponent(chckbxBeamSize)
+								.addComponent(chckbxNInitialItems))
+							.addContainerGap(42, Short.MAX_VALUE))))
 		);
 		gl_contentPanel.setVerticalGroup(
 			gl_contentPanel.createParallelGroup(Alignment.LEADING)
@@ -89,12 +106,20 @@ public class DisplayOptions extends JDialog
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(rdbtnShowJustSentences)
 					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addComponent(chckbxProbabilities)
+					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(chckbxProbabilities)
+						.addComponent(chckbxTimeDay))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
-					.addComponent(chckbxTimeElapsed)
-					.addGap(18)
-					.addComponent(chckbxDebugInfo)
-					.addContainerGap(54, Short.MAX_VALUE))
+					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(chckbxTimeElapsed)
+						.addComponent(chckbxBeamSize))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
+						.addComponent(chckbxDebugInfo)
+						.addComponent(chckbxNInitialItems))
+					.addPreferredGap(ComponentPlacement.UNRELATED)
+					.addComponent(chckbxInputSemantics)
+					.addContainerGap(25, Short.MAX_VALUE))
 		);
 		contentPanel.setLayout(gl_contentPanel);
 		{
