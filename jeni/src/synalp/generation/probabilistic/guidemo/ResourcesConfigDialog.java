@@ -26,13 +26,13 @@ public class ResourcesConfigDialog extends JDialog
 
 	private final JPanel contentPanel = new JPanel();
 	private JTextField grammarTextField;
-	private JTextField textField_1;
-	private JTextField textField_2;
+	private JTextField lexiconTextField;
+	private JTextField testsuiteTextField;
 	
 	//Config options
-	String grammarPath;
-	String lexiconPath;
-	String testsuitePath;
+	private String grammarPath;
+	private String lexiconPath;
+	private String testsuitePath;
 
 
 	/**
@@ -48,16 +48,19 @@ public class ResourcesConfigDialog extends JDialog
 		
 		
 		grammarTextField = new JTextField();
+		grammarTextField.setText("*.xml");
 		grammarTextField.setEditable(false);
 		grammarTextField.setColumns(10);
 		
-		textField_1 = new JTextField();
-		textField_1.setEditable(false);
-		textField_1.setColumns(10);
+		lexiconTextField = new JTextField();
+		lexiconTextField.setText("*.lex");
+		lexiconTextField.setEditable(false);
+		lexiconTextField.setColumns(10);
 		
-		textField_2 = new JTextField();
-		textField_2.setEditable(false);
-		textField_2.setColumns(10);
+		testsuiteTextField = new JTextField();
+		testsuiteTextField.setText("*.geni");
+		testsuiteTextField.setEditable(false);
+		testsuiteTextField.setColumns(10);
 		
 		JLabel lblGrammarFile = new JLabel("Grammar");
 		
@@ -65,7 +68,7 @@ public class ResourcesConfigDialog extends JDialog
 		
 		JLabel lblTestSuite = new JLabel("Testsuite");
 		
-		Button btnBrowse = new Button("Browse");
+		JButton btnBrowse = new JButton("Browse");
 		ResourcesConfigDialog thisDialog = this;
 		btnBrowse.addActionListener(new ActionListener() {
 
@@ -80,34 +83,50 @@ public class ResourcesConfigDialog extends JDialog
 				fd.setVisible(true);
 				
 				
-				grammarPath = fd.getFile();
-				grammarTextField.setText(grammarPath);			}
+				setGrammarPath(fd.getDirectory() + fd.getFile());
+				grammarTextField.setText(getGrammarPath());			}
 		});
 		
-		Button button = new Button("Browse");
+		JButton button = new JButton("Browse");
 		
-		btnBrowse.addActionListener(new ActionListener() {
+		button.addActionListener(new ActionListener() {
 
 
 			@Override
 			public void actionPerformed(ActionEvent e)
 			{
 				// TODO Auto-generated method stub
-				System.out.println("File dialog for grammar should open now.");
-				FileDialog fd = new FileDialog(thisDialog, "Choose a grammar file", FileDialog.LOAD);
+				System.out.println("File dialog for lexicon should open now.");
+				FileDialog fd = new FileDialog(thisDialog, "Choose a lexicon file", FileDialog.LOAD);
+				
+				fd.setVisible(true);
 				
 				
-				grammarPath = fd.getDirectory() + fd.getFile();
-				System.out.println(grammarPath);
-				
-				fd.setEnabled(false);
-				grammarTextField.setText(grammarPath);
-				
-			
-			}
+				setLexiconPath(fd.getDirectory() + fd.getFile());
+				lexiconTextField.setText(getLexiconPath());			}
 		});
 		
-		Button button_1 = new Button("Browse");
+	
+		
+		JButton button_1 = new JButton("Browse");
+		
+		button_1.addActionListener(new ActionListener() {
+
+
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				// TODO Auto-generated method stub
+				System.out.println("File dialog for testsuite should open now.");
+				FileDialog fd = new FileDialog(thisDialog, "Choose a lexicon file", FileDialog.LOAD);
+				
+				fd.setVisible(true);
+				
+				
+				setTestsuitePath(fd.getDirectory() + fd.getFile());
+				testsuiteTextField.setText(getTestsuitePath());			}
+		});
+		
 		GroupLayout gl_contentPanel = new GroupLayout(contentPanel);
 		gl_contentPanel.setHorizontalGroup(
 			gl_contentPanel.createParallelGroup(Alignment.LEADING)
@@ -116,9 +135,9 @@ public class ResourcesConfigDialog extends JDialog
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPanel.createSequentialGroup()
 							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(textField_1, GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+								.addComponent(lexiconTextField, GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
 								.addComponent(grammarTextField)
-								.addComponent(textField_2))
+								.addComponent(testsuiteTextField))
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
 								.addComponent(button_1, GroupLayout.PREFERRED_SIZE, 88, GroupLayout.PREFERRED_SIZE)
@@ -142,13 +161,13 @@ public class ResourcesConfigDialog extends JDialog
 					.addComponent(lblLexiconFile)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(textField_1, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(lexiconTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(button))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(lblTestSuite)
 					.addGap(4)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(textField_2, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(testsuiteTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(button_1))
 					.addContainerGap(28, Short.MAX_VALUE))
 		);
@@ -170,5 +189,41 @@ public class ResourcesConfigDialog extends JDialog
 				getRootPane().setDefaultButton(okButton);
 			}
 		}
+	}
+
+
+	String getGrammarPath()
+	{
+		return grammarPath;
+	}
+
+
+	void setGrammarPath(String grammarPath)
+	{
+		this.grammarPath = grammarPath;
+	}
+
+
+	String getLexiconPath()
+	{
+		return lexiconPath;
+	}
+
+
+	void setLexiconPath(String lexiconPath)
+	{
+		this.lexiconPath = lexiconPath;
+	}
+
+
+	String getTestsuitePath()
+	{
+		return testsuitePath;
+	}
+
+
+	void setTestsuitePath(String testsuitePath)
+	{
+		this.testsuitePath = testsuitePath;
 	}
 }
