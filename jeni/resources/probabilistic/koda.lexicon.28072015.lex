@@ -11430,5 +11430,11280 @@ P1 -> with/prep
 *EQUATIONS: 
 *COANCHORS: 
 
+*ENTRY: Gerald_P_Carr
+*CAT: n
+*SEM: unaryState[rel=Gerald_P_Carr]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronaut
+*CAT: n
+*SEM: unaryState[rel=Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronaut
+*CAT: n
+*SEM: unaryState[rel=Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Brazilian_Journal_of_Medical_and_Biological_Research
+*CAT: n
+*SEM: unaryState[rel=Brazilian_Journal_of_Medical_and_Biological_Research]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Medicine
+*CAT: n
+*SEM: unaryState[rel=Medicine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Physician
+*CAT: n
+*SEM: unaryState[rel=Physician]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Medicine
+*CAT: n
+*SEM: unaryState[rel=Medicine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Teacher
+*CAT: n
+*SEM: unaryState[rel=Teacher]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Education
+*CAT: n
+*SEM: unaryState[rel=Education]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: List_of_Highlander_characters
+*CAT: n
+*SEM: unaryState[rel=List_of_Highlander_characters]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deborah_Kara_Unger
+*CAT: n
+*SEM: unaryState[rel=Deborah_Kara_Unger]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chuvashia
+*CAT: n
+*SEM: unaryState[rel=Chuvashia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Cheboksary
+*CAT: n
+*SEM: unaryState[rel=Cheboksary]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Penza_Oblast
+*CAT: n
+*SEM: unaryState[rel=Penza_Oblast]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Penza
+*CAT: n
+*SEM: unaryState[rel=Penza]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Yekaterinburg
+*CAT: n
+*SEM: unaryState[rel=Yekaterinburg]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sverdlovsk_Oblast
+*CAT: n
+*SEM: unaryState[rel=Sverdlovsk_Oblast]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_College_Dublin
+*CAT: n
+*SEM: unaryState[rel=University_College_Dublin]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_University_of_Ireland
+*CAT: n
+*SEM: unaryState[rel=National_University_of_Ireland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: California_State_University_Fullerton
+*CAT: n
+*SEM: unaryState[rel=California_State_University_Fullerton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: California_State_University
+*CAT: n
+*SEM: unaryState[rel=California_State_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_California_Santa_Cruz
+*CAT: n
+*SEM: unaryState[rel=University_of_California_Santa_Cruz]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_California
+*CAT: n
+*SEM: unaryState[rel=University_of_California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_3
+*CAT: n
+*SEM: unaryState[rel=Skylab_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_4
+*CAT: n
+*SEM: unaryState[rel=Skylab_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab
+*CAT: n
+*SEM: unaryState[rel=Skylab]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_2
+*CAT: n
+*SEM: unaryState[rel=Skylab_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_presidential_election_1960
+*CAT: n
+*SEM: unaryState[rel=United_States_presidential_election_1960]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_F_Kennedy
+*CAT: n
+*SEM: unaryState[rel=John_F_Kennedy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_presidential_election_1980
+*CAT: n
+*SEM: unaryState[rel=United_States_presidential_election_1980]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ronald_Reagan
+*CAT: n
+*SEM: unaryState[rel=Ronald_Reagan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-55
+*CAT: n
+*SEM: unaryState[rel=STS-55]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: German_Aerospace_Center
+*CAT: n
+*SEM: unaryState[rel=German_Aerospace_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_29
+*CAT: n
+*SEM: unaryState[rel=Soyuz_29]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interkosmos
+*CAT: n
+*SEM: unaryState[rel=Interkosmos]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-15
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-15]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=European_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_28
+*CAT: n
+*SEM: unaryState[rel=Soyuz_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interkosmos
+*CAT: n
+*SEM: unaryState[rel=Interkosmos]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-14
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-14]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Adventures
+*CAT: n
+*SEM: unaryState[rel=Space_Adventures]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-14
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-14]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Adventures
+*CAT: n
+*SEM: unaryState[rel=Space_Adventures]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-01M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-01M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-122
+*CAT: n
+*SEM: unaryState[rel=STS-122]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=European_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-71
+*CAT: n
+*SEM: unaryState[rel=STS-71]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_Federal_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=Russian_Federal_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-51-G
+*CAT: n
+*SEM: unaryState[rel=STS-51-G]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: CNES
+*CAT: n
+*SEM: unaryState[rel=CNES]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-120
+*CAT: n
+*SEM: unaryState[rel=STS-120]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=European_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-71
+*CAT: n
+*SEM: unaryState[rel=STS-71]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_Federal_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=Russian_Federal_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-122
+*CAT: n
+*SEM: unaryState[rel=STS-122]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=European_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-78
+*CAT: n
+*SEM: unaryState[rel=STS-78]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Italian_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=Italian_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 425_Tactical_Fighter_Squadron
+*CAT: n
+*SEM: unaryState[rel=425_Tactical_Fighter_Squadron]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: McDonnell_Douglas_CF-18_Hornet
+*CAT: n
+*SEM: unaryState[rel=McDonnell_Douglas_CF-18_Hornet]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Walter_Reed
+*CAT: n
+*SEM: unaryState[rel=Walter_Reed]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Johns_Hopkins_University
+*CAT: n
+*SEM: unaryState[rel=Johns_Hopkins_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_Poindexter
+*CAT: n
+*SEM: unaryState[rel=John_Poindexter]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Naval_Academy
+*CAT: n
+*SEM: unaryState[rel=United_States_Naval_Academy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Proton
+*CAT: n
+*SEM: unaryState[rel=Proton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Antiproton
+*CAT: n
+*SEM: unaryState[rel=Antiproton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Electric_Area
+*CAT: n
+*SEM: unaryState[rel=Electric_Area]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_Institute_for_Medical_and_Biological_Engineering
+*CAT: n
+*SEM: unaryState[rel=American_Institute_for_Medical_and_Biological_Engineering]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_2
+*CAT: n
+*SEM: unaryState[rel=Expedition_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-102
+*CAT: n
+*SEM: unaryState[rel=STS-102]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_28
+*CAT: n
+*SEM: unaryState[rel=Expedition_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Random_Access_Memories
+*CAT: n
+*SEM: unaryState[rel=Random_Access_Memories]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Daft_Punk
+*CAT: n
+*SEM: unaryState[rel=Daft_Punk]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Benefit_album
+*CAT: n
+*SEM: unaryState[rel=Benefit_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jethro_Tull_band
+*CAT: n
+*SEM: unaryState[rel=Jethro_Tull_band]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nissan_Quest
+*CAT: n
+*SEM: unaryState[rel=Nissan_Quest]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_main_engine
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_main_engine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ed_Robertson
+*CAT: n
+*SEM: unaryState[rel=Ed_Robertson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Barenaked_Ladies
+*CAT: n
+*SEM: unaryState[rel=Barenaked_Ladies]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jim_Gordon_musician
+*CAT: n
+*SEM: unaryState[rel=Jim_Gordon_musician]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Alice_Cooper
+*CAT: n
+*SEM: unaryState[rel=Alice_Cooper]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ed_Robertson
+*CAT: n
+*SEM: unaryState[rel=Ed_Robertson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Barenaked_Ladies
+*CAT: n
+*SEM: unaryState[rel=Barenaked_Ladies]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jim_Gordon_musician
+*CAT: n
+*SEM: unaryState[rel=Jim_Gordon_musician]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Alice_Cooper
+*CAT: n
+*SEM: unaryState[rel=Alice_Cooper]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stanford_University
+*CAT: n
+*SEM: unaryState[rel=Stanford_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Collegiate_Athletic_Association
+*CAT: n
+*SEM: unaryState[rel=National_Collegiate_Athletic_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_Chicago
+*CAT: n
+*SEM: unaryState[rel=University_of_Chicago]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Collegiate_Athletic_Association
+*CAT: n
+*SEM: unaryState[rel=National_Collegiate_Athletic_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moon_Shot
+*CAT: n
+*SEM: unaryState[rel=Moon_Shot]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deke_Slayton
+*CAT: n
+*SEM: unaryState[rel=Deke_Slayton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 100_Greatest_African_Americans
+*CAT: n
+*SEM: unaryState[rel=100_Greatest_African_Americans]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Molefi_Kete_Asante
+*CAT: n
+*SEM: unaryState[rel=Molefi_Kete_Asante]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nathan_Farragut_Twining
+*CAT: n
+*SEM: unaryState[rel=Nathan_Farragut_Twining]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Distinguished_Flying_Cross_United_States
+*CAT: n
+*SEM: unaryState[rel=Distinguished_Flying_Cross_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nathan_Farragut_Twining
+*CAT: n
+*SEM: unaryState[rel=Nathan_Farragut_Twining]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_Medal
+*CAT: n
+*SEM: unaryState[rel=Air_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Order_of_British_Columbia
+*CAT: n
+*SEM: unaryState[rel=Order_of_British_Columbia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lieutenant_Governor_of_British_Columbia
+*CAT: n
+*SEM: unaryState[rel=Lieutenant_Governor_of_British_Columbia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_Force_Distinguished_Service_Medal
+*CAT: n
+*SEM: unaryState[rel=Air_Force_Distinguished_Service_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Air_Force
+*CAT: n
+*SEM: unaryState[rel=United_States_Air_Force]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deke_Slayton
+*CAT: n
+*SEM: unaryState[rel=Deke_Slayton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Collier_Trophy
+*CAT: n
+*SEM: unaryState[rel=Collier_Trophy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Valentin_Bondarenko
+*CAT: n
+*SEM: unaryState[rel=Valentin_Bondarenko]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Order_of_the_Red_Star
+*CAT: n
+*SEM: unaryState[rel=Order_of_the_Red_Star]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Barenaked_Ladies
+*CAT: n
+*SEM: unaryState[rel=Barenaked_Ladies]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ed_Robertson
+*CAT: n
+*SEM: unaryState[rel=Ed_Robertson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Highlights_for_Children
+*CAT: n
+*SEM: unaryState[rel=Highlights_for_Children]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Columbus_Ohio
+*CAT: n
+*SEM: unaryState[rel=Columbus_Ohio]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Orituco_River
+*CAT: n
+*SEM: unaryState[rel=Orituco_River]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Venezuela
+*CAT: n
+*SEM: unaryState[rel=Venezuela]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kharkiv_River
+*CAT: n
+*SEM: unaryState[rel=Kharkiv_River]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Army
+*CAT: n
+*SEM: unaryState[rel=United_States_Army]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Operation_Enduring_Freedom
+*CAT: n
+*SEM: unaryState[rel=Operation_Enduring_Freedom]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: VFA-211
+*CAT: n
+*SEM: unaryState[rel=VFA-211]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Operation_Southern_Watch
+*CAT: n
+*SEM: unaryState[rel=Operation_Southern_Watch]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mother_Teresa
+*CAT: n
+*SEM: unaryState[rel=Mother_Teresa]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_Peter's_Basilica
+*CAT: n
+*SEM: unaryState[rel=St_Peter's_Basilica]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_4
+*CAT: n
+*SEM: unaryState[rel=Skylab_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_3
+*CAT: n
+*SEM: unaryState[rel=Skylab_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_program
+*CAT: n
+*SEM: unaryState[rel=Apollo_program]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Project_Gemini
+*CAT: n
+*SEM: unaryState[rel=Project_Gemini]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Binghamton_New_York
+*CAT: n
+*SEM: unaryState[rel=Binghamton_New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Solid_Rocket_Booster
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Solid_Rocket_Booster]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Texas
+*CAT: n
+*SEM: unaryState[rel=Texas]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_Mexico
+*CAT: n
+*SEM: unaryState[rel=New_Mexico]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Texas
+*CAT: n
+*SEM: unaryState[rel=Texas]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Oklahoma
+*CAT: n
+*SEM: unaryState[rel=Oklahoma]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Leonardo_ISS_module
+*CAT: n
+*SEM: unaryState[rel=Leonardo_ISS_module]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Multi-Purpose_Logistics_Module
+*CAT: n
+*SEM: unaryState[rel=Multi-Purpose_Logistics_Module]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Barney_Miller
+*CAT: n
+*SEM: unaryState[rel=Barney_Miller]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Videotape
+*CAT: n
+*SEM: unaryState[rel=Videotape]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_War_College
+*CAT: n
+*SEM: unaryState[rel=Air_War_College]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Maxwell_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Maxwell_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: West_Coast_University
+*CAT: n
+*SEM: unaryState[rel=West_Coast_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Los_Angeles
+*CAT: n
+*SEM: unaryState[rel=Los_Angeles]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jesse_Jackson
+*CAT: n
+*SEM: unaryState[rel=Jesse_Jackson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_McGovern
+*CAT: n
+*SEM: unaryState[rel=George_McGovern]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jesse_Jackson
+*CAT: n
+*SEM: unaryState[rel=Jesse_Jackson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Walter_Mondale
+*CAT: n
+*SEM: unaryState[rel=Walter_Mondale]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_Kingdom
+*CAT: n
+*SEM: unaryState[rel=United_Kingdom]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: London
+*CAT: n
+*SEM: unaryState[rel=London]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moscow
+*CAT: n
+*SEM: unaryState[rel=Moscow]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_football
+*CAT: n
+*SEM: unaryState[rel=American_football]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Team_sport
+*CAT: n
+*SEM: unaryState[rel=Team_sport]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Association_football
+*CAT: n
+*SEM: unaryState[rel=Association_football]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Team_sport
+*CAT: n
+*SEM: unaryState[rel=Team_sport]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1986_TV_series
+*CAT: n
+*SEM: unaryState[rel=1986_TV_series]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NBC
+*CAT: n
+*SEM: unaryState[rel=NBC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lyndon_B_Johnson_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Lyndon_B_Johnson_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ellen_Ochoa
+*CAT: n
+*SEM: unaryState[rel=Ellen_Ochoa]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_H_W_Bush
+*CAT: n
+*SEM: unaryState[rel=George_H_W_Bush]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_W_Bush
+*CAT: n
+*SEM: unaryState[rel=George_W_Bush]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apogee_of_Fear
+*CAT: n
+*SEM: unaryState[rel=Apogee_of_Fear]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Salina_High_School_Central
+*CAT: n
+*SEM: unaryState[rel=Salina_High_School_Central]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Salina_Kansas
+*CAT: n
+*SEM: unaryState[rel=Salina_Kansas]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Purdue_University
+*CAT: n
+*SEM: unaryState[rel=Purdue_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: West_Lafayette_Indiana
+*CAT: n
+*SEM: unaryState[rel=West_Lafayette_Indiana]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stavropol_Shpakovskoye_Airport
+*CAT: n
+*SEM: unaryState[rel=Stavropol_Shpakovskoye_Airport]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stavropol
+*CAT: n
+*SEM: unaryState[rel=Stavropol]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Flight_horse
+*CAT: n
+*SEM: unaryState[rel=Flight_horse]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Bay_horse
+*CAT: n
+*SEM: unaryState[rel=Bay_horse]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Secretary_of_the_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Secretary_of_the_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: James_Cartwright
+*CAT: n
+*SEM: unaryState[rel=James_Cartwright]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Vice_Chairman_of_the_Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Navy_SEALs
+*CAT: n
+*SEM: unaryState[rel=United_States_Navy_SEALs]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Naval_Special_Warfare_Command
+*CAT: n
+*SEM: unaryState[rel=United_States_Naval_Special_Warfare_Command]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 67th_Fighter_Squadron
+*CAT: n
+*SEM: unaryState[rel=67th_Fighter_Squadron]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 18th_Wing
+*CAT: n
+*SEM: unaryState[rel=18th_Wing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Congress_Poland
+*CAT: n
+*SEM: unaryState[rel=Congress_Poland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_language
+*CAT: n
+*SEM: unaryState[rel=Russian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Uzbek_Soviet_Socialist_Republic
+*CAT: n
+*SEM: unaryState[rel=Uzbek_Soviet_Socialist_Republic]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_language
+*CAT: n
+*SEM: unaryState[rel=Russian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Good_Morning_America
+*CAT: n
+*SEM: unaryState[rel=Good_Morning_America]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: ABC_News
+*CAT: n
+*SEM: unaryState[rel=ABC_News]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Americans_2013_TV_series
+*CAT: n
+*SEM: unaryState[rel=The_Americans_2013_TV_series]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: FX_TV_channel
+*CAT: n
+*SEM: unaryState[rel=FX_TV_channel]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mister_Rogers'_Neighborhood
+*CAT: n
+*SEM: unaryState[rel=Mister_Rogers'_Neighborhood]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fred_Rogers
+*CAT: n
+*SEM: unaryState[rel=Fred_Rogers]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Italy_national_football_team
+*CAT: n
+*SEM: unaryState[rel=Italy_national_football_team]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: UEFA
+*CAT: n
+*SEM: unaryState[rel=UEFA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Glossary_of_American_football
+*CAT: n
+*SEM: unaryState[rel=Glossary_of_American_football]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Winning_percentage
+*CAT: n
+*SEM: unaryState[rel=Winning_percentage]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Santa_Ana_Army_Air_Base
+*CAT: n
+*SEM: unaryState[rel=Santa_Ana_Army_Air_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Army_Air_Forces
+*CAT: n
+*SEM: unaryState[rel=United_States_Army_Air_Forces]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Reese_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Reese_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Air_Force
+*CAT: n
+*SEM: unaryState[rel=United_States_Air_Force]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: County_Cork
+*CAT: n
+*SEM: unaryState[rel=County_Cork]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republic_of_Ireland
+*CAT: n
+*SEM: unaryState[rel=Republic_of_Ireland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Slayton_Minnesota
+*CAT: n
+*SEM: unaryState[rel=Slayton_Minnesota]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Cape_Breton_Island
+*CAT: n
+*SEM: unaryState[rel=Cape_Breton_Island]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nova_Scotia
+*CAT: n
+*SEM: unaryState[rel=Nova_Scotia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Key_West
+*CAT: n
+*SEM: unaryState[rel=Key_West]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Florida
+*CAT: n
+*SEM: unaryState[rel=Florida]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Voskhod_rocket
+*CAT: n
+*SEM: unaryState[rel=Voskhod_rocket]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Energia
+*CAT: n
+*SEM: unaryState[rel=Energia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Derry
+*CAT: n
+*SEM: unaryState[rel=Derry]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: County_Londonderry
+*CAT: n
+*SEM: unaryState[rel=County_Londonderry]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Pomeroy_County_Tyrone
+*CAT: n
+*SEM: unaryState[rel=Pomeroy_County_Tyrone]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: County_Tyrone
+*CAT: n
+*SEM: unaryState[rel=County_Tyrone]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mister_Rogers'_Neighborhood
+*CAT: n
+*SEM: unaryState[rel=Mister_Rogers'_Neighborhood]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fred_Rogers
+*CAT: n
+*SEM: unaryState[rel=Fred_Rogers]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stephen_Colbert_character
+*CAT: n
+*SEM: unaryState[rel=Stephen_Colbert_character]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stephen_Colbert
+*CAT: n
+*SEM: unaryState[rel=Stephen_Colbert]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-19
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-19]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fyodor_Yurchikhin
+*CAT: n
+*SEM: unaryState[rel=Fyodor_Yurchikhin]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sergey_Alexandrovich_Volkov
+*CAT: n
+*SEM: unaryState[rel=Sergey_Alexandrovich_Volkov]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_4
+*CAT: n
+*SEM: unaryState[rel=Soyuz_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aleksei_Yeliseyev
+*CAT: n
+*SEM: unaryState[rel=Aleksei_Yeliseyev]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-1
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-1]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-17
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Timothy_Creamer
+*CAT: n
+*SEM: unaryState[rel=Timothy_Creamer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-17
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-12
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-12]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-10
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-10]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sheikh_Muszaphar_Shukor
+*CAT: n
+*SEM: unaryState[rel=Sheikh_Muszaphar_Shukor]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-19
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-19]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_2
+*CAT: n
+*SEM: unaryState[rel=Skylab_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Paul_J_Weitz
+*CAT: n
+*SEM: unaryState[rel=Paul_J_Weitz]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-62
+*CAT: n
+*SEM: unaryState[rel=STS-62]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Charles_D_Gemar
+*CAT: n
+*SEM: unaryState[rel=Charles_D_Gemar]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-39
+*CAT: n
+*SEM: unaryState[rel=STS-39]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Donald_R_McMonagle
+*CAT: n
+*SEM: unaryState[rel=Donald_R_McMonagle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-38
+*CAT: n
+*SEM: unaryState[rel=STS-38]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Charles_D_Gemar
+*CAT: n
+*SEM: unaryState[rel=Charles_D_Gemar]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-58
+*CAT: n
+*SEM: unaryState[rel=STS-58]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: David_Wolf_astronaut
+*CAT: n
+*SEM: unaryState[rel=David_Wolf_astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-81
+*CAT: n
+*SEM: unaryState[rel=STS-81]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_E_Blaha
+*CAT: n
+*SEM: unaryState[rel=John_E_Blaha]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-134
+*CAT: n
+*SEM: unaryState[rel=STS-134]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gregory_Chamitoff
+*CAT: n
+*SEM: unaryState[rel=Gregory_Chamitoff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-84
+*CAT: n
+*SEM: unaryState[rel=STS-84]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Yelena_Kondakova
+*CAT: n
+*SEM: unaryState[rel=Yelena_Kondakova]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-120
+*CAT: n
+*SEM: unaryState[rel=STS-120]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Clayton_Anderson
+*CAT: n
+*SEM: unaryState[rel=Clayton_Anderson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-89
+*CAT: n
+*SEM: unaryState[rel=STS-89]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: David_Wolf_astronaut
+*CAT: n
+*SEM: unaryState[rel=David_Wolf_astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-117
+*CAT: n
+*SEM: unaryState[rel=STS-117]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Clayton_Anderson
+*CAT: n
+*SEM: unaryState[rel=Clayton_Anderson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-90
+*CAT: n
+*SEM: unaryState[rel=STS-90]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: James_A_Pawelczyk
+*CAT: n
+*SEM: unaryState[rel=James_A_Pawelczyk]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-61-A
+*CAT: n
+*SEM: unaryState[rel=STS-61-A]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Wubbo_Ockels
+*CAT: n
+*SEM: unaryState[rel=Wubbo_Ockels]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TM-23
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TM-23]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Claudie_Haigner_C3_A9
+*CAT: n
+*SEM: unaryState[rel=Claudie_Haigner_C3_A9]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-12
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-12]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TM-18
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TM-18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Valeri_Polyakov
+*CAT: n
+*SEM: unaryState[rel=Valeri_Polyakov]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-1
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-1]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Yury_Lonchakov
+*CAT: n
+*SEM: unaryState[rel=Yury_Lonchakov]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_13
+*CAT: n
+*SEM: unaryState[rel=Apollo_13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jim_Lovell
+*CAT: n
+*SEM: unaryState[rel=Jim_Lovell]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_13
+*CAT: n
+*SEM: unaryState[rel=Apollo_13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jack_Swigert
+*CAT: n
+*SEM: unaryState[rel=Jack_Swigert]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-17
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Timothy_Creamer
+*CAT: n
+*SEM: unaryState[rel=Timothy_Creamer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-19
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-19]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mercury-Atlas_8
+*CAT: n
+*SEM: unaryState[rel=Mercury-Atlas_8]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Wally_Schirra
+*CAT: n
+*SEM: unaryState[rel=Wally_Schirra]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_ruble
+*CAT: n
+*SEM: unaryState[rel=Russian_ruble]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Israeli_Air_Force
+*CAT: n
+*SEM: unaryState[rel=Israeli_Air_Force]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aluf
+*CAT: n
+*SEM: unaryState[rel=Aluf]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Exxon
+*CAT: n
+*SEM: unaryState[rel=Exxon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: ExxonMobil
+*CAT: n
+*SEM: unaryState[rel=ExxonMobil]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NEEMO
+*CAT: n
+*SEM: unaryState[rel=NEEMO]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aquarius_laboratory
+*CAT: n
+*SEM: unaryState[rel=Aquarius_laboratory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NEEMO
+*CAT: n
+*SEM: unaryState[rel=NEEMO]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Collins_Irish_leader
+*CAT: n
+*SEM: unaryState[rel=Michael_Collins_Irish_leader]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: County_Cork
+*CAT: n
+*SEM: unaryState[rel=County_Cork]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deke_Slayton
+*CAT: n
+*SEM: unaryState[rel=Deke_Slayton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: League_City_Texas
+*CAT: n
+*SEM: unaryState[rel=League_City_Texas]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 4750th_Air_Defense_Wing
+*CAT: n
+*SEM: unaryState[rel=4750th_Air_Defense_Wing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_Force_Outstanding_Unit_Award
+*CAT: n
+*SEM: unaryState[rel=Air_Force_Outstanding_Unit_Award]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_people
+*CAT: n
+*SEM: unaryState[rel=Soviet_people]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_4
+*CAT: n
+*SEM: unaryState[rel=Expedition_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-111
+*CAT: n
+*SEM: unaryState[rel=STS-111]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_28
+*CAT: n
+*SEM: unaryState[rel=Expedition_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_C3_A9phane_Dion
+*CAT: n
+*SEM: unaryState[rel=St_C3_A9phane_Dion]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Ignatieff
+*CAT: n
+*SEM: unaryState[rel=Michael_Ignatieff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Vice_Chairman_of_the_Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_disco
+*CAT: n
+*SEM: unaryState[rel=Space_disco]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: British_rock
+*CAT: n
+*SEM: unaryState[rel=British_rock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz-TM
+*CAT: n
+*SEM: unaryState[rel=Soyuz-TM]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz-TMA
+*CAT: n
+*SEM: unaryState[rel=Soyuz-TMA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz-TMA
+*CAT: n
+*SEM: unaryState[rel=Soyuz-TMA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz-TM
+*CAT: n
+*SEM: unaryState[rel=Soyuz-TM]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Wright_Flyer
+*CAT: n
+*SEM: unaryState[rel=Wright_Flyer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Wright_brothers
+*CAT: n
+*SEM: unaryState[rel=Wright_brothers]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-12
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-12]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-6
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-6]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-13
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-10
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-10]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aero_L-39_Albatros
+*CAT: n
+*SEM: unaryState[rel=Aero_L-39_Albatros]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aero_L-29_Delf_C3_ADn
+*CAT: n
+*SEM: unaryState[rel=Aero_L-29_Delf_C3_ADn]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-17
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-7
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-7]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-7
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-7]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-17
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_D-558-1_Skystreak
+*CAT: n
+*SEM: unaryState[rel=Douglas_D-558-1_Skystreak]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_D-558-2_Skyrocket
+*CAT: n
+*SEM: unaryState[rel=Douglas_D-558-2_Skyrocket]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: ASPNET_Razor_view_engine
+*CAT: n
+*SEM: unaryState[rel=ASPNET_Razor_view_engine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Microsoft
+*CAT: n
+*SEM: unaryState[rel=Microsoft]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Serenity_film
+*CAT: n
+*SEM: unaryState[rel=Serenity_film]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joss_Whedon
+*CAT: n
+*SEM: unaryState[rel=Joss_Whedon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apogee_of_Fear
+*CAT: n
+*SEM: unaryState[rel=Apogee_of_Fear]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_IEEE_Multidisciplinary_Engineering_Education_Magazine
+*CAT: n
+*SEM: unaryState[rel=The_IEEE_Multidisciplinary_Engineering_Education_Magazine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Education
+*CAT: n
+*SEM: unaryState[rel=Education]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 10605_Guidoni
+*CAT: n
+*SEM: unaryState[rel=10605_Guidoni]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: V_Giuliani
+*CAT: n
+*SEM: unaryState[rel=V_Giuliani]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Morgenr_C3_B6the-Rautenkranz
+*CAT: n
+*SEM: unaryState[rel=Morgenr_C3_B6the-Rautenkranz]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vogtlandkreis
+*CAT: n
+*SEM: unaryState[rel=Vogtlandkreis]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: IBM
+*CAT: n
+*SEM: unaryState[rel=IBM]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Personal_computer_hardware
+*CAT: n
+*SEM: unaryState[rel=Personal_computer_hardware]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Latvia
+*CAT: n
+*SEM: unaryState[rel=Latvia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apogee_of_Fear
+*CAT: n
+*SEM: unaryState[rel=Apogee_of_Fear]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Tracy_Hickman
+*CAT: n
+*SEM: unaryState[rel=Tracy_Hickman]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_McCain
+*CAT: n
+*SEM: unaryState[rel=John_McCain]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Naval_Academy
+*CAT: n
+*SEM: unaryState[rel=United_States_Naval_Academy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Engineer
+*CAT: n
+*SEM: unaryState[rel=Engineer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Business
+*CAT: n
+*SEM: unaryState[rel=Business]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aerospace_engineering
+*CAT: n
+*SEM: unaryState[rel=Aerospace_engineering]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Science
+*CAT: n
+*SEM: unaryState[rel=Science]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: McAuliffe_crater
+*CAT: n
+*SEM: unaryState[rel=McAuliffe_crater]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Christa_McAuliffe
+*CAT: n
+*SEM: unaryState[rel=Christa_McAuliffe]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nazi_Germany
+*CAT: n
+*SEM: unaryState[rel=Nazi_Germany]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: World_War_II
+*CAT: n
+*SEM: unaryState[rel=World_War_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: World_War_II
+*CAT: n
+*SEM: unaryState[rel=World_War_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_Soviet_Federative_Socialist_Republic
+*CAT: n
+*SEM: unaryState[rel=Russian_Soviet_Federative_Socialist_Republic]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kyrgyzstan
+*CAT: n
+*SEM: unaryState[rel=Kyrgyzstan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Uzbeks
+*CAT: n
+*SEM: unaryState[rel=Uzbeks]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ba'athist_Iraq
+*CAT: n
+*SEM: unaryState[rel=Ba'athist_Iraq]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gulf_War
+*CAT: n
+*SEM: unaryState[rel=Gulf_War]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nazi_Germany
+*CAT: n
+*SEM: unaryState[rel=Nazi_Germany]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: World_War_II
+*CAT: n
+*SEM: unaryState[rel=World_War_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Daily_Show
+*CAT: n
+*SEM: unaryState[rel=The_Daily_Show]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jon_Stewart
+*CAT: n
+*SEM: unaryState[rel=Jon_Stewart]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_28
+*CAT: n
+*SEM: unaryState[rel=Expedition_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-13
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_18
+*CAT: n
+*SEM: unaryState[rel=Expedition_18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_28
+*CAT: n
+*SEM: unaryState[rel=Expedition_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-13
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_18
+*CAT: n
+*SEM: unaryState[rel=Expedition_18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-02M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-02M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_28
+*CAT: n
+*SEM: unaryState[rel=Expedition_28]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-15
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-15]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_20
+*CAT: n
+*SEM: unaryState[rel=Expedition_20]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-111
+*CAT: n
+*SEM: unaryState[rel=STS-111]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_4
+*CAT: n
+*SEM: unaryState[rel=Expedition_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-108
+*CAT: n
+*SEM: unaryState[rel=STS-108]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_3
+*CAT: n
+*SEM: unaryState[rel=Expedition_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-102
+*CAT: n
+*SEM: unaryState[rel=STS-102]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_2
+*CAT: n
+*SEM: unaryState[rel=Expedition_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-105
+*CAT: n
+*SEM: unaryState[rel=STS-105]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_3
+*CAT: n
+*SEM: unaryState[rel=Expedition_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-111
+*CAT: n
+*SEM: unaryState[rel=STS-111]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_4
+*CAT: n
+*SEM: unaryState[rel=Expedition_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-108
+*CAT: n
+*SEM: unaryState[rel=STS-108]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_3
+*CAT: n
+*SEM: unaryState[rel=Expedition_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-102
+*CAT: n
+*SEM: unaryState[rel=STS-102]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_2
+*CAT: n
+*SEM: unaryState[rel=Expedition_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-105
+*CAT: n
+*SEM: unaryState[rel=STS-105]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_3
+*CAT: n
+*SEM: unaryState[rel=Expedition_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-111
+*CAT: n
+*SEM: unaryState[rel=STS-111]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_4
+*CAT: n
+*SEM: unaryState[rel=Expedition_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-116
+*CAT: n
+*SEM: unaryState[rel=STS-116]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_14
+*CAT: n
+*SEM: unaryState[rel=Expedition_14]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-102
+*CAT: n
+*SEM: unaryState[rel=STS-102]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_2
+*CAT: n
+*SEM: unaryState[rel=Expedition_2]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-121
+*CAT: n
+*SEM: unaryState[rel=STS-121]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_13
+*CAT: n
+*SEM: unaryState[rel=Expedition_13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-71
+*CAT: n
+*SEM: unaryState[rel=STS-71]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mir_EO-18
+*CAT: n
+*SEM: unaryState[rel=Mir_EO-18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: MS-DOS
+*CAT: n
+*SEM: unaryState[rel=MS-DOS]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: DOS
+*CAT: n
+*SEM: unaryState[rel=DOS]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mytishchi
+*CAT: n
+*SEM: unaryState[rel=Mytishchi]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moscow_Oblast
+*CAT: n
+*SEM: unaryState[rel=Moscow_Oblast]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fryazino
+*CAT: n
+*SEM: unaryState[rel=Fryazino]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moscow_Oblast
+*CAT: n
+*SEM: unaryState[rel=Moscow_Oblast]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: David_Schramm_astrophysicist
+*CAT: n
+*SEM: unaryState[rel=David_Schramm_astrophysicist]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astrophysics
+*CAT: n
+*SEM: unaryState[rel=Astrophysics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Anders_Celsius
+*CAT: n
+*SEM: unaryState[rel=Anders_Celsius]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronomy
+*CAT: n
+*SEM: unaryState[rel=Astronomy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Columbia
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Columbia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-1
+*CAT: n
+*SEM: unaryState[rel=STS-1]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Discovery
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Discovery]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-41-D
+*CAT: n
+*SEM: unaryState[rel=STS-41-D]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1963_song
+*CAT: n
+*SEM: unaryState[rel=1963_song]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gramophone_record
+*CAT: n
+*SEM: unaryState[rel=Gramophone_record]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nightline
+*CAT: n
+*SEM: unaryState[rel=Nightline]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 480i
+*CAT: n
+*SEM: unaryState[rel=480i]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Saab_9-3
+*CAT: n
+*SEM: unaryState[rel=Saab_9-3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Saab_Automobile
+*CAT: n
+*SEM: unaryState[rel=Saab_Automobile]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing
+*CAT: n
+*SEM: unaryState[rel=Boeing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Seattle
+*CAT: n
+*SEM: unaryState[rel=Seattle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Raytheon
+*CAT: n
+*SEM: unaryState[rel=Raytheon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Massachusetts
+*CAT: n
+*SEM: unaryState[rel=Massachusetts]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Microsoft
+*CAT: n
+*SEM: unaryState[rel=Microsoft]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Paul_Allen
+*CAT: n
+*SEM: unaryState[rel=Paul_Allen]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: James_Randi_Educational_Foundation
+*CAT: n
+*SEM: unaryState[rel=James_Randi_Educational_Foundation]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: James_Randi
+*CAT: n
+*SEM: unaryState[rel=James_Randi]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: VX-4
+*CAT: n
+*SEM: unaryState[rel=VX-4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Naval_Air_Station_Point_Mugu
+*CAT: n
+*SEM: unaryState[rel=Naval_Air_Station_Point_Mugu]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: US_Air_Force_Test_Pilot_School
+*CAT: n
+*SEM: unaryState[rel=US_Air_Force_Test_Pilot_School]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Edwards_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Edwards_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Shuttle_video_game
+*CAT: n
+*SEM: unaryState[rel=Shuttle_video_game]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Flight_simulator
+*CAT: n
+*SEM: unaryState[rel=Flight_simulator]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sky___Telescope
+*CAT: n
+*SEM: unaryState[rel=Sky___Telescope]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronomy
+*CAT: n
+*SEM: unaryState[rel=Astronomy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fort_Benjamin_Harrison
+*CAT: n
+*SEM: unaryState[rel=Fort_Benjamin_Harrison]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Army
+*CAT: n
+*SEM: unaryState[rel=United_States_Army]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Club_Universidad_Nacional
+*CAT: n
+*SEM: unaryState[rel=Club_Universidad_Nacional]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mexico
+*CAT: n
+*SEM: unaryState[rel=Mexico]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Union_Douala
+*CAT: n
+*SEM: unaryState[rel=Union_Douala]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douala
+*CAT: n
+*SEM: unaryState[rel=Douala]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rotary_International
+*CAT: n
+*SEM: unaryState[rel=Rotary_International]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Collegiate_Athletic_Association
+*CAT: n
+*SEM: unaryState[rel=National_Collegiate_Athletic_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Brit_Air
+*CAT: n
+*SEM: unaryState[rel=Brit_Air]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Morlaix
+*CAT: n
+*SEM: unaryState[rel=Morlaix]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: CNES
+*CAT: n
+*SEM: unaryState[rel=CNES]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: France
+*CAT: n
+*SEM: unaryState[rel=France]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Legion_of_Merit
+*CAT: n
+*SEM: unaryState[rel=Legion_of_Merit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Defense_Superior_Service_Medal
+*CAT: n
+*SEM: unaryState[rel=Defense_Superior_Service_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Distinguished_Flying_Cross_United_States
+*CAT: n
+*SEM: unaryState[rel=Distinguished_Flying_Cross_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Legion_of_Merit
+*CAT: n
+*SEM: unaryState[rel=Legion_of_Merit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_presidential_election_2012
+*CAT: n
+*SEM: unaryState[rel=United_States_presidential_election_2012]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Massachusetts
+*CAT: n
+*SEM: unaryState[rel=Massachusetts]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Association
+*CAT: n
+*SEM: unaryState[rel=The_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Eleven_band
+*CAT: n
+*SEM: unaryState[rel=Eleven_band]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 2010_Winter_Olympics
+*CAT: n
+*SEM: unaryState[rel=2010_Winter_Olympics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vancouver
+*CAT: n
+*SEM: unaryState[rel=Vancouver]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 2010_Winter_Olympics
+*CAT: n
+*SEM: unaryState[rel=2010_Winter_Olympics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: British_Columbia
+*CAT: n
+*SEM: unaryState[rel=British_Columbia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Federal_Assembly_Russia
+*CAT: n
+*SEM: unaryState[rel=Federal_Assembly_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: State_Duma
+*CAT: n
+*SEM: unaryState[rel=State_Duma]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Secretary_of_the_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Secretary_of_the_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ray_Mabus
+*CAT: n
+*SEM: unaryState[rel=Ray_Mabus]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: IBM_Internet_Security_Systems
+*CAT: n
+*SEM: unaryState[rel=IBM_Internet_Security_Systems]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Computer_software
+*CAT: n
+*SEM: unaryState[rel=Computer_software]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Bushcaddy
+*CAT: n
+*SEM: unaryState[rel=Bushcaddy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aerospace
+*CAT: n
+*SEM: unaryState[rel=Aerospace]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Challenger_disaster
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Challenger_disaster]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rogers_Commission_Report
+*CAT: n
+*SEM: unaryState[rel=Rogers_Commission_Report]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Amanda_Overmyer
+*CAT: n
+*SEM: unaryState[rel=Amanda_Overmyer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Singing
+*CAT: n
+*SEM: unaryState[rel=Singing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Dave_Barnes
+*CAT: n
+*SEM: unaryState[rel=Dave_Barnes]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Singing
+*CAT: n
+*SEM: unaryState[rel=Singing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Binghamton_New_York
+*CAT: n
+*SEM: unaryState[rel=Binghamton_New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_Louis
+*CAT: n
+*SEM: unaryState[rel=St_Louis]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Missouri
+*CAT: n
+*SEM: unaryState[rel=Missouri]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Winter_War
+*CAT: n
+*SEM: unaryState[rel=Winter_War]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: World_War_II
+*CAT: n
+*SEM: unaryState[rel=World_War_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: High_Speed_Civil_Transport
+*CAT: n
+*SEM: unaryState[rel=High_Speed_Civil_Transport]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Canadian_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=Canadian_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Government_of_Canada
+*CAT: n
+*SEM: unaryState[rel=Government_of_Canada]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Federal_government_of_the_United_States
+*CAT: n
+*SEM: unaryState[rel=Federal_government_of_the_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Eastern_Air_Lines
+*CAT: n
+*SEM: unaryState[rel=Eastern_Air_Lines]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Frank_Borman
+*CAT: n
+*SEM: unaryState[rel=Frank_Borman]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Capcom
+*CAT: n
+*SEM: unaryState[rel=Capcom]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chief_executive_officer
+*CAT: n
+*SEM: unaryState[rel=Chief_executive_officer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rocketplane_Limited_Inc
+*CAT: n
+*SEM: unaryState[rel=Rocketplane_Limited_Inc]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_Herrington
+*CAT: n
+*SEM: unaryState[rel=John_Herrington]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Charles_Simonyi
+*CAT: n
+*SEM: unaryState[rel=Charles_Simonyi]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_tourism
+*CAT: n
+*SEM: unaryState[rel=Space_tourism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Vice_Chairman_of_the_Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: International_Space_Station_program
+*CAT: n
+*SEM: unaryState[rel=International_Space_Station_program]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-61-C
+*CAT: n
+*SEM: unaryState[rel=STS-61-C]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Edwards_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Edwards_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-108
+*CAT: n
+*SEM: unaryState[rel=STS-108]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kennedy_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Kennedy_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukraine
+*CAT: n
+*SEM: unaryState[rel=Ukraine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukrainian_language
+*CAT: n
+*SEM: unaryState[rel=Ukrainian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gareth_L_Powell
+*CAT: n
+*SEM: unaryState[rel=Gareth_L_Powell]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: English_language
+*CAT: n
+*SEM: unaryState[rel=English_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Alberta
+*CAT: n
+*SEM: unaryState[rel=Alberta]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Calgary
+*CAT: n
+*SEM: unaryState[rel=Calgary]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_Mexico
+*CAT: n
+*SEM: unaryState[rel=New_Mexico]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Albuquerque_New_Mexico
+*CAT: n
+*SEM: unaryState[rel=Albuquerque_New_Mexico]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: California
+*CAT: n
+*SEM: unaryState[rel=California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Los_Angeles
+*CAT: n
+*SEM: unaryState[rel=Los_Angeles]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moscow
+*CAT: n
+*SEM: unaryState[rel=Moscow]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Italy
+*CAT: n
+*SEM: unaryState[rel=Italy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Milan
+*CAT: n
+*SEM: unaryState[rel=Milan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Italy
+*CAT: n
+*SEM: unaryState[rel=Italy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Naples
+*CAT: n
+*SEM: unaryState[rel=Naples]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Discovery
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Discovery]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-133
+*CAT: n
+*SEM: unaryState[rel=STS-133]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle_Columbia
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle_Columbia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-107
+*CAT: n
+*SEM: unaryState[rel=STS-107]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Albert_Scott_Crossfield
+*CAT: n
+*SEM: unaryState[rel=Albert_Scott_Crossfield]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Maxwell_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Maxwell_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mir
+*CAT: n
+*SEM: unaryState[rel=Mir]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kennedy_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Kennedy_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Salyut_6
+*CAT: n
+*SEM: unaryState[rel=Salyut_6]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Compton_Gamma_Ray_Observatory
+*CAT: n
+*SEM: unaryState[rel=Compton_Gamma_Ray_Observatory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-37
+*CAT: n
+*SEM: unaryState[rel=STS-37]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Arabsat-1B
+*CAT: n
+*SEM: unaryState[rel=Arabsat-1B]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-51-G
+*CAT: n
+*SEM: unaryState[rel=STS-51-G]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-48
+*CAT: n
+*SEM: unaryState[rel=STS-48]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kennedy_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Kennedy_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-61-C
+*CAT: n
+*SEM: unaryState[rel=STS-61-C]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kennedy_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Kennedy_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Turkmenistan
+*CAT: n
+*SEM: unaryState[rel=Turkmenistan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gurbanguly_Berdimuhamedow
+*CAT: n
+*SEM: unaryState[rel=Gurbanguly_Berdimuhamedow]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Dmitry_Medvedev
+*CAT: n
+*SEM: unaryState[rel=Dmitry_Medvedev]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Washington_DC
+*CAT: n
+*SEM: unaryState[rel=Washington_DC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Democratic_Party_United_States
+*CAT: n
+*SEM: unaryState[rel=Democratic_Party_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Washington_DC
+*CAT: n
+*SEM: unaryState[rel=Washington_DC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_House_of_Representatives
+*CAT: n
+*SEM: unaryState[rel=United_States_House_of_Representatives]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: President_of_Russia
+*CAT: n
+*SEM: unaryState[rel=President_of_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Bulgaria
+*CAT: n
+*SEM: unaryState[rel=Bulgaria]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Assembly_Bulgaria
+*CAT: n
+*SEM: unaryState[rel=National_Assembly_Bulgaria]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Other_short_story
+*CAT: n
+*SEM: unaryState[rel=The_Other_short_story]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Short_story
+*CAT: n
+*SEM: unaryState[rel=Short_story]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Return_Star_Trek
+*CAT: n
+*SEM: unaryState[rel=The_Return_Star_Trek]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Science_fiction
+*CAT: n
+*SEM: unaryState[rel=Science_fiction]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mount_Disappointment_California
+*CAT: n
+*SEM: unaryState[rel=Mount_Disappointment_California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mons_Hadley
+*CAT: n
+*SEM: unaryState[rel=Mons_Hadley]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moon
+*CAT: n
+*SEM: unaryState[rel=Moon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Cerro_Tololo_Inter-American_Observatory
+*CAT: n
+*SEM: unaryState[rel=Cerro_Tololo_Inter-American_Observatory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chile
+*CAT: n
+*SEM: unaryState[rel=Chile]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fort_Stewart
+*CAT: n
+*SEM: unaryState[rel=Fort_Stewart]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Georgia_US_state
+*CAT: n
+*SEM: unaryState[rel=Georgia_US_state]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Hughes_Aircraft_Company
+*CAT: n
+*SEM: unaryState[rel=Hughes_Aircraft_Company]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Culver_City_California
+*CAT: n
+*SEM: unaryState[rel=Culver_City_California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Applied_Minds
+*CAT: n
+*SEM: unaryState[rel=Applied_Minds]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: California
+*CAT: n
+*SEM: unaryState[rel=California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: ABC_Family
+*CAT: n
+*SEM: unaryState[rel=ABC_Family]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Tenix
+*CAT: n
+*SEM: unaryState[rel=Tenix]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Australia
+*CAT: n
+*SEM: unaryState[rel=Australia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA_insignia
+*CAT: n
+*SEM: unaryState[rel=NASA_insignia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Defense_Superior_Service_Medal
+*CAT: n
+*SEM: unaryState[rel=Defense_Superior_Service_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Legion_of_Merit
+*CAT: n
+*SEM: unaryState[rel=Legion_of_Merit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Legion_of_Merit
+*CAT: n
+*SEM: unaryState[rel=Legion_of_Merit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Distinguished_Flying_Cross_United_States
+*CAT: n
+*SEM: unaryState[rel=Distinguished_Flying_Cross_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_House_of_Representatives
+*CAT: n
+*SEM: unaryState[rel=United_States_House_of_Representatives]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: State_Duma
+*CAT: n
+*SEM: unaryState[rel=State_Duma]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing_B-52_Stratofortress
+*CAT: n
+*SEM: unaryState[rel=Boeing_B-52_Stratofortress]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing
+*CAT: n
+*SEM: unaryState[rel=Boeing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Thiokol
+*CAT: n
+*SEM: unaryState[rel=Thiokol]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vice_Chairman_of_the_Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Vice_Chairman_of_the_Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joint_Chiefs_of_Staff
+*CAT: n
+*SEM: unaryState[rel=Joint_Chiefs_of_Staff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Royal_Naval_Reserve
+*CAT: n
+*SEM: unaryState[rel=Royal_Naval_Reserve]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Royal_Navy
+*CAT: n
+*SEM: unaryState[rel=Royal_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: VX-23
+*CAT: n
+*SEM: unaryState[rel=VX-23]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Georgy_Zhukov
+*CAT: n
+*SEM: unaryState[rel=Georgy_Zhukov]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marshal_of_the_Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Marshal_of_the_Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Leonid_Brezhnev
+*CAT: n
+*SEM: unaryState[rel=Leonid_Brezhnev]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marshal_of_the_Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Marshal_of_the_Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Timothy_Creamer
+*CAT: n
+*SEM: unaryState[rel=Timothy_Creamer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-17
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-19
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-19]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joseph_M_Acaba
+*CAT: n
+*SEM: unaryState[rel=Joseph_M_Acaba]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TMA-04M
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TMA-04M]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: North_American_X-15
+*CAT: n
+*SEM: unaryState[rel=North_American_X-15]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Beechcraft_T-34_Mentor
+*CAT: n
+*SEM: unaryState[rel=Beechcraft_T-34_Mentor]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fallen_Astronaut
+*CAT: n
+*SEM: unaryState[rel=Fallen_Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moon
+*CAT: n
+*SEM: unaryState[rel=Moon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fake_Plastic_Trees
+*CAT: n
+*SEM: unaryState[rel=Fake_Plastic_Trees]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Radiohead
+*CAT: n
+*SEM: unaryState[rel=Radiohead]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: September_Daughtry_song
+*CAT: n
+*SEM: unaryState[rel=September_Daughtry_song]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Daughtry_band
+*CAT: n
+*SEM: unaryState[rel=Daughtry_band]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fake_Plastic_Trees
+*CAT: n
+*SEM: unaryState[rel=Fake_Plastic_Trees]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Radiohead
+*CAT: n
+*SEM: unaryState[rel=Radiohead]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: September_Daughtry_song
+*CAT: n
+*SEM: unaryState[rel=September_Daughtry_song]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Daughtry_band
+*CAT: n
+*SEM: unaryState[rel=Daughtry_band]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_presidential_election_1960
+*CAT: n
+*SEM: unaryState[rel=United_States_presidential_election_1960]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: John_F_Kennedy
+*CAT: n
+*SEM: unaryState[rel=John_F_Kennedy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_presidential_election_1980
+*CAT: n
+*SEM: unaryState[rel=United_States_presidential_election_1980]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ronald_Reagan
+*CAT: n
+*SEM: unaryState[rel=Ronald_Reagan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_of_Minnesota
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_of_Minnesota]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_United_States
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Dirk_Frimout
+*CAT: n
+*SEM: unaryState[rel=Dirk_Frimout]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Belgium
+*CAT: n
+*SEM: unaryState[rel=Belgium]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Yury_Onufriyenko
+*CAT: n
+*SEM: unaryState[rel=Yury_Onufriyenko]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-26
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-26]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Hallmark_Hall_of_Fame
+*CAT: n
+*SEM: unaryState[rel=Hallmark_Hall_of_Fame]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NBC
+*CAT: n
+*SEM: unaryState[rel=NBC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_Dreams
+*CAT: n
+*SEM: unaryState[rel=American_Dreams]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NBC
+*CAT: n
+*SEM: unaryState[rel=NBC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_3
+*CAT: n
+*SEM: unaryState[rel=Skylab_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_4
+*CAT: n
+*SEM: unaryState[rel=Skylab_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_17
+*CAT: n
+*SEM: unaryState[rel=Expedition_17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_18
+*CAT: n
+*SEM: unaryState[rel=Expedition_18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stargate_SG-1_season_4
+*CAT: n
+*SEM: unaryState[rel=Stargate_SG-1_season_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stargate_SG-1_season_5
+*CAT: n
+*SEM: unaryState[rel=Stargate_SG-1_season_5]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_Portland
+*CAT: n
+*SEM: unaryState[rel=University_of_Portland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Portland_Pilots
+*CAT: n
+*SEM: unaryState[rel=Portland_Pilots]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Songs_of_the_Doomed
+*CAT: n
+*SEM: unaryState[rel=Songs_of_the_Doomed]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Politics
+*CAT: n
+*SEM: unaryState[rel=Politics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Science_Order_and_Creativity
+*CAT: n
+*SEM: unaryState[rel=Science_Order_and_Creativity]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Science
+*CAT: n
+*SEM: unaryState[rel=Science]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Latvia
+*CAT: n
+*SEM: unaryState[rel=Latvia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Arthur_C_Clarke
+*CAT: n
+*SEM: unaryState[rel=Arthur_C_Clarke]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marine_Corps_Air_Station_Iwakuni
+*CAT: n
+*SEM: unaryState[rel=Marine_Corps_Air_Station_Iwakuni]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marine_Aircraft_Group_12
+*CAT: n
+*SEM: unaryState[rel=Marine_Aircraft_Group_12]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fort_Huachuca
+*CAT: n
+*SEM: unaryState[rel=Fort_Huachuca]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Army_Intelligence_Center
+*CAT: n
+*SEM: unaryState[rel=United_States_Army_Intelligence_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Simeon_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Simeon_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lieutenant
+*CAT: n
+*SEM: unaryState[rel=Lieutenant]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deke_Slayton
+*CAT: n
+*SEM: unaryState[rel=Deke_Slayton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Test_pilot
+*CAT: n
+*SEM: unaryState[rel=Test_pilot]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Ignatieff
+*CAT: n
+*SEM: unaryState[rel=Michael_Ignatieff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Liberal_Party_of_Canada
+*CAT: n
+*SEM: unaryState[rel=Liberal_Party_of_Canada]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mohammad_Najibullah
+*CAT: n
+*SEM: unaryState[rel=Mohammad_Najibullah]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: President_of_Afghanistan
+*CAT: n
+*SEM: unaryState[rel=President_of_Afghanistan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sevastopol
+*CAT: n
+*SEM: unaryState[rel=Sevastopol]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_language
+*CAT: n
+*SEM: unaryState[rel=Russian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukraine
+*CAT: n
+*SEM: unaryState[rel=Ukraine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukrainian_language
+*CAT: n
+*SEM: unaryState[rel=Ukrainian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lawrence_Berkeley_National_Laboratory
+*CAT: n
+*SEM: unaryState[rel=Lawrence_Berkeley_National_Laboratory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_California
+*CAT: n
+*SEM: unaryState[rel=University_of_California]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-114
+*CAT: n
+*SEM: unaryState[rel=STS-114]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_E2_80_93Soyuz_Test_Project
+*CAT: n
+*SEM: unaryState[rel=Apollo_E2_80_93Soyuz_Test_Project]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-122
+*CAT: n
+*SEM: unaryState[rel=STS-122]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Geocentric_orbit
+*CAT: n
+*SEM: unaryState[rel=Geocentric_orbit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: STS-131
+*CAT: n
+*SEM: unaryState[rel=STS-131]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Geocentric_orbit
+*CAT: n
+*SEM: unaryState[rel=Geocentric_orbit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_Lunar_Module
+*CAT: n
+*SEM: unaryState[rel=Apollo_Lunar_Module]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lunar_orbit
+*CAT: n
+*SEM: unaryState[rel=Lunar_orbit]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sukhoi_Su-27
+*CAT: n
+*SEM: unaryState[rel=Sukhoi_Su-27]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Tupolev_Tu-154
+*CAT: n
+*SEM: unaryState[rel=Tupolev_Tu-154]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rome_Laboratory
+*CAT: n
+*SEM: unaryState[rel=Rome_Laboratory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Griffiss_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Griffiss_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rome_Laboratory
+*CAT: n
+*SEM: unaryState[rel=Rome_Laboratory]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Event
+*CAT: n
+*SEM: unaryState[rel=Event]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Person
+*CAT: n
+*SEM: unaryState[rel=Person]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Activity
+*CAT: n
+*SEM: unaryState[rel=Activity]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Person
+*CAT: n
+*SEM: unaryState[rel=Person]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Eagle_Scout_Boy_Scouts_of_America
+*CAT: n
+*SEM: unaryState[rel=Eagle_Scout_Boy_Scouts_of_America]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boy_Scouts_of_America
+*CAT: n
+*SEM: unaryState[rel=Boy_Scouts_of_America]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Distinguished_Eagle_Scout_Award
+*CAT: n
+*SEM: unaryState[rel=Distinguished_Eagle_Scout_Award]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boy_Scouts_of_America
+*CAT: n
+*SEM: unaryState[rel=Boy_Scouts_of_America]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: BBC_World_Service
+*CAT: n
+*SEM: unaryState[rel=BBC_World_Service]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: BBC
+*CAT: n
+*SEM: unaryState[rel=BBC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA_TV
+*CAT: n
+*SEM: unaryState[rel=NASA_TV]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Owen_K_Garriott
+*CAT: n
+*SEM: unaryState[rel=Owen_K_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Scripps_Institution_of_Oceanography
+*CAT: n
+*SEM: unaryState[rel=Scripps_Institution_of_Oceanography]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_California_San_Diego
+*CAT: n
+*SEM: unaryState[rel=University_of_California_San_Diego]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lyndon_B_Johnson_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Lyndon_B_Johnson_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Goddard_Space_Flight_Center
+*CAT: n
+*SEM: unaryState[rel=Goddard_Space_Flight_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing_Defense_Space___Security
+*CAT: n
+*SEM: unaryState[rel=Boeing_Defense_Space___Security]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing
+*CAT: n
+*SEM: unaryState[rel=Boeing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_Space_Alliance
+*CAT: n
+*SEM: unaryState[rel=United_Space_Alliance]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Boeing
+*CAT: n
+*SEM: unaryState[rel=Boeing]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Kennedy_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Kennedy_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_W_Bush
+*CAT: n
+*SEM: unaryState[rel=George_W_Bush]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_H_W_Bush
+*CAT: n
+*SEM: unaryState[rel=George_H_W_Bush]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Antiproton
+*CAT: n
+*SEM: unaryState[rel=Antiproton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Proton
+*CAT: n
+*SEM: unaryState[rel=Proton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Vance_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Vance_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_Education_and_Training_Command
+*CAT: n
+*SEM: unaryState[rel=Air_Education_and_Training_Command]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Laughlin_Air_Force_Base
+*CAT: n
+*SEM: unaryState[rel=Laughlin_Air_Force_Base]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_Education_and_Training_Command
+*CAT: n
+*SEM: unaryState[rel=Air_Education_and_Training_Command]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marc_Garneau
+*CAT: n
+*SEM: unaryState[rel=Marc_Garneau]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Liberal_Party_of_Canada
+*CAT: n
+*SEM: unaryState[rel=Liberal_Party_of_Canada]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Ignatieff
+*CAT: n
+*SEM: unaryState[rel=Michael_Ignatieff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Liberal_Party_of_Canada
+*CAT: n
+*SEM: unaryState[rel=Liberal_Party_of_Canada]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apollo_15
+*CAT: n
+*SEM: unaryState[rel=Apollo_15]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lunar_Roving_Vehicle
+*CAT: n
+*SEM: unaryState[rel=Lunar_Roving_Vehicle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Galileo_spacecraft
+*CAT: n
+*SEM: unaryState[rel=Galileo_spacecraft]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Spacelab
+*CAT: n
+*SEM: unaryState[rel=Spacelab]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gulf_War
+*CAT: n
+*SEM: unaryState[rel=Gulf_War]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ba'athist_Iraq
+*CAT: n
+*SEM: unaryState[rel=Ba'athist_Iraq]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Siege_of_Leningrad
+*CAT: n
+*SEM: unaryState[rel=Siege_of_Leningrad]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soviet_Union
+*CAT: n
+*SEM: unaryState[rel=Soviet_Union]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Robert_April
+*CAT: n
+*SEM: unaryState[rel=Robert_April]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Earth
+*CAT: n
+*SEM: unaryState[rel=Earth]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: List_of_UNIT_personnel
+*CAT: n
+*SEM: unaryState[rel=List_of_UNIT_personnel]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Earth
+*CAT: n
+*SEM: unaryState[rel=Earth]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_Parliament
+*CAT: n
+*SEM: unaryState[rel=European_Parliament]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: European_United_Left_E2_80_93Nordic_Green_Left
+*CAT: n
+*SEM: unaryState[rel=European_United_Left_E2_80_93Nordic_Green_Left]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Federal_Assembly_Russia
+*CAT: n
+*SEM: unaryState[rel=Federal_Assembly_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_Russia
+*CAT: n
+*SEM: unaryState[rel=United_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_House_of_Representatives
+*CAT: n
+*SEM: unaryState[rel=United_States_House_of_Representatives]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_United_States
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: State_Duma
+*CAT: n
+*SEM: unaryState[rel=State_Duma]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_Russia
+*CAT: n
+*SEM: unaryState[rel=United_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Japanese_people
+*CAT: n
+*SEM: unaryState[rel=Japanese_people]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Iroquois
+*CAT: n
+*SEM: unaryState[rel=Iroquois]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stephen_Colbert_character
+*CAT: n
+*SEM: unaryState[rel=Stephen_Colbert_character]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stephen_Colbert
+*CAT: n
+*SEM: unaryState[rel=Stephen_Colbert]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Paul_Goddard
+*CAT: n
+*SEM: unaryState[rel=Paul_Goddard]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Forward_association_football
+*CAT: n
+*SEM: unaryState[rel=Forward_association_football]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sandrine_Br_C3_A9tigny
+*CAT: n
+*SEM: unaryState[rel=Sandrine_Br_C3_A9tigny]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Forward_association_football
+*CAT: n
+*SEM: unaryState[rel=Forward_association_football]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lar_Gand
+*CAT: n
+*SEM: unaryState[rel=Lar_Gand]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Flight
+*CAT: n
+*SEM: unaryState[rel=Flight]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Advisory_Committee_for_Aeronautics
+*CAT: n
+*SEM: unaryState[rel=National_Advisory_Committee_for_Aeronautics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Ignatieff
+*CAT: n
+*SEM: unaryState[rel=Michael_Ignatieff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_C3_A9phane_Dion
+*CAT: n
+*SEM: unaryState[rel=St_C3_A9phane_Dion]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Unisys
+*CAT: n
+*SEM: unaryState[rel=Unisys]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Burroughs_Corporation
+*CAT: n
+*SEM: unaryState[rel=Burroughs_Corporation]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Daily_Show
+*CAT: n
+*SEM: unaryState[rel=The_Daily_Show]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jon_Stewart
+*CAT: n
+*SEM: unaryState[rel=Jon_Stewart]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: William_P_Rogers
+*CAT: n
+*SEM: unaryState[rel=William_P_Rogers]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Nixon
+*CAT: n
+*SEM: unaryState[rel=Richard_Nixon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Janet_Napolitano
+*CAT: n
+*SEM: unaryState[rel=Janet_Napolitano]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Barack_Obama
+*CAT: n
+*SEM: unaryState[rel=Barack_Obama]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_4
+*CAT: n
+*SEM: unaryState[rel=Skylab_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Skylab_3
+*CAT: n
+*SEM: unaryState[rel=Skylab_3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_18
+*CAT: n
+*SEM: unaryState[rel=Expedition_18]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_17
+*CAT: n
+*SEM: unaryState[rel=Expedition_17]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1958_album
+*CAT: n
+*SEM: unaryState[rel=1958_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1957_album
+*CAT: n
+*SEM: unaryState[rel=1957_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1957_album
+*CAT: n
+*SEM: unaryState[rel=1957_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1956_album
+*CAT: n
+*SEM: unaryState[rel=1956_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stargate_SG-1_season_5
+*CAT: n
+*SEM: unaryState[rel=Stargate_SG-1_season_5]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stargate_SG-1_season_4
+*CAT: n
+*SEM: unaryState[rel=Stargate_SG-1_season_4]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Shuttle_Carrier_Aircraft
+*CAT: n
+*SEM: unaryState[rel=Shuttle_Carrier_Aircraft]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: North_American_B-25_Mitchell
+*CAT: n
+*SEM: unaryState[rel=North_American_B-25_Mitchell]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Army_Air_Forces
+*CAT: n
+*SEM: unaryState[rel=United_States_Army_Air_Forces]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Synchronicity_The_Police_album
+*CAT: n
+*SEM: unaryState[rel=Synchronicity_The_Police_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Police
+*CAT: n
+*SEM: unaryState[rel=The_Police]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apogee_of_Fear
+*CAT: n
+*SEM: unaryState[rel=Apogee_of_Fear]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Tracy_Hickman
+*CAT: n
+*SEM: unaryState[rel=Tracy_Hickman]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Pratt___Whitney
+*CAT: n
+*SEM: unaryState[rel=Pratt___Whitney]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jet_engine
+*CAT: n
+*SEM: unaryState[rel=Jet_engine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Northrop_Grumman
+*CAT: n
+*SEM: unaryState[rel=Northrop_Grumman]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Information_technology
+*CAT: n
+*SEM: unaryState[rel=Information_technology]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gordon_O'Connor
+*CAT: n
+*SEM: unaryState[rel=Gordon_O'Connor]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Consultant
+*CAT: n
+*SEM: unaryState[rel=Consultant]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Carlo_Urbani
+*CAT: n
+*SEM: unaryState[rel=Carlo_Urbani]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Physician
+*CAT: n
+*SEM: unaryState[rel=Physician]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_25
+*CAT: n
+*SEM: unaryState[rel=Expedition_25]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: International_Space_Station
+*CAT: n
+*SEM: unaryState[rel=International_Space_Station]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_13
+*CAT: n
+*SEM: unaryState[rel=Expedition_13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: International_Space_Station
+*CAT: n
+*SEM: unaryState[rel=International_Space_Station]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_Oldenburg
+*CAT: n
+*SEM: unaryState[rel=University_of_Oldenburg]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lower_Saxony
+*CAT: n
+*SEM: unaryState[rel=Lower_Saxony]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: KAIST
+*CAT: n
+*SEM: unaryState[rel=KAIST]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Daejeon
+*CAT: n
+*SEM: unaryState[rel=Daejeon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: People_magazine
+*CAT: n
+*SEM: unaryState[rel=People_magazine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Time_Inc
+*CAT: n
+*SEM: unaryState[rel=Time_Inc]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Croatian_Academy_of_Sciences_and_Arts
+*CAT: n
+*SEM: unaryState[rel=Croatian_Academy_of_Sciences_and_Arts]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Science
+*CAT: n
+*SEM: unaryState[rel=Science]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gerald_P_Carr
+*CAT: n
+*SEM: unaryState[rel=Gerald_P_Carr]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Marine_Corps
+*CAT: n
+*SEM: unaryState[rel=United_States_Marine_Corps]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mark_N_Brown
+*CAT: n
+*SEM: unaryState[rel=Mark_N_Brown]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Air_Force
+*CAT: n
+*SEM: unaryState[rel=United_States_Air_Force]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronomy
+*CAT: n
+*SEM: unaryState[rel=Astronomy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Physics
+*CAT: n
+*SEM: unaryState[rel=Physics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astana
+*CAT: n
+*SEM: unaryState[rel=Astana]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Decoration
+*CAT: n
+*SEM: unaryState[rel=Decoration]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Award
+*CAT: n
+*SEM: unaryState[rel=Award]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronaut
+*CAT: n
+*SEM: unaryState[rel=Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Person
+*CAT: n
+*SEM: unaryState[rel=Person]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Document_album
+*CAT: n
+*SEM: unaryState[rel=Document_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Fame_David_Bowie_song
+*CAT: n
+*SEM: unaryState[rel=Fame_David_Bowie_song]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Band_on_the_Run
+*CAT: n
+*SEM: unaryState[rel=Band_on_the_Run]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apple_Records
+*CAT: n
+*SEM: unaryState[rel=Apple_Records]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jean_Lapierre
+*CAT: n
+*SEM: unaryState[rel=Jean_Lapierre]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Outremont_electoral_district
+*CAT: n
+*SEM: unaryState[rel=Outremont_electoral_district]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Grady_Memorial_Hospital
+*CAT: n
+*SEM: unaryState[rel=Grady_Memorial_Hospital]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Atlanta
+*CAT: n
+*SEM: unaryState[rel=Atlanta]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Collegiate_Athletic_Association
+*CAT: n
+*SEM: unaryState[rel=National_Collegiate_Athletic_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_Bankers_Association
+*CAT: n
+*SEM: unaryState[rel=American_Bankers_Association]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Southwest_Asia_Service_Medal
+*CAT: n
+*SEM: unaryState[rel=Southwest_Asia_Service_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Defense_Service_Medal
+*CAT: n
+*SEM: unaryState[rel=National_Defense_Service_Medal]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Germans
+*CAT: n
+*SEM: unaryState[rel=Germans]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Swedes
+*CAT: n
+*SEM: unaryState[rel=Swedes]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soldier
+*CAT: n
+*SEM: unaryState[rel=Soldier]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Police_officer
+*CAT: n
+*SEM: unaryState[rel=Police_officer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Teacher
+*CAT: n
+*SEM: unaryState[rel=Teacher]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Professor
+*CAT: n
+*SEM: unaryState[rel=Professor]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Willis_W_Bradley
+*CAT: n
+*SEM: unaryState[rel=Willis_W_Bradley]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Bruce_McCandless
+*CAT: n
+*SEM: unaryState[rel=Bruce_McCandless]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: James_L_Holloway_III
+*CAT: n
+*SEM: unaryState[rel=James_L_Holloway_III]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Admiral_United_States
+*CAT: n
+*SEM: unaryState[rel=Admiral_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Robert_Garriott
+*CAT: n
+*SEM: unaryState[rel=Robert_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Afghanistan
+*CAT: n
+*SEM: unaryState[rel=Afghanistan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Islam
+*CAT: n
+*SEM: unaryState[rel=Islam]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Heather_Reisman
+*CAT: n
+*SEM: unaryState[rel=Heather_Reisman]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Judaism
+*CAT: n
+*SEM: unaryState[rel=Judaism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: The_Young_and_the_Restless_characters_2000s
+*CAT: n
+*SEM: unaryState[rel=The_Young_and_the_Restless_characters_2000s]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Washington_DC
+*CAT: n
+*SEM: unaryState[rel=Washington_DC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gabrielle_Giffords
+*CAT: n
+*SEM: unaryState[rel=Gabrielle_Giffords]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Tucson_Arizona
+*CAT: n
+*SEM: unaryState[rel=Tucson_Arizona]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Jesse_Helms
+*CAT: n
+*SEM: unaryState[rel=Jesse_Helms]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: North_Carolina
+*CAT: n
+*SEM: unaryState[rel=North_Carolina]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Three_Sugababes_album
+*CAT: n
+*SEM: unaryState[rel=Three_Sugababes_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: BBC
+*CAT: n
+*SEM: unaryState[rel=BBC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Roman_Catholic_Diocese_of_Paterson
+*CAT: n
+*SEM: unaryState[rel=Roman_Catholic_Diocese_of_Paterson]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Roman_Rite
+*CAT: n
+*SEM: unaryState[rel=Roman_Rite]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Saturn_II
+*CAT: n
+*SEM: unaryState[rel=Saturn_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Launch_vehicle
+*CAT: n
+*SEM: unaryState[rel=Launch_vehicle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: LGM-25C_Titan_II
+*CAT: n
+*SEM: unaryState[rel=LGM-25C_Titan_II]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Launch_vehicle
+*CAT: n
+*SEM: unaryState[rel=Launch_vehicle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Inertial_Upper_Stage
+*CAT: n
+*SEM: unaryState[rel=Inertial_Upper_Stage]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Centaur_rocket_stage
+*CAT: n
+*SEM: unaryState[rel=Centaur_rocket_stage]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space_Shuttle
+*CAT: n
+*SEM: unaryState[rel=Space_Shuttle]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interstate_293
+*CAT: n
+*SEM: unaryState[rel=Interstate_293]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Everett_Turnpike
+*CAT: n
+*SEM: unaryState[rel=Everett_Turnpike]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interstate_293
+*CAT: n
+*SEM: unaryState[rel=Interstate_293]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Hooksett_New_Hampshire
+*CAT: n
+*SEM: unaryState[rel=Hooksett_New_Hampshire]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interstate_93
+*CAT: n
+*SEM: unaryState[rel=Interstate_93]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Hooksett_New_Hampshire
+*CAT: n
+*SEM: unaryState[rel=Hooksett_New_Hampshire]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Interstate_293
+*CAT: n
+*SEM: unaryState[rel=Interstate_293]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Everett_Turnpike
+*CAT: n
+*SEM: unaryState[rel=Everett_Turnpike]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Willie_Llewellyn
+*CAT: n
+*SEM: unaryState[rel=Willie_Llewellyn]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Cardiff_RFC
+*CAT: n
+*SEM: unaryState[rel=Cardiff_RFC]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Moon
+*CAT: n
+*SEM: unaryState[rel=Moon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Earth
+*CAT: n
+*SEM: unaryState[rel=Earth]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: North_Toronto_Collegiate_Institute
+*CAT: n
+*SEM: unaryState[rel=North_Toronto_Collegiate_Institute]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: High_school
+*CAT: n
+*SEM: unaryState[rel=High_school]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ghazni_Province
+*CAT: n
+*SEM: unaryState[rel=Ghazni_Province]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ghazni
+*CAT: n
+*SEM: unaryState[rel=Ghazni]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_Russia
+*CAT: n
+*SEM: unaryState[rel=United_Russia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: State_Duma
+*CAT: n
+*SEM: unaryState[rel=State_Duma]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_United_States
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Senate
+*CAT: n
+*SEM: unaryState[rel=United_States_Senate]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_United_States
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_House_of_Representatives
+*CAT: n
+*SEM: unaryState[rel=United_States_House_of_Representatives]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Republican_Party_of_Minnesota
+*CAT: n
+*SEM: unaryState[rel=Republican_Party_of_Minnesota]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_House_of_Representatives
+*CAT: n
+*SEM: unaryState[rel=United_States_House_of_Representatives]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States_Navy
+*CAT: n
+*SEM: unaryState[rel=United_States_Navy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ray_Mabus
+*CAT: n
+*SEM: unaryState[rel=Ray_Mabus]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Deke_Slayton
+*CAT: n
+*SEM: unaryState[rel=Deke_Slayton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mercury_Seven
+*CAT: n
+*SEM: unaryState[rel=Mercury_Seven]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gordon_Cooper
+*CAT: n
+*SEM: unaryState[rel=Gordon_Cooper]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Mercury_Seven
+*CAT: n
+*SEM: unaryState[rel=Mercury_Seven]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Latin_Church
+*CAT: n
+*SEM: unaryState[rel=Latin_Church]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Protestantism
+*CAT: n
+*SEM: unaryState[rel=Protestantism]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Scott_Tracy
+*CAT: n
+*SEM: unaryState[rel=Scott_Tracy]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Thunderbirds_TV_series
+*CAT: n
+*SEM: unaryState[rel=Thunderbirds_TV_series]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Linus_van_Pelt
+*CAT: n
+*SEM: unaryState[rel=Linus_van_Pelt]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Peanuts
+*CAT: n
+*SEM: unaryState[rel=Peanuts]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sarnoff_Corporation
+*CAT: n
+*SEM: unaryState[rel=Sarnoff_Corporation]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Research
+*CAT: n
+*SEM: unaryState[rel=Research]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: SpaceX
+*CAT: n
+*SEM: unaryState[rel=SpaceX]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Rocket_launch
+*CAT: n
+*SEM: unaryState[rel=Rocket_launch]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: USNS_Wally_Schirra_T-AKE-8
+*CAT: n
+*SEM: unaryState[rel=USNS_Wally_Schirra_T-AKE-8]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Wally_Schirra
+*CAT: n
+*SEM: unaryState[rel=Wally_Schirra]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Daniel_C_Burbank
+*CAT: n
+*SEM: unaryState[rel=Daniel_C_Burbank]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronaut
+*CAT: n
+*SEM: unaryState[rel=Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Randolph_Bresnik
+*CAT: n
+*SEM: unaryState[rel=Randolph_Bresnik]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Astronaut
+*CAT: n
+*SEM: unaryState[rel=Astronaut]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz_TM-34
+*CAT: n
+*SEM: unaryState[rel=Soyuz_TM-34]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Soyuz-TM
+*CAT: n
+*SEM: unaryState[rel=Soyuz-TM]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Russian_Federal_Space_Agency
+*CAT: n
+*SEM: unaryState[rel=Russian_Federal_Space_Agency]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Baikonur_Cosmodrome
+*CAT: n
+*SEM: unaryState[rel=Baikonur_Cosmodrome]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_25
+*CAT: n
+*SEM: unaryState[rel=Expedition_25]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: International_Space_Station
+*CAT: n
+*SEM: unaryState[rel=International_Space_Station]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Expedition_13
+*CAT: n
+*SEM: unaryState[rel=Expedition_13]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: International_Space_Station
+*CAT: n
+*SEM: unaryState[rel=International_Space_Station]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chinese_language
+*CAT: n
+*SEM: unaryState[rel=Chinese_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: China
+*CAT: n
+*SEM: unaryState[rel=China]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukrainian_language
+*CAT: n
+*SEM: unaryState[rel=Ukrainian_language]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukraine
+*CAT: n
+*SEM: unaryState[rel=Ukraine]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sally_Ride
+*CAT: n
+*SEM: unaryState[rel=Sally_Ride]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Steven_Hawley
+*CAT: n
+*SEM: unaryState[rel=Steven_Hawley]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Taichi_Yamazaki
+*CAT: n
+*SEM: unaryState[rel=Taichi_Yamazaki]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Naoko_Yamazaki
+*CAT: n
+*SEM: unaryState[rel=Naoko_Yamazaki]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ukraine_women's_national_football_team
+*CAT: n
+*SEM: unaryState[rel=Ukraine_women's_national_football_team]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chernihiv
+*CAT: n
+*SEM: unaryState[rel=Chernihiv]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Challenger_1990_film
+*CAT: n
+*SEM: unaryState[rel=Challenger_1990_film]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Julie_Fulton
+*CAT: n
+*SEM: unaryState[rel=Julie_Fulton]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Challenger_1990_film
+*CAT: n
+*SEM: unaryState[rel=Challenger_1990_film]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Brian_Kerwin
+*CAT: n
+*SEM: unaryState[rel=Brian_Kerwin]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Purdue_University
+*CAT: n
+*SEM: unaryState[rel=Purdue_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Indiana
+*CAT: n
+*SEM: unaryState[rel=Indiana]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_Rochester
+*CAT: n
+*SEM: unaryState[rel=University_of_Rochester]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York
+*CAT: n
+*SEM: unaryState[rel=New_York]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Herbert__22Flight_Time_22_Lang
+*CAT: n
+*SEM: unaryState[rel=Herbert__22Flight_Time_22_Lang]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Richard_Garriott
+*CAT: n
+*SEM: unaryState[rel=Richard_Garriott]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: United_States
+*CAT: n
+*SEM: unaryState[rel=United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Aberdeen
+*CAT: n
+*SEM: unaryState[rel=Aberdeen]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Scotland
+*CAT: n
+*SEM: unaryState[rel=Scotland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Marine_Corps_Base_Quantico
+*CAT: n
+*SEM: unaryState[rel=Marine_Corps_Base_Quantico]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Virginia
+*CAT: n
+*SEM: unaryState[rel=Virginia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Institute_West_Virginia
+*CAT: n
+*SEM: unaryState[rel=Institute_West_Virginia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Political_divisions_of_the_United_States
+*CAT: n
+*SEM: unaryState[rel=Political_divisions_of_the_United_States]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Ramon_Isabela
+*CAT: n
+*SEM: unaryState[rel=Ramon_Isabela]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: House_of_Representatives_of_the_Philippines
+*CAT: n
+*SEM: unaryState[rel=House_of_Representatives_of_the_Philippines]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1957_album
+*CAT: n
+*SEM: unaryState[rel=1957_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1958_album
+*CAT: n
+*SEM: unaryState[rel=1958_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1956_album
+*CAT: n
+*SEM: unaryState[rel=1956_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: 1957_album
+*CAT: n
+*SEM: unaryState[rel=1957_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: ExxonMobil
+*CAT: n
+*SEM: unaryState[rel=ExxonMobil]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Exxon
+*CAT: n
+*SEM: unaryState[rel=Exxon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_C3_A9phane_Dion
+*CAT: n
+*SEM: unaryState[rel=St_C3_A9phane_Dion]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Michael_Ignatieff
+*CAT: n
+*SEM: unaryState[rel=Michael_Ignatieff]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Sperry_Corporation
+*CAT: n
+*SEM: unaryState[rel=Sperry_Corporation]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Unisys
+*CAT: n
+*SEM: unaryState[rel=Unisys]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: National_Advisory_Committee_for_Aeronautics
+*CAT: n
+*SEM: unaryState[rel=National_Advisory_Committee_for_Aeronautics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Car_Talk
+*CAT: n
+*SEM: unaryState[rel=Car_Talk]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NPR
+*CAT: n
+*SEM: unaryState[rel=NPR]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Johnson_Space_Center_shooting
+*CAT: n
+*SEM: unaryState[rel=Johnson_Space_Center_shooting]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Lyndon_B_Johnson_Space_Center
+*CAT: n
+*SEM: unaryState[rel=Lyndon_B_Johnson_Space_Center]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Enos_Cabell
+*CAT: n
+*SEM: unaryState[rel=Enos_Cabell]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Houston_Astros
+*CAT: n
+*SEM: unaryState[rel=Houston_Astros]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Zsolt_Baumgartner
+*CAT: n
+*SEM: unaryState[rel=Zsolt_Baumgartner]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Minardi
+*CAT: n
+*SEM: unaryState[rel=Minardi]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Zsolt_Baumgartner
+*CAT: n
+*SEM: unaryState[rel=Zsolt_Baumgartner]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Minardi
+*CAT: n
+*SEM: unaryState[rel=Minardi]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Nichelle_Nichols
+*CAT: n
+*SEM: unaryState[rel=Nichelle_Nichols]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Star_Trek
+*CAT: n
+*SEM: unaryState[rel=Star_Trek]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_H_Winner_Jr
+*CAT: n
+*SEM: unaryState[rel=George_H_Winner_Jr]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York_State_Senate
+*CAT: n
+*SEM: unaryState[rel=New_York_State_Senate]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: George_H_Winner_Jr
+*CAT: n
+*SEM: unaryState[rel=George_H_Winner_Jr]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: New_York_State_Assembly
+*CAT: n
+*SEM: unaryState[rel=New_York_State_Assembly]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Apogee_Books
+*CAT: n
+*SEM: unaryState[rel=Apogee_Books]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Space
+*CAT: n
+*SEM: unaryState[rel=Space]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Bill_Anoatubby
+*CAT: n
+*SEM: unaryState[rel=Bill_Anoatubby]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Chickasaw_Nation
+*CAT: n
+*SEM: unaryState[rel=Chickasaw_Nation]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Toronto
+*CAT: n
+*SEM: unaryState[rel=Toronto]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Gerald_P_Carr
+*CAT: n
+*SEM: unaryState[rel=Gerald_P_Carr]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Douglas_H_Wheelock
+*CAT: n
+*SEM: unaryState[rel=Douglas_H_Wheelock]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA
+*CAT: n
+*SEM: unaryState[rel=NASA]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Portland_Pilots
+*CAT: n
+*SEM: unaryState[rel=Portland_Pilots]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: University_of_Portland
+*CAT: n
+*SEM: unaryState[rel=University_of_Portland]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Statin
+*CAT: n
+*SEM: unaryState[rel=Statin]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Hypercholesterolemia
+*CAT: n
+*SEM: unaryState[rel=Hypercholesterolemia]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: NASA_M2-F1
+*CAT: n
+*SEM: unaryState[rel=NASA_M2-F1]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Northrop_M2-F3
+*CAT: n
+*SEM: unaryState[rel=Northrop_M2-F3]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_Institute
+*CAT: n
+*SEM: unaryState[rel=American_Institute]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: American_Institute_of_Aeronautics_and_Astronautics
+*CAT: n
+*SEM: unaryState[rel=American_Institute_of_Aeronautics_and_Astronautics]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Professional_Engineer
+*CAT: n
+*SEM: unaryState[rel=Professional_Engineer]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Regulation_and_licensure_in_engineering
+*CAT: n
+*SEM: unaryState[rel=Regulation_and_licensure_in_engineering]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Control_tower
+*CAT: n
+*SEM: unaryState[rel=Control_tower]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Air_traffic_control
+*CAT: n
+*SEM: unaryState[rel=Air_traffic_control]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Liberal_Party_of_Canada_leadership_election_2006
+*CAT: n
+*SEM: unaryState[rel=Liberal_Party_of_Canada_leadership_election_2006]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: St_C3_A9phane_Dion
+*CAT: n
+*SEM: unaryState[rel=St_C3_A9phane_Dion]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Carl_Sagan
+*CAT: n
+*SEM: unaryState[rel=Carl_Sagan]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Cornell_University
+*CAT: n
+*SEM: unaryState[rel=Cornell_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Arthur_Leonard_Schawlow
+*CAT: n
+*SEM: unaryState[rel=Arthur_Leonard_Schawlow]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Stanford_University
+*CAT: n
+*SEM: unaryState[rel=Stanford_University]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Three_Sugababes_album
+*CAT: n
+*SEM: unaryState[rel=Three_Sugababes_album]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Diane_Warren
+*CAT: n
+*SEM: unaryState[rel=Diane_Warren]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Serenity_film
+*CAT: n
+*SEM: unaryState[rel=Serenity_film]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
+*ENTRY: Joss_Whedon
+*CAT: n
+*SEM: unaryState[rel=Joss_Whedon]
+*ACC: 1.0
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS:
+
+
 
 
