@@ -178,6 +178,7 @@ public class JeniGenerator implements Generator
 		JeniChartItems ret = new JeniChartItems();
 
 		LexicalSelectionResult result = lexicalSelection.selectEntries(semantics);
+		
 
 		generationReport.setLexicalSelection(result);
 
@@ -572,11 +573,18 @@ public class JeniGenerator implements Generator
 		else logger.info("--- " + prefix);
 
 		if (logger.isTraceEnabled())
-			for(JeniChartItem item : items)
+			for(JeniChartItem item : items) {
 				logger.trace("\n" + item.toString(ItemFormat.COMPLETE_FULL_TREE));
-		else if (logger.isDebugEnabled())
-			for(JeniChartItem item : items)
-				logger.info("\n" + item.toString(ItemFormat.MULTI_LINE_SHORT));
+				
+			}
+		
+		else if (logger.isDebugEnabled()) {
+			for(JeniChartItem item : items) {
+				logger.debug("\n" + item.toString(ItemFormat.MULTI_LINE_SHORT));
+				logger.debug("\n probability: " + item.getProbability());
+			}
+			
+		}
 	}
 
 

@@ -130,7 +130,7 @@ public class AppWindow extends JFrame
 			{
 				if (btnGenerate.isEnabled())
 				{
-					ResultWindow resultWin = new ResultWindow();
+					GenerationWindow resultWin = new GenerationWindow();
 
 					resultWin.setVisible(true);
 				}

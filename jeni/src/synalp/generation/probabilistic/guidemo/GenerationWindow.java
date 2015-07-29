@@ -8,12 +8,12 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
-import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
 import javax.swing.LayoutStyle.ComponentPlacement;
+import java.awt.Dimension;
 
-public class ResultWindow extends JFrame
+public class GenerationWindow extends JFrame
 {
 
 	private JPanel contentPane;
@@ -25,54 +25,47 @@ public class ResultWindow extends JFrame
 	/**
 	 * Create the frame.
 	 */
-	public ResultWindow()
+	public GenerationWindow()
 	{
 		setTitle("Generation results");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 492, 391);
+		setBounds(100, 100, 473, 391);
 		contentPane = new JPanel();
+		contentPane.setMaximumSize(new Dimension(1280, 1024));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
+		
+		JTextArea textArea = new JTextArea();
+		textArea.setEditable(false);
 		
 		JButton btnSaveAs = new JButton("Save as...");
 		
 		JButton btnNewButton = new JButton("Copy to clipboard");
-		
-		JPanel panel = new JPanel();
-		JTextArea display = new JTextArea(19,38);
-		display.setText("Scroll test \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nsuccessful.");
-		display.setEditable(false);
-		JScrollPane scroll = new JScrollPane(display);
-		
-		panel.add(scroll);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.LEADING)
+						.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 439, Short.MAX_VALUE)
 						.addGroup(gl_contentPane.createSequentialGroup()
 							.addComponent(btnNewButton)
-							.addPreferredGap(ComponentPlacement.RELATED, 199, Short.MAX_VALUE)
-							.addComponent(btnSaveAs))
-						.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-							.addComponent(panel, GroupLayout.DEFAULT_SIZE, 470, Short.MAX_VALUE)
-							.addContainerGap())))
+							.addPreferredGap(ComponentPlacement.RELATED, 177, Short.MAX_VALUE)
+							.addComponent(btnSaveAs)))
+					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
 			gl_contentPane.createParallelGroup(Alignment.TRAILING)
 				.addGroup(gl_contentPane.createSequentialGroup()
-					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 323, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+					.addComponent(textArea, GroupLayout.DEFAULT_SIZE, 338, Short.MAX_VALUE)
+					.addGap(18)
 					.addGroup(gl_contentPane.createParallelGroup(Alignment.BASELINE)
 						.addComponent(btnNewButton)
 						.addComponent(btnSaveAs)))
 		);
 		contentPane.setLayout(gl_contentPane);
-		
-		
-		
-		
 	}
+	
+	
 }
