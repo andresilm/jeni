@@ -38,6 +38,7 @@ public class PJeniDemoGUI extends JFrame
 	
 	DisplayOptions displayOpt;
 	ResourcesConfigDialog resConfig;
+	GeneratorParametersDialog genParamDialog;
 	
 
 	/**
@@ -82,6 +83,8 @@ public class PJeniDemoGUI extends JFrame
 		JMenuItem mntmResourcesSuite = new JMenuItem("Sources");
 		resConfig = new ResourcesConfigDialog();
 		
+		genParamDialog = new GeneratorParametersDialog();
+		
 		mntmResourcesSuite.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
@@ -110,11 +113,34 @@ public class PJeniDemoGUI extends JFrame
 				
 			}
 		});
+		
+		mntmDisplayOptions.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				displayOpt.setVisible(true);
+				
+				
+			}
+		});
 
 		mnNewMenu.add(mntmDisplayOptions);
 		
-		JMenuItem mntmSaveCurrentConfig = new JMenuItem("Save current config");
-		mnNewMenu.add(mntmSaveCurrentConfig);
+		JMenuItem mntmParameters = new JMenuItem("Parameters");
+		mntmParameters.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				genParamDialog.setVisible(true);
+				
+				
+			}
+		});
+		
+		
+		mnNewMenu.add(mntmParameters);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
