@@ -1,5 +1,35 @@
 include macros.mac
 
+*ENTRY: Russia
+*CAT: n
+*SEM: unaryState[rel=Russia]
+*ACC: 0.5
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS: 
+
+*ENTRY: Physician
+*CAT: n
+*SEM: unaryState[rel=Physician]
+*ACC: 0.5
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS: 
+
+*ENTRY: Medicine
+*CAT: n
+*SEM: unaryState[rel=Medicine]
+*ACC: 0.5
+*FAM: alphaNXN
+*FILTERS: []
+*EX: {}
+*EQUATIONS:
+*COANCHORS: 
+
 *ENTRY: in
 *CAT: prep
 *SEM: binaryRel[rel=activitySector]
