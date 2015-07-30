@@ -47,17 +47,18 @@ public class ResourcesConfigDialog extends JDialog
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 
 		grammarTextField = new JTextField();
-		grammarTextField.setText("*.xml");
+		grammarTextField.setText(appConfig.getGrammarSource());
 		grammarTextField.setEditable(false);
 		grammarTextField.setColumns(10);
 
 		lexiconTextField = new JTextField();
-		lexiconTextField.setText("*.lex");
+		lexiconTextField.setText(appConfig.getLexiconSource());
+		
 		lexiconTextField.setEditable(false);
 		lexiconTextField.setColumns(10);
 
 		testsuiteTextField = new JTextField();
-		testsuiteTextField.setText("*.geni");
+		testsuiteTextField.setText(appConfig.getTestsuiteSource());
 		testsuiteTextField.setEditable(false);
 		testsuiteTextField.setColumns(10);
 
@@ -82,7 +83,7 @@ public class ResourcesConfigDialog extends JDialog
 				fd.setVisible(true);
 
 				grammarTextField.setText(fd.getDirectory() + fd.getFile());
-				appConfig.setGrammarSource(fd.getDirectory() + fd.getFile());
+				
 			}
 		});
 
@@ -101,7 +102,8 @@ public class ResourcesConfigDialog extends JDialog
 				fd.setVisible(true);
 
 				lexiconTextField.setText(fd.getDirectory() + fd.getFile());
-				appConfig.setLexiconSource(fd.getDirectory() + fd.getFile());
+				
+				
 
 			}
 		});
@@ -121,7 +123,7 @@ public class ResourcesConfigDialog extends JDialog
 				fd.setVisible(true);
 
 				testsuiteTextField.setText(fd.getDirectory() + fd.getFile());
-				appConfig.setTestsuiteSource(fd.getDirectory() + fd.getFile());
+				
 			}
 		});
 
@@ -195,6 +197,15 @@ public class ResourcesConfigDialog extends JDialog
 					@Override
 					public void mouseClicked(MouseEvent e)
 					{
+						if (!grammarTextField.getText().isEmpty() && !lexiconTextField.getText().isEmpty())
+						{
+							if (!testsuiteTextField.getText().isEmpty()) {
+								System.out.println(grammarTextField.getText() + lexiconTextField.getText() + testsuiteTextField.getText());
+								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText(), testsuiteTextField.getText());
+							}
+							else
+								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText());
+						}
 						setVisible(false);
 					}
 				});

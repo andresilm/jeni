@@ -57,7 +57,7 @@ public class AppWindow extends JFrame
 	{
 		appConfig = new AppConfiguration();
 		//Hardcoded configuration
-		appConfig.createConfigFromTestsuite("probabilistic_demosuite");
+		//appConfig.createConfigFromTestsuite("probabilistic_demosuite");
 		
 
 		setTitle("Probabilistic Jeni Generator Demo");
@@ -144,7 +144,7 @@ public class AppWindow extends JFrame
 			{
 				if (btnGenerate.isEnabled())
 				{
-					updateApplicationConfiguration();
+					
 					GenerationWindow resultWin = new GenerationWindow(appConfig);
 
 					resultWin.setVisible(true);
