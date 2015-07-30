@@ -25,14 +25,17 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import synalp.generation.configuration.GeneratorConfigurations;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
-import synalp.generation.probabilistic.guidemo.PJeniDemoAppConfiguration;
+import synalp.generation.probabilistic.guidemo.AppConfiguration;
 
 import java.awt.Dimension;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import javax.swing.JScrollPane;
+import javax.swing.JTextPane;
 
 public class GenerationWindow extends JFrame
 {
@@ -41,14 +44,16 @@ public class GenerationWindow extends JFrame
 
 	JTextArea genTextArea;
 	JScrollPane scroll;
-	PJeniDemoAppConfiguration appConfig;
+	AppConfiguration appConfig;
 	boolean generationDone = false;
+
 
 	/**
 	 * Create the frame.
 	 */
-	public GenerationWindow(PJeniDemoAppConfiguration appConfig)
+	public GenerationWindow(AppConfiguration appConfig)
 	{
+		this.appConfig = appConfig;
 		setTitle("Generation results");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
@@ -57,108 +62,113 @@ public class GenerationWindow extends JFrame
 		contentPane.setMaximumSize(new Dimension(1280, 1024));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
-		
-		JPanel panel = new JPanel();
-		
-		JButton btnNewButton = new JButton("Save results");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addContainerGap()
-					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
-						.addComponent(panel, GroupLayout.DEFAULT_SIZE, 766, Short.MAX_VALUE)
-						.addComponent(btnNewButton))
-					.addContainerGap())
-		);
+											gl_contentPane	.createParallelGroup(Alignment.LEADING)
+															.addGap(0, 630, Short.MAX_VALUE));
 		gl_contentPane.setVerticalGroup(
-			gl_contentPane.createParallelGroup(Alignment.LEADING)
-				.addGroup(gl_contentPane.createSequentialGroup()
-					.addContainerGap()
-					.addComponent(panel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addPreferredGap(ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
-					.addComponent(btnNewButton))
-		);
-		
-		genTextArea = new JTextArea();
-		genTextArea.setEditable(false);
-		//genTextArea.setText("test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nscrolling");
-		genTextArea.setColumns(80);
-		genTextArea.setRows(35);
-		panel.add(genTextArea);
-		scroll= new JScrollPane(genTextArea);
-		panel.add(scroll);
+										gl_contentPane	.createParallelGroup(Alignment.LEADING)
+														.addGap(0, 470, Short.MAX_VALUE));
 		contentPane.setLayout(gl_contentPane);
-		
-		
-		this.appConfig = appConfig;
-		
+
+		JPanel panel = new JPanel();
+
 	}
-	
+
+
 	@Override
-	public void setVisible(boolean b) {
-		
+	public void setVisible(boolean b)
+	{
+
 		super.setVisible(b);
-		if (b && !generationDone) {
+		if (b && !generationDone)
+		{
 			startGeneration();
 			generationDone = true;
 		}
 	}
-	
 
-	
-	public void startGeneration() {
-		GeneratorConfiguration config = this.appConfig.generationConfig;
-		
-		if (config == null) {
+
+	public void startGeneration()
+	{
+
+		if (this.appConfig == null)
+		{
 			System.out.println("Configuration is null");
 		}
-		else {
-		
-		JeniGenerator generator = new JeniGenerator(config);
-		
-		genTextArea.append("=== GENERATION STARTED AT " + LocalDateTime.now().toString() + "===\n\n");
-		System.out.println(LocalDateTime.now().toString() + "\n");
-		int entryNum = 1;
-		System.out.println("*RESOURCES FILE INFO:");
-		System.out.println("GRAMMAR: ");
-		System.out.println("LEXICON: ");
-		System.out.println("TESTSUITE: " + "\n");
-		
-		                   System.out.println("#ENTRIES: " + config.getTestSuite().size() + "\n");
-		for(TestSuiteEntry entry : config.getTestSuite())
+		else
 		{
-			
-			genTextArea.append("TESTSUITE ENTRY #" + entryNum + "\n\n");
-			System.out.println("TESTSUITE ENTRY #" + entryNum + "\n");
-			
-			System.out.println("INPUT SEMANTICS:\n" + entry.getSemantics().toString() + "\n");
-			genTextArea.append("INPUT SEMANTICS:\n" + entry.getSemantics().toString() + "\n\n");
-			
-			
-			List<JeniRealization> results = generator.generate(entry.getSemantics());
-			if (results.isEmpty()) {
-				genTextArea.append("*** NO SENTENCE WAS GENERATED ***\n\n");
-			}
-			int sentenceCount = 1;
-			
-			
-			for (JeniRealization real: results) {
-				genTextArea.append("GENERATED SENTENCE #" + sentenceCount + ":\n" + getSurface(real,true)+ "\n\n");
-				System.out.println("GENERATED SENTENCE #" + sentenceCount + ":\n" + getSurface(real,true)+ "\n");
+			GeneratorConfiguration config = this.appConfig.generationConfig;
+
+			JeniGenerator generator = new JeniGenerator(config);
+			String time = LocalDateTime.now().toString().split("T")[1];
+			String date = LocalDateTime.now().toString().split("T")[0];
+
+			System.out.println("= Generation started at");
+			System.out.println("*Time: " + time);
+			System.out.println("*Date: " + date + "\n");
+
+			int entryNum = 1;
+			System.out.println("== File resources info:");
+			System.out.println("*Grammar: " + appConfig.getGrammarSource());
+			System.out.println("*Lexicon: " + appConfig.getLexiconSource());
+			System.out.println("*Testsuite: " + appConfig.getTestsuiteSource());
+		
 				
-				genTextArea.append("PROBABILITY:\n" + real.getProbability() + "\n\n");
-				System.out.println("PROBABILITY:\n" + real.getProbability() + "\n");
-				++sentenceCount;
-				genTextArea.update(genTextArea.getGraphics());
+			System.out.print("\n");
+
+			System.out.println("== PJeni Generator configuration info");
+			System.out.println("*Beam size: " + config.getOption("beam_size") + "\n");
+
+			System.out.println("== Testsuite details:");
+			System.out.println("*#Tests: " + config.getTestSuite().size() + "\n");
+			System.out.println("== Starting sentences generation\n");
+			for(TestSuiteEntry entry : config.getTestSuite())
+			{
+
+				//genTextArea.append("TESTSUITE ENTRY #" + entryNum + "\n\n");
+				System.out.println("=== Input #" + entryNum);
+
+				System.out.println("*Semantics: " + entry.getSemantics().toString() + "\n");
+				//genTextArea.append("INPUT SEMANTICS:\n" + entry.getSemantics().toString() + "\n\n");
+
+				List<JeniRealization> results = generator.generate(entry.getSemantics());
+				if (results.isEmpty())
+				{
+					System.out.println("! No sentence was generated !\n\n");
+				}
+				int sentenceCount = 1;
+				
+				Map<String,Integer> resultsGrouped = groupRealizations(results);
+				
+				for(String real : resultsGrouped.keySet())
+				{
+					//genTextArea.append("GENERATED SENTENCE #" + sentenceCount + ":\n" + getSurface(real,true)+ "\n\n");
+					System.out.println("==== Realization #" + sentenceCount);
+					System.out.println("*Sentence: " + real.split(":")[0]);
+					System.out.println("*Times: " + resultsGrouped.get(real));
+
+					//genTextArea.append("PROBABILITY:\n" + real.getProbability() + "\n\n");
+					System.out.println("*Probability: " + real.split(":")[1] + "\n");
+					++sentenceCount;
+					//genTextArea.update(genTextArea.getGraphics());
+				}
+				++entryNum;
+				//break;//just one entry for now
+
 			}
-			++entryNum;
-			//break;//just one entry for now
+			time = LocalDateTime.now().toString().split("T")[1];
+			date = LocalDateTime.now().toString().split("T")[0];
+
+			System.out.println("= Generation ended at");
+			System.out.println("*Time: " + time);
+			System.out.println("*Date: " + date + "\n");
+
 			
-		}
 		}
 	}
-	
+
+
 	/**
 	 * Returns the surface form of given realizations. If morph is true, returns the morphological
 	 * realizations, if false returns the lemmas separated by space.
@@ -191,6 +201,24 @@ public class GenerationWindow extends JFrame
 				ret.add(morphReal.asString());
 		}
 		else ret.add(Utils.print(real.getLemmas(), " "));
+		return ret;
+	}
+	
+	private static Map<String, Integer> groupRealizations( List<JeniRealization> results)
+	{
+		Map<String, Integer> ret = new HashMap<String, Integer>();
+		
+		
+			for(JeniRealization result : results)
+				for(MorphRealization morphReal : result.getMorphRealizations())
+				{
+					String surface = morphReal.asString() + ":" + result.getProbability();
+					if (!ret.containsKey(surface))
+						ret.put(surface, 0);
+					ret.put(surface, ret.get(surface) + 1);
+				}
+		
+		
 		return ret;
 	}
 }

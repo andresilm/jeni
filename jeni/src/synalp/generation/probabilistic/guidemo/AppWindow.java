@@ -47,7 +47,7 @@ public class AppWindow extends JFrame
 	ResourcesConfigDialog resConfig;
 	GeneratorParametersDialog genParamDialog;
 
-	PJeniDemoAppConfiguration appConfig;
+	AppConfiguration appConfig;
 
 
 	/**
@@ -55,9 +55,10 @@ public class AppWindow extends JFrame
 	 */
 	public AppWindow()
 	{
-		appConfig = new PJeniDemoAppConfiguration();
+		appConfig = new AppConfiguration();
 		//Hardcoded configuration
-		appConfig.getConfigFromTestsuite("probabilistic_demosuite");
+		appConfig.createConfigFromTestsuite("probabilistic_demosuite");
+		
 
 		setTitle("Probabilistic Jeni Generator Demo");
 		setResizable(false);

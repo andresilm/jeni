@@ -30,13 +30,13 @@ public class ResourcesConfigDialog extends JDialog
 	private JTextField lexiconTextField;
 	private JTextField testsuiteTextField;
 
-	private PJeniDemoAppConfiguration appConfig;
+	private AppConfiguration appConfig;
 
 
 	/**
 	 * Create the dialog.
 	 */
-	public ResourcesConfigDialog(PJeniDemoAppConfiguration appConfig)
+	public ResourcesConfigDialog(AppConfiguration appConfig)
 	{
 		this.appConfig = appConfig;
 
