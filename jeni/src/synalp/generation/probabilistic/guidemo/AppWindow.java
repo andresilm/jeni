@@ -19,6 +19,9 @@ import javax.swing.JTextPane;
 
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
@@ -35,17 +38,16 @@ import synalp.generation.configuration.GeneratorConfigurations;
 
 public class AppWindow extends JFrame
 {
+	
 
 	private JPanel contentPane;
 	private JTextField textField;
-	
 	//different configuration dialogs
 	DisplayOptions displayOpt;
 	ResourcesConfigDialog resConfig;
 	GeneratorParametersDialog genParamDialog;
-	
-	//current generation configuration
-	GeneratorConfiguration config;
+
+	PJeniDemoAppConfiguration appConfig;
 
 
 	/**
@@ -53,10 +55,10 @@ public class AppWindow extends JFrame
 	 */
 	public AppWindow()
 	{
+		appConfig = new PJeniDemoAppConfiguration();
 		//Hardcoded configuration
-				this.config = GeneratorConfigurations.getConfig("probabilistic_demosuite");
-				
-				
+		appConfig.getConfigFromTestsuite("probabilistic_demosuite");
+
 		setTitle("Probabilistic Jeni Generator Demo");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -69,7 +71,7 @@ public class AppWindow extends JFrame
 		menuBar.add(mnNewMenu);
 
 		JMenuItem mntmResourcesSuite = new JMenuItem("Sources");
-		resConfig = new ResourcesConfigDialog();
+		resConfig = new ResourcesConfigDialog(appConfig);
 
 		genParamDialog = new GeneratorParametersDialog();
 
@@ -137,15 +139,15 @@ public class AppWindow extends JFrame
 		btnGenerate.addMouseListener(new MouseAdapter()
 		{
 			@Override
-			public void mouseClicked(MouseEvent e)
+			public void mousePressed(MouseEvent e)
 			{
 				if (btnGenerate.isEnabled())
 				{
-					GenerationWindow resultWin = new GenerationWindow();
-					
-					
+					updateApplicationConfiguration();
+					GenerationWindow resultWin = new GenerationWindow(appConfig);
+
 					resultWin.setVisible(true);
-					resultWin.startGeneration(config);
+
 				}
 
 			}
@@ -179,67 +181,72 @@ public class AppWindow extends JFrame
 		JButton button_1 = new JButton("Browse");
 		GroupLayout gl_panel = new GroupLayout(panel);
 		gl_panel.setHorizontalGroup(
-				gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(	gl_panel.createSequentialGroup()
-											.addContainerGap()
-											.addGroup(	gl_panel.createParallelGroup(Alignment.LEADING)
-																.addComponent(editorPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-																.addComponent(rdbtnFileOfInput)
-																.addComponent(lblGenerateFrom)
-																.addComponent(rdbtnUserGivenInput)
-																.addComponent(rdbtnPreparatedInputItems)
-																.addGroup(	gl_panel.createSequentialGroup()
-																					.addGroup(	gl_panel.createParallelGroup(Alignment.TRAILING)
-																										.addGroup(gl_panel.createSequentialGroup()
-																															.addGap(29)
-																															.addComponent(comboBox, 0, 339, Short.MAX_VALUE))
-																										.addComponent(textField, GroupLayout.PREFERRED_SIZE, 331,
-																														GroupLayout.PREFERRED_SIZE))
-																					.addPreferredGap(ComponentPlacement.RELATED)
-																					.addComponent(button_1)))
-											.addContainerGap())
-				);
+									gl_panel.createParallelGroup(Alignment.LEADING)
+											.addGroup(gl_panel	.createSequentialGroup()
+																.addContainerGap()
+																.addGroup(gl_panel	.createParallelGroup(Alignment.LEADING)
+																					.addComponent(editorPane, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+																					.addComponent(rdbtnFileOfInput)
+																					.addComponent(lblGenerateFrom)
+																					.addComponent(rdbtnUserGivenInput)
+																					.addComponent(rdbtnPreparatedInputItems)
+																					.addGroup(gl_panel	.createSequentialGroup()
+																										.addGroup(gl_panel	.createParallelGroup(Alignment.TRAILING)
+																															.addGroup(gl_panel	.createSequentialGroup()
+																																				.addGap(29)
+																																				.addComponent(	comboBox, 0, 339,
+																																								Short.MAX_VALUE))
+																															.addComponent(	textField, GroupLayout.PREFERRED_SIZE,
+																																			331,
+																																			GroupLayout.PREFERRED_SIZE))
+																										.addPreferredGap(ComponentPlacement.RELATED)
+																										.addComponent(button_1)))
+																.addContainerGap()));
 		gl_panel.setVerticalGroup(
-				gl_panel.createParallelGroup(Alignment.LEADING)
-						.addGroup(gl_panel.createSequentialGroup()
-											.addContainerGap()
-											.addComponent(lblGenerateFrom)
-											.addGap(8)
-											.addComponent(rdbtnFileOfInput)
-											.addGap(1)
-											.addGroup(gl_panel.createParallelGroup(Alignment.BASELINE)
-																.addComponent(textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-																.addComponent(button_1))
-											.addGap(18)
-											.addComponent(rdbtnPreparatedInputItems)
-											.addPreferredGap(ComponentPlacement.UNRELATED)
-											.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-											.addGap(23)
-											.addComponent(rdbtnUserGivenInput)
-											.addPreferredGap(ComponentPlacement.UNRELATED)
-											.addComponent(editorPane, GroupLayout.PREFERRED_SIZE, 83, GroupLayout.PREFERRED_SIZE)
-											.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-				);
+									gl_panel.createParallelGroup(Alignment.LEADING)
+											.addGroup(gl_panel	.createSequentialGroup()
+																.addContainerGap()
+																.addComponent(lblGenerateFrom)
+																.addGap(8)
+																.addComponent(rdbtnFileOfInput)
+																.addGap(1)
+																.addGroup(gl_panel	.createParallelGroup(Alignment.BASELINE)
+																					.addComponent(	textField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE,
+																									GroupLayout.PREFERRED_SIZE)
+																					.addComponent(button_1))
+																.addGap(18)
+																.addComponent(rdbtnPreparatedInputItems)
+																.addPreferredGap(ComponentPlacement.UNRELATED)
+																.addComponent(comboBox, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+																.addGap(23)
+																.addComponent(rdbtnUserGivenInput)
+																.addPreferredGap(ComponentPlacement.UNRELATED)
+																.addComponent(editorPane, GroupLayout.PREFERRED_SIZE, 83, GroupLayout.PREFERRED_SIZE)
+																.addContainerGap(GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)));
 		panel.setLayout(gl_panel);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
-						gl_contentPane.createParallelGroup(Alignment.TRAILING)
-										.addGroup(gl_contentPane.createSequentialGroup()
-																.addGap(341)
-																.addComponent(btnGenerate, GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-																.addContainerGap())
-										.addComponent(panel, GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE)
-						);
+											gl_contentPane	.createParallelGroup(Alignment.TRAILING)
+															.addGroup(gl_contentPane.createSequentialGroup()
+																					.addGap(341)
+																					.addComponent(btnGenerate, GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
+																					.addContainerGap())
+															.addComponent(panel, GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE));
 		gl_contentPane.setVerticalGroup(
-						gl_contentPane.createParallelGroup(Alignment.LEADING)
-										.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-																					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 319, GroupLayout.PREFERRED_SIZE)
-																					.addPreferredGap(ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-																					.addComponent(btnGenerate))
-						);
+										gl_contentPane	.createParallelGroup(Alignment.LEADING)
+														.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
+																									.addComponent(	panel, GroupLayout.PREFERRED_SIZE, 319,
+																													GroupLayout.PREFERRED_SIZE)
+																									.addPreferredGap(ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+																									.addComponent(btnGenerate)));
 		contentPane.setLayout(gl_contentPane);
-		
-		
+
+	}
+
+
+	void updateApplicationConfiguration()
+	{
+
 	}
 
 }

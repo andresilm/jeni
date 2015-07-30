@@ -25,6 +25,7 @@ import javax.swing.LayoutStyle.ComponentPlacement;
 import synalp.generation.configuration.GeneratorConfigurations;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
+import synalp.generation.probabilistic.guidemo.PJeniDemoAppConfiguration;
 
 import java.awt.Dimension;
 import java.time.LocalDateTime;
@@ -40,30 +41,34 @@ public class GenerationWindow extends JFrame
 
 	JTextArea genTextArea;
 	JScrollPane scroll;
-
-
+	PJeniDemoAppConfiguration appConfig;
+	boolean generationDone = false;
 
 	/**
 	 * Create the frame.
 	 */
-	public GenerationWindow()
+	public GenerationWindow(PJeniDemoAppConfiguration appConfig)
 	{
 		setTitle("Generation results");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-		setBounds(100, 100, 473, 391);
+		setBounds(100, 100, 640, 480);
 		contentPane = new JPanel();
 		contentPane.setMaximumSize(new Dimension(1280, 1024));
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		
 		JPanel panel = new JPanel();
+		
+		JButton btnNewButton = new JButton("Save results");
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
 			gl_contentPane.createParallelGroup(Alignment.LEADING)
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
-					.addComponent(panel, GroupLayout.DEFAULT_SIZE, 451, Short.MAX_VALUE)
+					.addGroup(gl_contentPane.createParallelGroup(Alignment.TRAILING)
+						.addComponent(panel, GroupLayout.DEFAULT_SIZE, 766, Short.MAX_VALUE)
+						.addComponent(btnNewButton))
 					.addContainerGap())
 		);
 		gl_contentPane.setVerticalGroup(
@@ -71,23 +76,45 @@ public class GenerationWindow extends JFrame
 				.addGroup(gl_contentPane.createSequentialGroup()
 					.addContainerGap()
 					.addComponent(panel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
-					.addContainerGap(39, Short.MAX_VALUE))
+					.addPreferredGap(ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
+					.addComponent(btnNewButton))
 		);
 		
 		genTextArea = new JTextArea();
 		genTextArea.setEditable(false);
 		//genTextArea.setText("test\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nscrolling");
-		genTextArea.setColumns(36);
-		genTextArea.setRows(19);
+		genTextArea.setColumns(80);
+		genTextArea.setRows(35);
 		panel.add(genTextArea);
 		scroll= new JScrollPane(genTextArea);
 		panel.add(scroll);
 		contentPane.setLayout(gl_contentPane);
 		
 		
+		this.appConfig = appConfig;
+		
 	}
 	
-	public void startGeneration(GeneratorConfiguration config) {
+	@Override
+	public void setVisible(boolean b) {
+		
+		super.setVisible(b);
+		if (b && !generationDone) {
+			startGeneration();
+			generationDone = true;
+		}
+	}
+	
+
+	
+	public void startGeneration() {
+		GeneratorConfiguration config = this.appConfig.generationConfig;
+		
+		if (config == null) {
+			System.out.println("Configuration is null");
+		}
+		else {
+		
 		JeniGenerator generator = new JeniGenerator(config);
 		
 		genTextArea.append("=== GENERATION STARTED AT " + LocalDateTime.now().toString() + "===\n\n");
@@ -128,7 +155,8 @@ public class GenerationWindow extends JFrame
 			++entryNum;
 			//break;//just one entry for now
 			
-		}		
+		}
+		}
 	}
 	
 	/**
