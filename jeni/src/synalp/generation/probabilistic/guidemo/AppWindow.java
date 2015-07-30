@@ -30,15 +30,22 @@ import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.JMenu;
 
+import synalp.generation.configuration.GeneratorConfiguration;
+import synalp.generation.configuration.GeneratorConfigurations;
+
 public class AppWindow extends JFrame
 {
 
 	private JPanel contentPane;
 	private JTextField textField;
-
+	
+	//different configuration dialogs
 	DisplayOptions displayOpt;
 	ResourcesConfigDialog resConfig;
 	GeneratorParametersDialog genParamDialog;
+	
+	//current generation configuration
+	GeneratorConfiguration config;
 
 
 	/**
@@ -46,6 +53,10 @@ public class AppWindow extends JFrame
 	 */
 	public AppWindow()
 	{
+		//Hardcoded configuration
+				this.config = GeneratorConfigurations.getConfig("probabilistic_demosuite");
+				
+				
 		setTitle("Probabilistic Jeni Generator Demo");
 		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -131,14 +142,14 @@ public class AppWindow extends JFrame
 				if (btnGenerate.isEnabled())
 				{
 					GenerationWindow resultWin = new GenerationWindow();
-
+					
+					
 					resultWin.setVisible(true);
+					resultWin.startGeneration(config);
 				}
 
 			}
 		});
-
-		btnGenerate.setEnabled(false);
 
 		JPanel panel = new JPanel();
 		panel.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -227,6 +238,8 @@ public class AppWindow extends JFrame
 																					.addComponent(btnGenerate))
 						);
 		contentPane.setLayout(gl_contentPane);
+		
+		
 	}
 
 }
