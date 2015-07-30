@@ -695,4 +695,9 @@ public class GeneratorConfiguration
 	{
 		return options.get(option);
 	}
+	
+	
+	public File getTestsuiteFile() {
+		return getResource(this.TEST_SUITE_KEY);
+	}
 }
