@@ -47,7 +47,7 @@ public class DisplayOptions extends JDialog
 		group.add(rdbtnFullOutput);
 		group.add(rdbtnShowJustSentences);
 
-		JCheckBox chckbxDebugInfo = new JCheckBox("Grammar & lexicon files");
+		JCheckBox chckbxDebugInfo = new JCheckBox("Sources files");
 
 		JCheckBox chckbxInputSemantics = new JCheckBox("Input semantics");
 		chckbxInputSemantics.setSelected(true);
@@ -60,7 +60,7 @@ public class DisplayOptions extends JDialog
 
 		JCheckBox chckbxNInitialItems = new JCheckBox("Nº initial items");
 
-		JCheckBox chckbxTestItem = new JCheckBox("Test item");
+		JCheckBox chckbxTestItem = new JCheckBox("Test item label");
 		chckbxTestItem.setSelected(true);
 		GroupLayout gl_contentPanel = new GroupLayout(contentPanel);
 		gl_contentPanel.setHorizontalGroup(

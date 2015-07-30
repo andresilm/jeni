@@ -45,7 +45,7 @@ public class AppWindow extends JFrame
 	//different configuration dialogs
 	DisplayOptions displayOpt;
 	ResourcesConfigDialog resConfig;
-	GeneratorParametersDialog genParamDialog;
+	
 
 	AppConfiguration appConfig;
 
@@ -74,7 +74,7 @@ public class AppWindow extends JFrame
 		JMenuItem mntmResourcesSuite = new JMenuItem("Sources");
 		resConfig = new ResourcesConfigDialog(appConfig);
 
-		genParamDialog = new GeneratorParametersDialog();
+		
 
 		mntmResourcesSuite.addActionListener(new ActionListener()
 		{
@@ -116,20 +116,6 @@ public class AppWindow extends JFrame
 		});
 
 		mnNewMenu.add(mntmDisplayOptions);
-
-		JMenuItem mntmParameters = new JMenuItem("Parameters");
-		mntmParameters.addActionListener(new ActionListener()
-		{
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-
-				genParamDialog.setVisible(true);
-
-			}
-		});
-
-		mnNewMenu.add(mntmParameters);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
