@@ -19,6 +19,8 @@ public class JeniRealization extends ArrayList<Lemma> implements SyntacticRealiz
 	private DerivationTree derivation;
 	private InstantiationContext context;
 	private Collection<MorphRealization> sentences;
+	
+	private float probability;
 
 
 	/**
@@ -39,6 +41,7 @@ public class JeniRealization extends ArrayList<Lemma> implements SyntacticRealiz
 	{
 		this.derivation = derivation;
 		this.context = context;
+		
 	}
 
 
@@ -98,6 +101,18 @@ public class JeniRealization extends ArrayList<Lemma> implements SyntacticRealiz
 	public void setContext(InstantiationContext context)
 	{
 		this.context = context;
+	}
+
+
+	public float getProbability()
+	{
+		return probability;
+	}
+
+
+	public void setProbability(float probability)
+	{
+		this.probability = probability;
 	}
 
 }

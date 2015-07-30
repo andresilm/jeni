@@ -142,6 +142,9 @@ public class JeniGenerator implements Generator
 			ret = generateItems(semantics).getRealizations();
 			for(JeniRealization real : ret)
 				morphRealizer.setMorphRealizations(real);
+			
+				
+			
 		}
 		catch (TimeoutException e)
 		{

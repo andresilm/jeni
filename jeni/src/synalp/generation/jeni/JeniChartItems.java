@@ -136,6 +136,7 @@ public class JeniChartItems extends ArrayList<JeniChartItem>
 		for(JeniChartItem item : this)
 		{
 			JeniRealization real = new JeniRealization(item.getDerivation(), item.getContext());
+			real.setProbability(item.getProbability());
 			real.addAll(item.getTree().getLemmas());
 			ret.add(real);
 		}
