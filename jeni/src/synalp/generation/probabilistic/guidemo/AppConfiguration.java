@@ -16,10 +16,10 @@ class AppConfiguration
 	GeneratorConfiguration generationConfig;
 	Map<String, String> resourcesFiles;
 	Map<String, Boolean> infoToOutput;
-	int userInputType;
+	int userInputType;//userInput or testsuite
 	String userInput;
 
-
+	private boolean verboseOutput;
 	AppConfiguration()
 	{
 		this.resourcesFiles = new HashMap();
@@ -29,9 +29,9 @@ class AppConfiguration
 		this.resourcesFiles.put("lexicon", generationConfig.getSyntacticLexiconFile().getAbsolutePath());
 		this.resourcesFiles.put("testsuite", generationConfig.getTestsuiteFile().getAbsolutePath());
 		
-		
 		this.infoToOutput = new HashMap();
 		this.isBuiltinTest = false;
+		this.setVerboseOutput(false);
 		
 		
 
@@ -126,6 +126,24 @@ class AppConfiguration
 	void setGrammarSource(String filename)
 	{
 		this.resourcesFiles.put("grammar", filename);
+	}
+
+
+	/**
+	 * @return the verboseOutput
+	 */
+	boolean isVerboseOutput()
+	{
+		return verboseOutput;
+	}
+
+
+	/**
+	 * @param verboseOutput the verboseOutput to set
+	 */
+	void setVerboseOutput(boolean verboseOutput)
+	{
+		this.verboseOutput = verboseOutput;
 	}
 
 }
