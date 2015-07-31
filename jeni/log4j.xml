@@ -39,7 +39,7 @@
 	</logger>
 	
 	<logger name="synalp.generation.jeni.generation.probabilistic">
-		<level value="debug"/>
+		<level value="info"/>
 	</logger>
 
 	<root>

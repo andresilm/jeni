@@ -1,6 +1,9 @@
 package synalp.generation.probabilistic.guidemo;
 
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,8 +19,9 @@ class AppConfiguration
 	GeneratorConfiguration generationConfig;
 	Map<String, String> resourcesFiles;
 	Map<String, Boolean> infoToOutput;
-	int userInputType;//userInput or testsuite
+	private int userInputType=0;//userInput or testsuite
 	String userInput;
+	int beamSize;
 
 	private boolean verboseOutput;
 	AppConfiguration()
@@ -32,15 +36,13 @@ class AppConfiguration
 		this.infoToOutput = new HashMap();
 		this.isBuiltinTest = false;
 		this.setVerboseOutput(false);
-		
-		
 
 	}
 
 
-	void setBeamSize(int beam)
+	void setBeamSize(String beam)
 	{
-		generationConfig.setOption("beam_size", Integer.toString(beam));
+		generationConfig.setOption("beam_size", beam);
 	}
 
 
@@ -81,12 +83,22 @@ class AppConfiguration
 	}
 
 
-	void setUserInput(int type, String theInput)
+	void setUserInput(int type, String theInput) throws IOException
 	{
-		this.userInputType = type;
+		this.setUserInputType(type);
 		this.userInput = theInput;
+		createAndConfigureInputFileForSemantics(theInput);
 	}
-
+	
+	void createAndConfigureInputFileForSemantics(String inputSemantics) throws IOException
+	{
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("customSemanticsTmpFile.geni")));
+		buffOutput.write("test-user-input\n");
+		buffOutput.write("semantics:[" + inputSemantics + "]\n");
+		buffOutput.close();
+		this.setTestsuiteSource("customSemanticsTmpFile.geni");
+		
+	}
 
 	String getGrammarSource()
 	{
@@ -107,6 +119,7 @@ class AppConfiguration
 	void setTestsuiteSource(String filename)
 	{
 		this.resourcesFiles.put("testsuite", filename);
+		generationConfig.setTestSuiteFile(new File(filename));
 	}
 
 
@@ -144,6 +157,24 @@ class AppConfiguration
 	void setVerboseOutput(boolean verboseOutput)
 	{
 		this.verboseOutput = verboseOutput;
+	}
+
+
+	/**
+	 * @return the userInputType
+	 */
+	int getUserInputType()
+	{
+		return userInputType;
+	}
+
+
+	/**
+	 * @param userInputType the userInputType to set
+	 */
+	void setUserInputType(int userInputType)
+	{
+		this.userInputType = userInputType;
 	}
 
 }

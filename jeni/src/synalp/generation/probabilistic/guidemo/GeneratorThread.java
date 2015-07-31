@@ -21,34 +21,46 @@ import synalp.generation.jeni.JeniRealization;
 public class GeneratorThread extends Thread
 {
 	private AppConfiguration appConfig;
-	JTextArea genTextArea; JProgressBar progressBar;
-	int entryNum=0,totalEntries=0;
+	JTextArea genTextArea;
+	JProgressBar progressBar;
+	int entryNum = 0, totalEntries = 0;
 	JLabel lblGenerationInProcess;
-	
-	public void setConfig(AppConfiguration appConfig) {
+
+
+	public void setConfig(AppConfiguration appConfig)
+	{
 		this.appConfig = appConfig;
 	}
-	
-	void setWidgetsToUpdate(JTextArea genTextArea, JProgressBar progressBar,JLabel lblGenerationInProcess) {
+
+
+	void setWidgetsToUpdate(JTextArea genTextArea, JProgressBar progressBar, JLabel lblGenerationInProcess)
+	{
 		this.genTextArea = genTextArea;
 		this.progressBar = progressBar;
 		this.lblGenerationInProcess = lblGenerationInProcess;
 	}
-    public void run() {
-        startGeneration();
-    }
 
-    public static void main(String args[]) {
-    
-    }
-    
-    void addToTextArea(String text)
+
+	public void run()
+	{
+		startGeneration();
+	}
+
+
+	public static void main(String args[])
+	{
+
+	}
+
+
+	void addToTextArea(String text)
 	{
 		genTextArea.append(text);
 
 	}
-    
-    public void startGeneration()
+
+
+	public void startGeneration()
 	{
 
 		if (this.appConfig == null)
@@ -93,34 +105,48 @@ public class GeneratorThread extends Thread
 
 			addToTextArea("*Lexicon: " + appConfig.getLexiconSource() + "\n");
 			System.out.println("*Lexicon: " + appConfig.getLexiconSource());
-
+			
+			if (this.appConfig.getUserInputType() == 0) {
 			addToTextArea("*Testsuite: " + appConfig.getTestsuiteSource() + "\n");
 			System.out.println("*Testsuite: " + appConfig.getTestsuiteSource());
-if (appConfig.isVerboseOutput())
-{
-			addToTextArea("\n");
-			System.out.print("\n");
+			}
+			
+			if (appConfig.isVerboseOutput())
+			{
+				addToTextArea("\n");
+				System.out.print("\n");
 
-			addToTextArea("== PJeni Generator configuration info\n");
-			System.out.println("== PJeni Generator configuration info");
+				addToTextArea("== PJeni Generator configuration info\n");
+				System.out.println("== PJeni Generator configuration info");
 
-			addToTextArea("*Beam size: " + config.getOption("beam_size") + "\n\n");
-			System.out.println("*Beam size: " + config.getOption("beam_size") + "\n");
+				addToTextArea("*Beam size: " + config.getOption("beam_size") + "\n\n");
+				System.out.println("*Beam size: " + config.getOption("beam_size") + "\n");
 
-			addToTextArea("== Testsuite details:\n");
-			System.out.println("== Testsuite details:");
+				if (appConfig.getUserInputType() == 0)
+				{
+					addToTextArea("== Testsuite details:\n");
+					System.out.println("== Testsuite details:");
+					addToTextArea("*#Tests: " + config.getTestSuite().size() + "\n\n");
+					System.out.println("*#Tests: " + config.getTestSuite().size() + "\n");
+				}
+				else
+				{
+					addToTextArea("== Generating from specified input\n");
+				}
 
-			addToTextArea("*#Tests: " + config.getTestSuite().size() + "\n\n");
-			System.out.println("*#Tests: " + config.getTestSuite().size() + "\n");
-}
-else {
-	addToTextArea("== Beam size: " + config.getOption("beam_size")+"\n");
-	addToTextArea("== Number of tests in suite: " +  config.getTestSuite().size() + "\n");
-}
+				
+			}
+			else
+			{
+				addToTextArea("== Beam size: " + config.getOption("beam_size") + "\n");
+				if (this.appConfig.getUserInputType() == 0)
+					addToTextArea("== Number of tests in suite: " + config.getTestSuite().size() + "\n");
+			}
 
-			if (appConfig.isVerboseOutput()) {
-			addToTextArea("== Starting sentences generation\n\n");
-			System.out.println("== Starting sentences generation\n");
+			if (appConfig.isVerboseOutput())
+			{
+				addToTextArea("== Starting sentences generation\n\n");
+				System.out.println("== Starting sentences generation\n");
 			}
 
 			for(TestSuiteEntry entry : config.getTestSuite())
@@ -176,8 +202,7 @@ else {
 				++this.entryNum;
 
 			}
-			
-			
+
 			this.progressBar.setValue(this.entryNum);
 			this.progressBar.setString(this.entryNum + "/" + this.totalEntries);
 			this.progressBar.update(this.progressBar.getGraphics());
@@ -203,7 +228,7 @@ else {
 			}
 
 		}
-		this.stop();
+
 	}
 
 

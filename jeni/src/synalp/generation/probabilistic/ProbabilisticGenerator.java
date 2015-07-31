@@ -43,7 +43,7 @@ public class ProbabilisticGenerator extends JeniGenerator
 	{
 		
 		
-		logger.debug("Beam size="+GeneratorOption.BEAM_SIZE);
+		
 		Map<Integer, JeniChartItems> itemsPerSize = new HashMap<>();
 		itemsPerSize.put(1, agenda);
 		logger.debug("Agenda size: "+agenda.size());
@@ -66,7 +66,7 @@ public class ProbabilisticGenerator extends JeniGenerator
 		ruleOutNonUnifyingTopBotTrees(ret);
 		setupLemmaFeatures(ret);
 		logResults(ret);
-		
+		logger.info("*******************Beam size="+GeneratorOption.BEAM_SIZE);
 		return ret;
 	}
 

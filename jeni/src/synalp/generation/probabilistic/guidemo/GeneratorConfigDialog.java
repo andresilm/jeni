@@ -211,7 +211,7 @@ public class GeneratorConfigDialog extends JDialog
 							else
 								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText());
 						}
-						appConfig.setBeamSize(Integer.valueOf(beamSizeField.getText()));
+						appConfig.setBeamSize(beamSizeField.getText());
 						setVisible(false);
 					}
 				});

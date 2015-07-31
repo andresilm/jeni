@@ -27,6 +27,7 @@ public class ProbabilisticRanker implements Ranker
 		return items.subList(0, maxItems);*/
 		
 		Collections.sort(items, Comparator.comparing(ChartItem::getProbability).reversed());
+	
 		int index=0;
 		float proba=Float.MAX_VALUE;
 		int nbOfDiffBeamSizes=0;
