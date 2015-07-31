@@ -197,7 +197,7 @@ public class GeneratorThread extends Thread
 					}
 
 					++sentenceCount;
-					genTextArea.update(genTextArea.getGraphics());
+					
 				}
 				++this.entryNum;
 
