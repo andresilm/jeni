@@ -16,7 +16,7 @@ import javax.swing.JCheckBox;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
-public class DisplayOptions extends JDialog
+public class CustomOutputDialog2 extends JDialog
 {
 
 	private final JPanel contentPanel = new JPanel();
@@ -25,7 +25,7 @@ public class DisplayOptions extends JDialog
 	/**
 	 * Create the dialog.
 	 */
-	public DisplayOptions()
+	public CustomOutputDialog2()
 	{
 		setTitle("Output options");
 		setBounds(100, 100, 450, 300);
@@ -34,9 +34,10 @@ public class DisplayOptions extends JDialog
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 
 		JRadioButton rdbtnFullOutput = new JRadioButton("Full output");
+		rdbtnFullOutput.setSelected(true);
 
 		JRadioButton rdbtnShowJustSentences = new JRadioButton("Show sentences and info about:");
-		rdbtnShowJustSentences.setSelected(true);
+		rdbtnShowJustSentences.setEnabled(false);
 
 		JCheckBox chckbxProbabilities = new JCheckBox("Probabilities");
 		chckbxProbabilities.setSelected(true);
