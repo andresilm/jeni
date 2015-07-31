@@ -38,14 +38,12 @@ import synalp.generation.configuration.GeneratorConfigurations;
 
 public class AppWindow extends JFrame
 {
-	
 
 	private JPanel contentPane;
 	private JTextField textField;
 	//different configuration dialogs
-	DisplayOptions displayOpt;
-	ResourcesConfigDialog resConfig;
-	
+	OutputOptionsWindow displayOpt;
+	GeneratorConfigDialog resConfig;
 
 	AppConfiguration appConfig;
 
@@ -57,8 +55,7 @@ public class AppWindow extends JFrame
 	{
 		appConfig = new AppConfiguration();
 		//Hardcoded configuration
-		//appConfig.createConfigFromTestsuite("probabilistic_demosuite");
-		
+		//appConfig.createConfigFromTestsuite("probabilistic");
 
 		setTitle("Probabilistic Jeni Generator Demo");
 		setResizable(false);
@@ -68,13 +65,43 @@ public class AppWindow extends JFrame
 		JMenuBar menuBar = new JMenuBar();
 		setJMenuBar(menuBar);
 
-		JMenu mnNewMenu = new JMenu("Configuration");
-		menuBar.add(mnNewMenu);
+		JMenu AppMenu = new JMenu("Application");
+		menuBar.add(AppMenu);
+		resConfig = new GeneratorConfigDialog(appConfig);
 
-		JMenuItem mntmResourcesSuite = new JMenuItem("Sources");
-		resConfig = new ResourcesConfigDialog(appConfig);
+		//create windows
+		displayOpt = new OutputOptionsWindow(appConfig);
+		AppWindow thisWindow = this;
+		JMenuItem mntmQuit = new JMenuItem("Quit");
+		mntmQuit.addMouseListener(new MouseAdapter()
+		{
+			@Override
+			public void mousePressed(MouseEvent e)
+			{
 
-		
+				thisWindow.dispose();
+			}
+		});
+		AppMenu.add(mntmQuit);
+
+		JMenu optionsMenu = new JMenu("Options");
+		menuBar.add(optionsMenu);
+
+		JMenuItem mntmDisplayOptions = new JMenuItem("Customize output");
+		optionsMenu.add(mntmDisplayOptions);
+		mntmDisplayOptions.addActionListener(new ActionListener()
+		{
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+
+				displayOpt.setVisible(true);
+
+			}
+		});
+
+		JMenuItem mntmResourcesSuite = new JMenuItem("Generator config");
+		optionsMenu.add(mntmResourcesSuite);
 
 		mntmResourcesSuite.addActionListener(new ActionListener()
 		{
@@ -86,41 +113,11 @@ public class AppWindow extends JFrame
 
 			}
 		});
-
-		mnNewMenu.add(mntmResourcesSuite);
-
-		//create windows
-		displayOpt = new DisplayOptions();
-
-		JMenuItem mntmDisplayOptions = new JMenuItem("Output");
-		mntmDisplayOptions.addActionListener(new ActionListener()
-		{
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-
-				displayOpt.setVisible(true);
-
-			}
-		});
-
-		mntmDisplayOptions.addActionListener(new ActionListener()
-		{
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-
-				displayOpt.setVisible(true);
-
-			}
-		});
-
-		mnNewMenu.add(mntmDisplayOptions);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 
-		JButton btnGenerate = new JButton("Generate");
+		JButton btnGenerate = new JButton("Use this configuration");
 
 		//button handlers for opening the corresponding windows 
 		btnGenerate.addMouseListener(new MouseAdapter()
@@ -130,10 +127,12 @@ public class AppWindow extends JFrame
 			{
 				if (btnGenerate.isEnabled())
 				{
-					
+
 					GenerationWindow resultWin = new GenerationWindow(appConfig);
 
 					resultWin.setVisible(true);
+					
+					//resultWin.startGeneration();
 
 				}
 
@@ -213,19 +212,24 @@ public class AppWindow extends JFrame
 		panel.setLayout(gl_panel);
 		GroupLayout gl_contentPane = new GroupLayout(contentPane);
 		gl_contentPane.setHorizontalGroup(
-											gl_contentPane	.createParallelGroup(Alignment.TRAILING)
-															.addGroup(gl_contentPane.createSequentialGroup()
-																					.addGap(341)
-																					.addComponent(btnGenerate, GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE)
-																					.addContainerGap())
-															.addComponent(panel, GroupLayout.DEFAULT_SIZE, 490, Short.MAX_VALUE));
+			gl_contentPane.createParallelGroup(Alignment.TRAILING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(282)
+					.addComponent(btnGenerate, GroupLayout.DEFAULT_SIZE, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+					.addGap(59))
+				.addGroup(Alignment.LEADING, gl_contentPane.createSequentialGroup()
+					.addComponent(panel, GroupLayout.PREFERRED_SIZE, 488, GroupLayout.PREFERRED_SIZE)
+					.addContainerGap(44, Short.MAX_VALUE))
+		);
 		gl_contentPane.setVerticalGroup(
-										gl_contentPane	.createParallelGroup(Alignment.LEADING)
-														.addGroup(Alignment.TRAILING, gl_contentPane.createSequentialGroup()
-																									.addComponent(	panel, GroupLayout.PREFERRED_SIZE, 319,
-																													GroupLayout.PREFERRED_SIZE)
-																									.addPreferredGap(ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-																									.addComponent(btnGenerate)));
+			gl_contentPane.createParallelGroup(Alignment.TRAILING)
+				.addGroup(gl_contentPane.createSequentialGroup()
+					.addGap(3)
+					.addComponent(panel, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+					.addPreferredGap(ComponentPlacement.RELATED, GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+					.addComponent(btnGenerate)
+					.addContainerGap())
+		);
 		contentPane.setLayout(gl_contentPane);
 
 	}
@@ -235,5 +239,4 @@ public class AppWindow extends JFrame
 	{
 
 	}
-
 }
