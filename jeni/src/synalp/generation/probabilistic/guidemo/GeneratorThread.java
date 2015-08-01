@@ -1,22 +1,36 @@
 package synalp.generation.probabilistic.guidemo;
 
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.Writer;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
+import java.util.stream.Stream;
 
 import javax.swing.JLabel;
 import javax.swing.JProgressBar;
 import javax.swing.JTextArea;
+
+import org.xml.sax.SAXException;
 
 import synalp.commons.input.TestSuiteEntry;
 import synalp.commons.output.MorphRealization;
 import synalp.commons.output.SyntacticRealization;
 import synalp.commons.utils.Utils;
 import synalp.generation.configuration.GeneratorConfiguration;
+import synalp.generation.configuration.GeneratorConfigurations;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
+import synalp.generation.probabilistic.ProbabilisticGenerator;
+import synalp.generation.configuration.GeneratorConfigurationReader;
 
 public class GeneratorThread extends Thread
 {
@@ -43,6 +57,7 @@ public class GeneratorThread extends Thread
 
 	public void run()
 	{
+
 		startGeneration();
 	}
 
@@ -69,9 +84,9 @@ public class GeneratorThread extends Thread
 		}
 		else
 		{
-			GeneratorConfiguration config = this.appConfig.generationConfig;
+			GeneratorConfiguration config = this.appConfig.getGenerationConfig();
 
-			JeniGenerator generator = new JeniGenerator(config);
+			ProbabilisticGenerator generator = new ProbabilisticGenerator(config);
 			String time = LocalDateTime.now().toString().split("T")[1];
 			String date = LocalDateTime.now().toString().split("T")[0];
 
@@ -105,12 +120,13 @@ public class GeneratorThread extends Thread
 
 			addToTextArea("*Lexicon: " + appConfig.getLexiconSource() + "\n");
 			System.out.println("*Lexicon: " + appConfig.getLexiconSource());
-			
-			if (this.appConfig.getUserInputType() == 0) {
-			addToTextArea("*Testsuite: " + appConfig.getTestsuiteSource() + "\n");
-			System.out.println("*Testsuite: " + appConfig.getTestsuiteSource());
+
+			if (this.appConfig.getUserInputType() == 0)
+			{
+				addToTextArea("*Testsuite: " + appConfig.getTestsuiteSource() + "\n");
+				System.out.println("*Testsuite: " + appConfig.getTestsuiteSource());
 			}
-			
+
 			if (appConfig.isVerboseOutput())
 			{
 				addToTextArea("\n");
@@ -134,7 +150,6 @@ public class GeneratorThread extends Thread
 					addToTextArea("== Generating from specified input\n");
 				}
 
-				
 			}
 			else
 			{
@@ -167,8 +182,8 @@ public class GeneratorThread extends Thread
 				List<JeniRealization> results = generator.generate(entry.getSemantics());
 				if (results.isEmpty())
 				{
-					addToTextArea("! No sentence was generated !\n");
-					System.out.println("! No sentence was generated !\n");
+					addToTextArea("No sentence\n");
+					System.out.println("No sentence !\n");
 				}
 				int sentenceCount = 1;
 
@@ -197,7 +212,7 @@ public class GeneratorThread extends Thread
 					}
 
 					++sentenceCount;
-					
+
 				}
 				++this.entryNum;
 
@@ -283,5 +298,7 @@ public class GeneratorThread extends Thread
 
 		return ret;
 	}
+
+
 
 }
