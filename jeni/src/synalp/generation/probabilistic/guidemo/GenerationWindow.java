@@ -39,6 +39,7 @@ import java.util.Map;
 
 import javax.swing.JScrollPane;
 import javax.swing.JTextPane;
+
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.File;
@@ -46,8 +47,11 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
+
 import javax.swing.JProgressBar;
 import javax.swing.JLabel;
+
+import org.xml.sax.SAXException;
 
 public class GenerationWindow extends JFrame
 {
@@ -145,7 +149,9 @@ public class GenerationWindow extends JFrame
 			{
 				 genThread = new GeneratorThread();
 				genThread.setWidgetsToUpdate(genTextArea, progressBar, lblGenerationInProcess);
-				genThread.setConfig(appConfig);
+			
+					genThread.setConfig(appConfig);
+		
 				genThread.start();
 			}
 		});

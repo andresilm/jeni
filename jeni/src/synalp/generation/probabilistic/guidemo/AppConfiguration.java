@@ -16,22 +16,22 @@ class AppConfiguration
 	String builtinTestsuiteName;
 	boolean isBuiltinTest;
 
-	GeneratorConfiguration generationConfig;
+	private GeneratorConfiguration generationConfig;
 	Map<String, String> resourcesFiles;
 	Map<String, Boolean> infoToOutput;
 	private int userInputType=0;//userInput or testsuite
 	String userInput;
-	int beamSize;
+	private int beamSize;
 
 	private boolean verboseOutput;
 	AppConfiguration()
 	{
 		this.resourcesFiles = new HashMap();
 		//load bundled sources for having basic configuration, then replace input files with the desired ones
-		this.generationConfig = GeneratorConfigurations.getConfig("probabilistic");
-		this.resourcesFiles.put("grammar", generationConfig.getGrammarFile().getAbsolutePath());
-		this.resourcesFiles.put("lexicon", generationConfig.getSyntacticLexiconFile().getAbsolutePath());
-		this.resourcesFiles.put("testsuite", generationConfig.getTestsuiteFile().getAbsolutePath());
+		this.setGenerationConfig(GeneratorConfigurations.getConfig("probabilistic"));
+		this.resourcesFiles.put("grammar", getGenerationConfig().getGrammarFile().getAbsolutePath());
+		this.resourcesFiles.put("lexicon", getGenerationConfig().getSyntacticLexiconFile().getAbsolutePath());
+		this.resourcesFiles.put("testsuite", getGenerationConfig().getTestsuiteFile().getAbsolutePath());
 		
 		this.infoToOutput = new HashMap();
 		this.isBuiltinTest = false;
@@ -42,16 +42,16 @@ class AppConfiguration
 
 	void setBeamSize(String beam)
 	{
-		generationConfig.setOption("beam_size", beam);
+		getGenerationConfig().setOption("beam_size", beam);
 	}
 
 
 	void createConfigFromTestsuite(String configName)
 	{
 
-		this.resourcesFiles.put("grammar", generationConfig.getGrammarFile().getName());
-		this.resourcesFiles.put("lexicon", generationConfig.getSyntacticLexiconFile().getName());
-		this.resourcesFiles.put("testsuite", generationConfig.getTestsuiteFile().getName());
+		this.resourcesFiles.put("grammar", getGenerationConfig().getGrammarFile().getName());
+		this.resourcesFiles.put("lexicon", getGenerationConfig().getSyntacticLexiconFile().getName());
+		this.resourcesFiles.put("testsuite", getGenerationConfig().getTestsuiteFile().getName());
 		this.isBuiltinTest = true;
 		this.builtinTestsuiteName = configName;
 
@@ -61,10 +61,10 @@ class AppConfiguration
 	void setConfiguration(String grammarFilename, String lexiconFilename)
 	{
 
-		generationConfig.setGrammarFile(new File(grammarFilename));
+		getGenerationConfig().setGrammarFile(new File(grammarFilename));
 		this.resourcesFiles.put("grammar", grammarFilename);
 
-		generationConfig.setSyntacticLexiconFile(new File(lexiconFilename));
+		getGenerationConfig().setSyntacticLexiconFile(new File(lexiconFilename));
 		this.resourcesFiles.put("lexicon", lexiconFilename);
 	}
 
@@ -72,13 +72,13 @@ class AppConfiguration
 	void setConfiguration(String grammarFilename, String lexiconFilename, String testsuiteFilename)
 	{
 		File grammarFile = new File(grammarFilename);
-		generationConfig.setGrammarFile(grammarFile);
+		getGenerationConfig().setGrammarFile(grammarFile);
 		this.resourcesFiles.put("grammar", grammarFilename);
 
-		generationConfig.setSyntacticLexiconFile(new File(lexiconFilename));
+		getGenerationConfig().setSyntacticLexiconFile(new File(lexiconFilename));
 		this.resourcesFiles.put("lexicon", lexiconFilename);
 
-		generationConfig.setTestSuiteFile(new File(testsuiteFilename));
+		getGenerationConfig().setTestSuiteFile(new File(testsuiteFilename));
 		this.resourcesFiles.put("testsuite", testsuiteFilename);
 	}
 
@@ -119,7 +119,7 @@ class AppConfiguration
 	void setTestsuiteSource(String filename)
 	{
 		this.resourcesFiles.put("testsuite", filename);
-		generationConfig.setTestSuiteFile(new File(filename));
+		getGenerationConfig().setTestSuiteFile(new File(filename));
 	}
 
 
@@ -175,6 +175,30 @@ class AppConfiguration
 	void setUserInputType(int userInputType)
 	{
 		this.userInputType = userInputType;
+	}
+
+
+	GeneratorConfiguration getGenerationConfig()
+	{
+		return generationConfig;
+	}
+
+
+	void setGenerationConfig(GeneratorConfiguration generationConfig)
+	{
+		this.generationConfig = generationConfig;
+	}
+
+
+	int getBeamSize()
+	{
+		return beamSize;
+	}
+
+
+	void setBeamSize(int beamSize)
+	{
+		this.beamSize = beamSize;
 	}
 
 }
