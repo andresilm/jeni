@@ -79,12 +79,12 @@ public class GeneratorConfigDialog extends JDialog
 			public void actionPerformed(ActionEvent e)
 			{
 				// TODO Auto-generated method stub
-				System.out.println("File dialog for grammar should open now.");
+				
 				FileDialog fd = new FileDialog(thisDialog, "Choose a grammar file", FileDialog.LOAD);
 
 				fd.setVisible(true);
-
-				grammarTextField.setText(fd.getDirectory() + fd.getFile());
+				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
+					grammarTextField.setText(fd.getDirectory() + fd.getFile());
 				
 			}
 		});
@@ -98,11 +98,11 @@ public class GeneratorConfigDialog extends JDialog
 			public void actionPerformed(ActionEvent e)
 			{
 				// TODO Auto-generated method stub
-				System.out.println("File dialog for lexicon should open now.");
+				
 				FileDialog fd = new FileDialog(thisDialog, "Choose a lexicon file", FileDialog.LOAD);
 
 				fd.setVisible(true);
-
+				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
 				lexiconTextField.setText(fd.getDirectory() + fd.getFile());
 				
 				
@@ -119,13 +119,12 @@ public class GeneratorConfigDialog extends JDialog
 			public void actionPerformed(ActionEvent e)
 			{
 				// TODO Auto-generated method stub
-				System.out.println("File dialog for testsuite should open now.");
+				
 				FileDialog fd = new FileDialog(thisDialog, "Choose a lexicon file", FileDialog.LOAD);
 
 				fd.setVisible(true);
-
+				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
 				testsuiteTextField.setText(fd.getDirectory() + fd.getFile());
-				
 			}
 		});
 		
@@ -205,7 +204,7 @@ public class GeneratorConfigDialog extends JDialog
 						if (!grammarTextField.getText().isEmpty() && !lexiconTextField.getText().isEmpty())
 						{
 							if (!testsuiteTextField.getText().isEmpty()) {
-								System.out.println(grammarTextField.getText() + lexiconTextField.getText() + testsuiteTextField.getText());
+								
 								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText(), testsuiteTextField.getText());
 							}
 							else

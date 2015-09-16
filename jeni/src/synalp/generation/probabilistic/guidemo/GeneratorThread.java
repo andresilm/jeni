@@ -80,7 +80,7 @@ public class GeneratorThread extends Thread
 
 		if (this.appConfig == null)
 		{
-			System.out.println("Configuration is null");
+			System.err.println("Configuration is null");
 		}
 		else
 		{
@@ -93,13 +93,13 @@ public class GeneratorThread extends Thread
 			if (appConfig.isVerboseOutput())
 			{
 				genTextArea.append("= Generation started at" + "\n");
-				System.out.println("= Generation started at");
+			
 
 				addToTextArea("*Time: " + time + "\n");
-				System.out.println("*Time: " + time);
+			
 
 				addToTextArea("*Date: " + date + "\n\n");
-				System.out.println("*Date: " + date + "\n");
+		
 			}
 			else
 			{
@@ -113,37 +113,37 @@ public class GeneratorThread extends Thread
 			this.lblGenerationInProcess.setText("Generation in process...");
 
 			addToTextArea("== File resources info:" + "\n");
-			System.out.println("== File resources info:");
+		
 
 			addToTextArea("*Grammar: " + appConfig.getGrammarSource() + "\n");
-			System.out.println("*Grammar: " + appConfig.getGrammarSource());
+		
 
 			addToTextArea("*Lexicon: " + appConfig.getLexiconSource() + "\n");
-			System.out.println("*Lexicon: " + appConfig.getLexiconSource());
+		
 
 			if (this.appConfig.getUserInputType() == 0)
 			{
 				addToTextArea("*Testsuite: " + appConfig.getTestsuiteSource() + "\n");
-				System.out.println("*Testsuite: " + appConfig.getTestsuiteSource());
+				
 			}
 
 			if (appConfig.isVerboseOutput())
 			{
 				addToTextArea("\n");
-				System.out.print("\n");
+				
 
 				addToTextArea("== PJeni Generator configuration info\n");
-				System.out.println("== PJeni Generator configuration info");
+				
 
 				addToTextArea("*Beam size: " + config.getOption("beam_size") + "\n\n");
-				System.out.println("*Beam size: " + config.getOption("beam_size") + "\n");
+				
 
 				if (appConfig.getUserInputType() == 0)
 				{
 					addToTextArea("== Testsuite details:\n");
-					System.out.println("== Testsuite details:");
+				
 					addToTextArea("*#Tests: " + config.getTestSuite().size() + "\n\n");
-					System.out.println("*#Tests: " + config.getTestSuite().size() + "\n");
+				
 				}
 				else
 				{
@@ -161,7 +161,7 @@ public class GeneratorThread extends Thread
 			if (appConfig.isVerboseOutput())
 			{
 				addToTextArea("== Starting sentences generation\n\n");
-				System.out.println("== Starting sentences generation\n");
+				
 			}
 
 			for(TestSuiteEntry entry : config.getTestSuite())
@@ -171,19 +171,19 @@ public class GeneratorThread extends Thread
 				this.progressBar.update(this.progressBar.getGraphics());
 
 				addToTextArea("=== Input #" + entryNum + "\n");
-				System.out.println("=== Input #" + entryNum);
+				
 
 				addToTextArea("*Test item ID: " + entry.getId() + "\n");
-				System.out.println("*Test item ID: " + entry.getId());
+				
 
 				addToTextArea("*Semantics: " + entry.getSemantics().toString() + "\n");
-				System.out.println("*Semantics: " + entry.getSemantics().toString() + "\n");
+				
 
 				List<JeniRealization> results = generator.generate(entry.getSemantics());
 				if (results.isEmpty())
 				{
 					addToTextArea("No sentence\n");
-					System.out.println("No sentence !\n");
+				
 				}
 				int sentenceCount = 1;
 
@@ -195,16 +195,16 @@ public class GeneratorThread extends Thread
 					{
 						//addToTextArea("GENERATED SENTENCE #" + sentenceCount + ":\n" + getSurface(real,true)+ "\n\n");
 						addToTextArea("==== Realization #" + sentenceCount + "\n");
-						System.out.println("==== Realization #" + sentenceCount);
+				
 
 						addToTextArea("*Sentence: " + real.split(":")[0] + "\n");
-						System.out.println("*Sentence: " + real.split(":")[0]);
+				
 
-						System.out.println("*Times: " + resultsGrouped.get(real));
+				
 						addToTextArea("*Times: " + resultsGrouped.get(real) + "\n");
 
 						addToTextArea("*Probability: " + real.split(":")[1] + "\n\n");
-						System.out.println("*Probability: " + real.split(":")[1] + "\n");
+				
 					}
 					else
 					{
@@ -232,10 +232,10 @@ public class GeneratorThread extends Thread
 				System.out.println("= Generation ended at");
 
 				addToTextArea("*Time: " + time + "\n");
-				System.out.println("*Time: " + time);
+				
 
 				addToTextArea("*Date: " + date + "\n\n");
-				System.out.println("*Date: " + date + "\n");
+				
 			}
 			else
 			{
