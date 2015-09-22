@@ -54,7 +54,7 @@ public class AppWindow extends JFrame
 
 	AppConfiguration appConfig;
 	Map<String, String> predefinedInputs;
-
+	
 
 	/**
 	 * Create the frame.
@@ -171,8 +171,7 @@ public class AppWindow extends JFrame
 			{
 				if (btnGenerate.isEnabled())
 				{
-
-
+					
 
 					if (rdbtnUserGivenInput.isSelected())
 					{
@@ -194,7 +193,7 @@ public class AppWindow extends JFrame
 
 							System.out.println((String) comboBox.getSelectedItem());
 							System.out.println(predefinedInputs.get((String) comboBox.getSelectedItem()));
-							thisWindow.appConfig.setUserInput(1, predefinedInputs.get((String) comboBox.getSelectedItem()));
+							thisWindow.appConfig.setUserInputForPredefinedSample(1, (String) comboBox.getSelectedItem(), predefinedInputs.get((String) comboBox.getSelectedItem()));
 						}
 						catch (IOException e1)
 						{

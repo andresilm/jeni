@@ -22,7 +22,7 @@ class AppConfiguration
 	private int userInputType=0;//userInput or testsuite
 	String userInput;
 	private int beamSize;
-
+static int run=0;
 	private boolean verboseOutput;
 	AppConfiguration()
 	{
@@ -85,6 +85,15 @@ class AppConfiguration
 
 	void setUserInput(int type, String theInput) throws IOException
 	{
+		
+			
+		this.setUserInputType(type);
+		this.userInput = theInput;
+		createAndConfigureInputFileForSemantics(theInput);
+	}
+	
+	void setUserInputForPredefinedSample(int type, String name, String theInput) throws IOException
+	{
 		if (type == 1) {
 			this.setLexiconSource("resources/probabilistic/koda.lexicon.28072015.lex");
 			System.out.println("Predefined input chosen -> using default lexicon source: " + "resources/probabilistic/koda.lexicon.28072015.lex");
@@ -92,27 +101,29 @@ class AppConfiguration
 			
 		this.setUserInputType(type);
 		this.userInput = theInput;
-		createAndConfigureInputFileForSemantics(theInput);
+		createAndConfigureInputFileForSemantics(name,theInput);
 	}
 	
 	public void createAndConfigureInputFileForSemantics(String inputSemantics) throws IOException
 	{
-		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile.geni")));
+		++run;
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile"+run+".geni")));
 		buffOutput.write("test-user-input\n");
 		buffOutput.write("semantics:[" + inputSemantics + "]\n");
 		buffOutput.close();
-		this.setTestsuiteSource("TmpFile.geni");
+		this.setTestsuiteSource("TmpFile"+run+".geni");
 		
 	}
 	
 	public void createAndConfigureInputFileForSemantics(String sampleName,String inputSemantics) throws IOException
 	{
-		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile.geni")));
+		++run;
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile"+run+".geni")));
 		
 		buffOutput.write(sampleName+"\n");
 		buffOutput.write("semantics:[" + inputSemantics + "]\n");
 		buffOutput.close();
-		this.setTestsuiteSource("TmpFile.geni");
+		this.setTestsuiteSource("TmpFile"+run+".geni");
 		
 	}
 
