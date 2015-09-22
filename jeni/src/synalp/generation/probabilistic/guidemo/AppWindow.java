@@ -139,9 +139,9 @@ public class AppWindow extends JFrame
 
 		JLabel lblGenerateFrom = new JLabel("Generate from...");
 
-		JRadioButton rdbtnUserGivenInput = new JRadioButton("User given input. E.g.: rel(r x y) s(x) o(y)");
+		JRadioButton rdbtnUserGivenInput = new JRadioButton("or write the input semantics. E.g.: rel(r x y) s(x) o(y)");
 
-		JRadioButton rdbtnPreparatedInputItems = new JRadioButton("Preparated input item");
+		JRadioButton rdbtnPreparatedInputItems = new JRadioButton("or choose a sample in the list below:");
 		rdbtnPreparatedInputItems.addActionListener(new ActionListener()
 		{
 			public void actionPerformed(ActionEvent e)
