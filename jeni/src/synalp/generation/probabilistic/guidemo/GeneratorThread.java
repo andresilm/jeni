@@ -119,6 +119,7 @@ public class GeneratorThread extends Thread
 		
 
 			addToTextArea("*Lexicon: " + appConfig.getLexiconSource() + "\n");
+			
 		
 
 			if (this.appConfig.getUserInputType() == 0)
@@ -166,6 +167,7 @@ public class GeneratorThread extends Thread
 
 			for(TestSuiteEntry entry : config.getTestSuite())
 			{
+				System.err.println(entry.getSemantics());
 				this.progressBar.setValue(this.entryNum);
 				this.progressBar.setString(this.entryNum + "/" + this.totalEntries);
 				this.progressBar.update(this.progressBar.getGraphics());

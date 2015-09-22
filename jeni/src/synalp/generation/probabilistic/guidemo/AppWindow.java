@@ -21,10 +21,15 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.Scanner;
 
 import javax.swing.ButtonGroup;
 import javax.swing.JCheckBox;
@@ -48,6 +53,7 @@ public class AppWindow extends JFrame
 	GeneratorConfigDialog resConfig;
 
 	AppConfiguration appConfig;
+	Map<String, String> predefinedInputs;
 
 
 	/**
@@ -55,9 +61,18 @@ public class AppWindow extends JFrame
 	 */
 	public AppWindow()
 	{
+		predefinedInputs = new HashMap();
+		try
+		{
+			loadSample("sample.geni");
+		}
+		catch (FileNotFoundException e2)
+		{
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+
 		appConfig = new AppConfiguration();
-		//Hardcoded configuration
-		//appConfig.createConfigFromTestsuite("probabilistic");
 
 		setTitle("Probabilistic Jeni Generator Demo");
 		setResizable(false);
@@ -127,6 +142,12 @@ public class AppWindow extends JFrame
 		JRadioButton rdbtnUserGivenInput = new JRadioButton("User given input. E.g.: rel(r x y) s(x) o(y)");
 
 		JRadioButton rdbtnPreparatedInputItems = new JRadioButton("Preparated input item");
+		rdbtnPreparatedInputItems.addActionListener(new ActionListener()
+		{
+			public void actionPerformed(ActionEvent e)
+			{
+			}
+		});
 
 		ButtonGroup group = new ButtonGroup();
 
@@ -136,53 +157,70 @@ public class AppWindow extends JFrame
 
 		JButton btnGenerate = new JButton("Use this configuration");
 		JEditorPane editorPane = new JEditorPane();
-		JComboBox comboBox = new JComboBox();
 
+		JComboBox comboBox = new JComboBox(this.predefinedInputs.keySet().toArray());
+
+		
+
+		
 		//button handlers for opening the corresponding windows 
 		btnGenerate.addMouseListener(new MouseAdapter()
 		{
 			@Override
-			public void mousePressed(MouseEvent e)
+			public void mouseReleased(MouseEvent e)
 			{
 				if (btnGenerate.isEnabled())
 				{
 
-					
 
-					//configure according to the selected radiobutton
-					if (!radiobuttonInputFile.isSelected())
+
+					if (rdbtnUserGivenInput.isSelected())
 					{
-						if (rdbtnUserGivenInput.isSelected())
+						try
 						{
-							try
-							{
-								thisWindow.appConfig.setUserInput(2,editorPane.getText());
-							}
-							catch (IOException e1)
-							{
-								// TODO Auto-generated catch block
-								e1.printStackTrace();
-							}
+
+							thisWindow.appConfig.setUserInput(2, editorPane.getText());
 						}
-						else if (rdbtnPreparatedInputItems.isSelected())
+						catch (IOException e1)
 						{
-							//thisWindow.appConfig.setUserInput(1,comboBox.getSelectedObjects());
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
 						}
-					} else {
-						thisWindow.appConfig.setUserInputType(0);
-						
-						
 					}
-					 
-						
+					else if (rdbtnPreparatedInputItems.isSelected())
+					{
+						try
+						{
+
+							System.out.println((String) comboBox.getSelectedItem());
+							System.out.println(predefinedInputs.get((String) comboBox.getSelectedItem()));
+							thisWindow.appConfig.setUserInput(1, predefinedInputs.get((String) comboBox.getSelectedItem()));
+						}
+						catch (IOException e1)
+						{
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+
+					}
+					else if (radiobuttonInputFile.isSelected())
+					{
+						thisWindow.appConfig.setUserInputType(0);
+						thisWindow.appConfig.setConfiguration(	resConfig.getGrammarTextField().getText(), resConfig.getLexiconTextField().getText(),
+																resConfig.getTestsuiteTextField().getText());
+
+					}
+					else {
+						System.err.println("error");
+						System.exit(1);
+					}
+
 					GenerationWindow resultWin = new GenerationWindow(appConfig);
 					resultWin.setVisible(true);
-
-					//resultWin.startGeneration();
-
 				}
 
 			}
+
 		});
 
 		JPanel panel = new JPanel();
@@ -244,5 +282,22 @@ public class AppWindow extends JFrame
 	}
 
 
-	
+	private void loadSample(String filename) throws FileNotFoundException
+	{
+		Scanner sampleFile = new Scanner(new FileInputStream(new File(this.getClass().getResource(filename).getFile())));
+
+		while(sampleFile.hasNextLine())
+		{
+			String sampleName = sampleFile.nextLine();
+
+			String semantics = sampleFile.nextLine();
+			semantics = semantics.split("\\[")[1];
+			semantics = semantics.split("\\]")[0];
+			predefinedInputs.put(sampleName, semantics);
+			sampleFile.nextLine();//skip "\n"
+
+		}
+		sampleFile.close();
+	}
+
 }

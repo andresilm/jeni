@@ -48,21 +48,21 @@ public class GeneratorConfigDialog extends JDialog
 		contentPanel.setBorder(new EmptyBorder(5, 5, 5, 5));
 		getContentPane().add(contentPanel, BorderLayout.CENTER);
 
-		grammarTextField = new JTextField();
-		grammarTextField.setText(appConfig.getGrammarSource());
-		grammarTextField.setEditable(false);
-		grammarTextField.setColumns(10);
+		setGrammarTextField(new JTextField());
+		getGrammarTextField().setText(appConfig.getGrammarSource());
+		getGrammarTextField().setEditable(false);
+		getGrammarTextField().setColumns(10);
 
-		lexiconTextField = new JTextField();
-		lexiconTextField.setText(appConfig.getLexiconSource());
+		setLexiconTextField(new JTextField());
+		getLexiconTextField().setText(appConfig.getLexiconSource());
 		
-		lexiconTextField.setEditable(false);
-		lexiconTextField.setColumns(10);
+		getLexiconTextField().setEditable(false);
+		getLexiconTextField().setColumns(10);
 
-		testsuiteTextField = new JTextField();
-		testsuiteTextField.setText(appConfig.getTestsuiteSource());
-		testsuiteTextField.setEditable(false);
-		testsuiteTextField.setColumns(10);
+		setTestsuiteTextField(new JTextField());
+		getTestsuiteTextField().setText(appConfig.getTestsuiteSource());
+		getTestsuiteTextField().setEditable(false);
+		getTestsuiteTextField().setColumns(10);
 
 		JLabel lblGrammarFile = new JLabel("Grammar");
 
@@ -84,7 +84,7 @@ public class GeneratorConfigDialog extends JDialog
 
 				fd.setVisible(true);
 				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
-					grammarTextField.setText(fd.getDirectory() + fd.getFile());
+					getGrammarTextField().setText(fd.getDirectory() + fd.getFile());
 				
 			}
 		});
@@ -103,7 +103,7 @@ public class GeneratorConfigDialog extends JDialog
 
 				fd.setVisible(true);
 				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
-				lexiconTextField.setText(fd.getDirectory() + fd.getFile());
+				getLexiconTextField().setText(fd.getDirectory() + fd.getFile());
 				
 				
 
@@ -124,7 +124,7 @@ public class GeneratorConfigDialog extends JDialog
 
 				fd.setVisible(true);
 				if (fd.getDirectory()!= null &&  fd.getFile()!=null)
-				testsuiteTextField.setText(fd.getDirectory() + fd.getFile());
+				getTestsuiteTextField().setText(fd.getDirectory() + fd.getFile());
 			}
 		});
 		
@@ -145,9 +145,9 @@ public class GeneratorConfigDialog extends JDialog
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
 						.addGroup(gl_contentPanel.createSequentialGroup()
 							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING, false)
-								.addComponent(lexiconTextField, GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
-								.addComponent(grammarTextField)
-								.addComponent(testsuiteTextField))
+								.addComponent(getLexiconTextField(), GroupLayout.DEFAULT_SIZE, 321, Short.MAX_VALUE)
+								.addComponent(getGrammarTextField())
+								.addComponent(getTestsuiteTextField()))
 							.addPreferredGap(ComponentPlacement.RELATED)
 							.addGroup(gl_contentPanel.createParallelGroup(Alignment.LEADING)
 								.addComponent(button_1, GroupLayout.PREFERRED_SIZE, 88, GroupLayout.PREFERRED_SIZE)
@@ -169,19 +169,19 @@ public class GeneratorConfigDialog extends JDialog
 					.addComponent(lblGrammarFile)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(grammarTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(getGrammarTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(btnBrowse))
 					.addGap(24)
 					.addComponent(lblLexiconFile)
 					.addPreferredGap(ComponentPlacement.RELATED)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(lexiconTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(getLexiconTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(button))
 					.addPreferredGap(ComponentPlacement.UNRELATED)
 					.addComponent(lblTestSuite)
 					.addGap(4)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
-						.addComponent(testsuiteTextField, GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
+						.addComponent(getTestsuiteTextField(), GroupLayout.PREFERRED_SIZE, GroupLayout.DEFAULT_SIZE, GroupLayout.PREFERRED_SIZE)
 						.addComponent(button_1))
 					.addPreferredGap(ComponentPlacement.RELATED, 39, Short.MAX_VALUE)
 					.addGroup(gl_contentPanel.createParallelGroup(Alignment.BASELINE)
@@ -201,14 +201,14 @@ public class GeneratorConfigDialog extends JDialog
 					@Override
 					public void mouseClicked(MouseEvent e)
 					{
-						if (!grammarTextField.getText().isEmpty() && !lexiconTextField.getText().isEmpty())
+						if (!getGrammarTextField().getText().isEmpty() && !getLexiconTextField().getText().isEmpty())
 						{
-							if (!testsuiteTextField.getText().isEmpty()) {
+							if (!getTestsuiteTextField().getText().isEmpty()) {
 								
-								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText(), testsuiteTextField.getText());
+								appConfig.setConfiguration(getGrammarTextField().getText(), getLexiconTextField().getText(), getTestsuiteTextField().getText());
 							}
 							else
-								appConfig.setConfiguration(grammarTextField.getText(), lexiconTextField.getText());
+								appConfig.setConfiguration(getGrammarTextField().getText(), getLexiconTextField().getText());
 						}
 						appConfig.setBeamSize(beamSizeField.getText());
 						setVisible(false);
@@ -219,5 +219,59 @@ public class GeneratorConfigDialog extends JDialog
 				getRootPane().setDefaultButton(okButton);
 			}
 		}
+	}
+
+
+	/**
+	 * @return the grammarTextField
+	 */
+	public JTextField getGrammarTextField()
+	{
+		return grammarTextField;
+	}
+
+
+	/**
+	 * @param grammarTextField the grammarTextField to set
+	 */
+	private void setGrammarTextField(JTextField grammarTextField)
+	{
+		this.grammarTextField = grammarTextField;
+	}
+
+
+	/**
+	 * @return the lexiconTextField
+	 */
+	public JTextField getLexiconTextField()
+	{
+		return lexiconTextField;
+	}
+
+
+	/**
+	 * @param lexiconTextField the lexiconTextField to set
+	 */
+	private void setLexiconTextField(JTextField lexiconTextField)
+	{
+		this.lexiconTextField = lexiconTextField;
+	}
+
+
+	/**
+	 * @return the testsuiteTextField
+	 */
+	public JTextField getTestsuiteTextField()
+	{
+		return testsuiteTextField;
+	}
+
+
+	/**
+	 * @param testsuiteTextField the testsuiteTextField to set
+	 */
+	private void setTestsuiteTextField(JTextField testsuiteTextField)
+	{
+		this.testsuiteTextField = testsuiteTextField;
 	}
 }

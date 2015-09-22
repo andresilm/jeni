@@ -28,7 +28,7 @@ class AppConfiguration
 	{
 		this.resourcesFiles = new HashMap();
 		//load bundled sources for having basic configuration, then replace input files with the desired ones
-		this.setGenerationConfig(GeneratorConfigurations.getConfig("probabilistic"));
+		this.setGenerationConfig(GeneratorConfigurations.getConfig("probabilistic_demosuite"));
 		this.resourcesFiles.put("grammar", getGenerationConfig().getGrammarFile().getAbsolutePath());
 		this.resourcesFiles.put("lexicon", getGenerationConfig().getSyntacticLexiconFile().getAbsolutePath());
 		this.resourcesFiles.put("testsuite", getGenerationConfig().getTestsuiteFile().getAbsolutePath());
@@ -69,7 +69,7 @@ class AppConfiguration
 	}
 
 
-	void setConfiguration(String grammarFilename, String lexiconFilename, String testsuiteFilename)
+	public void setConfiguration(String grammarFilename, String lexiconFilename, String testsuiteFilename)
 	{
 		File grammarFile = new File(grammarFilename);
 		getGenerationConfig().setGrammarFile(grammarFile);
@@ -85,18 +85,34 @@ class AppConfiguration
 
 	void setUserInput(int type, String theInput) throws IOException
 	{
+		if (type == 1) {
+			this.setLexiconSource("resources/probabilistic/koda.lexicon.28072015.lex");
+			System.out.println("Predefined input chosen -> using default lexicon source: " + "resources/probabilistic/koda.lexicon.28072015.lex");
+		}
+			
 		this.setUserInputType(type);
 		this.userInput = theInput;
 		createAndConfigureInputFileForSemantics(theInput);
 	}
 	
-	void createAndConfigureInputFileForSemantics(String inputSemantics) throws IOException
+	public void createAndConfigureInputFileForSemantics(String inputSemantics) throws IOException
 	{
-		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("customSemanticsTmpFile.geni")));
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile.geni")));
 		buffOutput.write("test-user-input\n");
 		buffOutput.write("semantics:[" + inputSemantics + "]\n");
 		buffOutput.close();
-		this.setTestsuiteSource("customSemanticsTmpFile.geni");
+		this.setTestsuiteSource("TmpFile.geni");
+		
+	}
+	
+	public void createAndConfigureInputFileForSemantics(String sampleName,String inputSemantics) throws IOException
+	{
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile.geni")));
+		
+		buffOutput.write(sampleName+"\n");
+		buffOutput.write("semantics:[" + inputSemantics + "]\n");
+		buffOutput.close();
+		this.setTestsuiteSource("TmpFile.geni");
 		
 	}
 
