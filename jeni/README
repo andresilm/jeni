@@ -1,3 +1,5 @@
+
+
 *** Jeni project
 Java port of GenI - in progress
 
@@ -9,9 +11,14 @@ doc : some documentation (UML not up to date)
 resources : some resources including french/english grammars (one XMG grammar), lexicons, test suites
 
 
+
 *** How to run it?
 For now by eclipse, you can run Junit tests in ...commons.tests package, and the ...jeni.JeniGeneratorTest.
 The logs are written in root directory jeni.log file.
+
+You can also run a basic GUI of Probabilistic Jeni generator. If you exported anbd packaged Jeni into a jar "jeni.jar" then you can run that GUI by doing on command line:
+java -jar jeni.jar synalp.generation.probabilistic.guidemo.PJeniDemoApp
+NOTE: If you are looking specifically for the PJeni (Probabilistic Jeni) package, take a look to README_PJENI
 
 
 *** NgramRanker and SRILM
