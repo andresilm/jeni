@@ -30,6 +30,7 @@ import synalp.generation.configuration.GeneratorConfigurations;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
 import synalp.generation.probabilistic.ProbabilisticGenerator;
+import synalp.generation.probabilistic.Surface;
 import synalp.generation.configuration.GeneratorConfigurationReader;
 
 public class GeneratorThread extends Thread
@@ -167,7 +168,7 @@ public class GeneratorThread extends Thread
 
 			for(TestSuiteEntry entry : config.getTestSuite())
 			{
-				System.err.println(entry.getSemantics());
+				//System.err.println(entry.getSemantics());
 				this.progressBar.setValue(this.entryNum);
 				this.progressBar.setString(this.entryNum + "/" + this.totalEntries);
 				this.progressBar.update(this.progressBar.getGraphics());
@@ -189,28 +190,36 @@ public class GeneratorThread extends Thread
 				}
 				int sentenceCount = 1;
 
-				Map<String, Integer> resultsGrouped = groupRealizations(results);
-
-				for(String real : resultsGrouped.keySet())
+				List<Surface> resultsGrouped = Surface.groupSurfaces(results);
+				
+				
+				if (results.size()>0 && resultsGrouped.size() == 0)
+					addToTextArea("ERROR when getting surfaces\n");
+				
+				for(Surface surf : resultsGrouped)
 				{
+					
+					
+					
+					
 					if (appConfig.isVerboseOutput())
 					{
 						//addToTextArea("GENERATED SENTENCE #" + sentenceCount + ":\n" + getSurface(real,true)+ "\n\n");
-						addToTextArea("==== Realization #" + sentenceCount + "\n");
+						addToTextArea("==== Surface #" + sentenceCount + "\n");
 				
 
-						addToTextArea("*Sentence: " + real.split(":")[0] + "\n");
+						addToTextArea("*Sentence: " + surf.getSentence() + "\n");
 				
 
 				
-						addToTextArea("*Times: " + resultsGrouped.get(real) + "\n");
+						addToTextArea("*Times: " + surf.getTimes() + "\n");
 
-						addToTextArea("*Probability: " + real.split(":")[1] + "\n\n");
+						addToTextArea("*Probability: " + surf.getProbability() + "\n\n");
 				
 					}
 					else
 					{
-						addToTextArea("\"" + real.split(":")[0] + "\"" + " (" + resultsGrouped.get(real) + "," + real.split(":")[1] + ")\n");
+						addToTextArea("\"" + surf.getSentence() + "\"" + " (" + surf.getTimes()  + "," + surf.getProbability() + ")\n");
 					}
 
 					++sentenceCount;
@@ -231,7 +240,7 @@ public class GeneratorThread extends Thread
 			if (appConfig.isVerboseOutput())
 			{
 				addToTextArea("= Generation ended at" + "\n");
-				System.out.println("= Generation ended at");
+			//	System.out.println("= Generation ended at");
 
 				addToTextArea("*Time: " + time + "\n");
 				
@@ -249,57 +258,8 @@ public class GeneratorThread extends Thread
 	}
 
 
-	/**
-	 * Returns the surface form of given realizations. If morph is true, returns the morphological
-	 * realizations, if false returns the lemmas separated by space.
-	 * @param realizations
-	 * @param morph
-	 * @return a list of surface forms
-	 */
-	private static List<String> getSurface(List<? extends SyntacticRealization> realizations, boolean morph)
-	{
-		List<String> ret = new ArrayList<String>();
-		for(SyntacticRealization real : realizations)
-			ret.addAll(getSurface(real, morph));
-		return ret;
-	}
 
 
-	/**
-	 * Returns the surface form of given realization. If morph is true, returns the morphological
-	 * realizations, if false returns the lemmas separated by space.
-	 * @param real
-	 * @param morph
-	 * @return a list of surface forms
-	 */
-	private static List<String> getSurface(SyntacticRealization real, boolean morph)
-	{
-		List<String> ret = new ArrayList<String>();
-		if (morph)
-		{
-			for(MorphRealization morphReal : real.getMorphRealizations())
-				ret.add(morphReal.asString());
-		}
-		else ret.add(Utils.print(real.getLemmas(), " "));
-		return ret;
-	}
-
-
-	private static Map<String, Integer> groupRealizations(List<JeniRealization> results)
-	{
-		Map<String, Integer> ret = new HashMap<String, Integer>();
-
-		for(JeniRealization result : results)
-			for(MorphRealization morphReal : result.getMorphRealizations())
-			{
-				String surface = morphReal.asString() + ":" + result.getProbability();
-				if (!ret.containsKey(surface))
-					ret.put(surface, 0);
-				ret.put(surface, ret.get(surface) + 1);
-			}
-
-		return ret;
-	}
 
 
 

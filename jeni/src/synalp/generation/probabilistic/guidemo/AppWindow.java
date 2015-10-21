@@ -25,6 +25,7 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -283,8 +284,8 @@ public class AppWindow extends JFrame
 
 	private void loadSample(String filename) throws FileNotFoundException
 	{
-		Scanner sampleFile = new Scanner(new FileInputStream(new File(this.getClass().getResource(filename).getFile())));
-
+		InputStream file = this.getClass().getResourceAsStream("resources/sample.geni");
+		Scanner sampleFile = new Scanner(file);
 		while(sampleFile.hasNextLine())
 		{
 			String sampleName = sampleFile.nextLine();
