@@ -229,7 +229,7 @@ public class AppConfiguration
 	}
 
 
-	void setBeamSize(int beamSize)
+	public void setBeamSize(int beamSize)
 	{
 		this.beamSize = beamSize;
 	}

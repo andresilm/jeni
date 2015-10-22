@@ -35,7 +35,7 @@ public class Surface
 		{
 
 			Surface first = new Surface(results.get(0));
-			System.err.println("FIRST_SENTENCE#"+first.getSentence()+"#");
+			//System.err.println("FIRST_SENTENCE#"+first.getSentence()+"#");
 			ret.add(first);
 
 			for(int i = 1; i < results.size(); ++i)
@@ -47,7 +47,7 @@ public class Surface
 				{
 					if (s.getSentence().equals(surface.getSentence()))
 					{
-						System.err.println("OMITTING_ADDED_SENTENCE#"+s.getSentence()+"#");
+					//	System.err.println("OMITTING_ADDED_SENTENCE#"+s.getSentence()+"#");
 						s.addRealization(real);
 						addedBefore = true;
 						break;
@@ -57,7 +57,7 @@ public class Surface
 				
 				if (!addedBefore)
 				{
-					System.err.println("NEW_SENTENCE#"+surface.getSentence()+"#");
+					//System.err.println("NEW_SENTENCE#"+surface.getSentence()+"#");
 					ret.add(surface);
 					
 				}
