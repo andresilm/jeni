@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.awt.EventQueue;
 

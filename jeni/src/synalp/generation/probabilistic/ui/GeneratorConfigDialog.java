@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Button;
@@ -9,6 +9,9 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import synalp.generation.probabilistic.common.AppConfiguration;
+
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.JTextField;

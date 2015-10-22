@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.awt.BorderLayout;
 
@@ -28,7 +28,7 @@ import javax.swing.ScrollPaneConstants;
 import synalp.generation.configuration.GeneratorConfigurations;
 import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
-import synalp.generation.probabilistic.guidemo.AppConfiguration;
+import synalp.generation.probabilistic.common.AppConfiguration;
 
 import java.awt.Dimension;
 import java.time.LocalDateTime;

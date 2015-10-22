@@ -6,7 +6,10 @@ import static java.util.stream.Collectors.toList;
 
 import org.apache.log4j.Logger;
 
+import synalp.commons.output.MorphRealization;
+import synalp.commons.output.SyntacticRealization;
 import synalp.commons.semantics.Semantics;
+import synalp.commons.utils.Utils;
 import synalp.generation.ChartItem;
 import synalp.generation.configuration.*;
 import synalp.generation.jeni.*;
@@ -67,6 +70,42 @@ public class ProbabilisticGenerator extends JeniGenerator
 		setupLemmaFeatures(ret);
 		logResults(ret);
 		logger.info("*******************Beam size="+GeneratorOption.BEAM_SIZE);
+		return ret;
+	}
+	
+	 /** Returns the surface form of given realization. If morph is true, returns the morphological
+	 * realizations, if false returns the lemmas separated by space.
+	 * @param real
+	 * @param morph
+	 * @return a list of surface forms
+	 */
+	private static List<String> getSurface(SyntacticRealization real, boolean morph)
+	{
+		List<String> ret = new ArrayList<String>();
+		if (morph)
+		{
+			for(MorphRealization morphReal : real.getMorphRealizations())
+				ret.add(morphReal.asString());
+		}
+		else ret.add(Utils.print(real.getLemmas(), " "));
+		return ret;
+	}
+
+
+
+	public static Map<String, Integer> groupRealizations(List<JeniRealization> results)
+	{
+		Map<String, Integer> ret = new HashMap<String, Integer>();
+
+		for(JeniRealization result : results)
+			for(MorphRealization morphReal : result.getMorphRealizations())
+			{
+				String surface = morphReal.asString() + ":" + result.getProbability();
+				if (!ret.containsKey(surface))
+					ret.put(surface, 0);
+				ret.put(surface, ret.get(surface) + 1);
+			}
+
 		return ret;
 	}
 

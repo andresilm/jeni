@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -6,6 +6,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import synalp.generation.probabilistic.common.AppConfiguration;
+
 import javax.swing.ButtonGroup;
 import javax.swing.GroupLayout;
 import javax.swing.GroupLayout.Alignment;

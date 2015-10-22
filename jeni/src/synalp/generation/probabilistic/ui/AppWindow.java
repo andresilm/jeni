@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -44,6 +44,7 @@ import javax.swing.JMenu;
 
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.configuration.GeneratorConfigurations;
+import synalp.generation.probabilistic.common.AppConfiguration;
 
 public class AppWindow extends JFrame
 {
@@ -63,7 +64,7 @@ public class AppWindow extends JFrame
 	public AppWindow()
 	{
 		predefinedInputs = new HashMap();
-		try
+	/*	try
 		{
 			loadSample("sample.geni");
 		}
@@ -72,7 +73,7 @@ public class AppWindow extends JFrame
 			// TODO Auto-generated catch block
 			e2.printStackTrace();
 		}
-
+*/
 		appConfig = new AppConfiguration();
 
 		setTitle("Probabilistic Jeni Generator Demo");

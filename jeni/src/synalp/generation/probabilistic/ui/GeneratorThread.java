@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.ui;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -31,6 +31,7 @@ import synalp.generation.jeni.JeniGenerator;
 import synalp.generation.jeni.JeniRealization;
 import synalp.generation.probabilistic.ProbabilisticGenerator;
 import synalp.generation.probabilistic.Surface;
+import synalp.generation.probabilistic.common.AppConfiguration;
 import synalp.generation.configuration.GeneratorConfigurationReader;
 
 public class GeneratorThread extends Thread

@@ -1,4 +1,4 @@
-package synalp.generation.probabilistic.guidemo;
+package synalp.generation.probabilistic.common;
 
 import java.io.BufferedWriter;
 import java.io.File;
@@ -10,7 +10,7 @@ import java.util.Map;
 import synalp.generation.configuration.GeneratorConfiguration;
 import synalp.generation.configuration.GeneratorConfigurations;
 
-class AppConfiguration
+public class AppConfiguration
 {
 
 	String builtinTestsuiteName;
@@ -19,12 +19,14 @@ class AppConfiguration
 	private GeneratorConfiguration generationConfig;
 	Map<String, String> resourcesFiles;
 	Map<String, Boolean> infoToOutput;
-	private int userInputType=0;//userInput or testsuite
+	private int userInputType = 0;//userInput or testsuite
 	String userInput;
 	private int beamSize;
-static int run=0;
+	static int run = 0;
 	private boolean verboseOutput;
-	AppConfiguration()
+
+
+	public AppConfiguration()
 	{
 		this.resourcesFiles = new HashMap();
 		//load bundled sources for having basic configuration, then replace input files with the desired ones
@@ -32,7 +34,7 @@ static int run=0;
 		this.resourcesFiles.put("grammar", getGenerationConfig().getGrammarFile().getAbsolutePath());
 		this.resourcesFiles.put("lexicon", getGenerationConfig().getSyntacticLexiconFile().getAbsolutePath());
 		this.resourcesFiles.put("testsuite", getGenerationConfig().getTestsuiteFile().getAbsolutePath());
-		
+
 		this.infoToOutput = new HashMap();
 		this.isBuiltinTest = false;
 		this.setVerboseOutput(false);
@@ -40,7 +42,7 @@ static int run=0;
 	}
 
 
-	void setBeamSize(String beam)
+	public void setBeamSize(String beam)
 	{
 		getGenerationConfig().setOption("beam_size", beam);
 	}
@@ -58,7 +60,7 @@ static int run=0;
 	}
 
 
-	void setConfiguration(String grammarFilename, String lexiconFilename)
+	public void setConfiguration(String grammarFilename, String lexiconFilename)
 	{
 
 		getGenerationConfig().setGrammarFile(new File(grammarFilename));
@@ -83,51 +85,55 @@ static int run=0;
 	}
 
 
-	void setUserInput(int type, String theInput) throws IOException
+	public void setUserInput(int type, String theInput) throws IOException
 	{
-		
-			
+
 		this.setUserInputType(type);
 		this.userInput = theInput;
 		createAndConfigureInputFileForSemantics(theInput);
 	}
-	
-	void setUserInputForPredefinedSample(int type, String name, String theInput) throws IOException
+
+
+	public void setUserInputForPredefinedSample(int type, String name, String theInput) throws IOException
 	{
-		if (type == 1) {
+		if (type == 1)
+		{
 			this.setLexiconSource("resources/probabilistic/koda.lexicon.28072015.lex");
 			System.out.println("Predefined input chosen -> using default lexicon source: " + "resources/probabilistic/koda.lexicon.28072015.lex");
 		}
-			
+
 		this.setUserInputType(type);
 		this.userInput = theInput;
-		createAndConfigureInputFileForSemantics(name,theInput);
+		createAndConfigureInputFileForSemantics(name, theInput);
 	}
-	
+
+
 	public void createAndConfigureInputFileForSemantics(String inputSemantics) throws IOException
 	{
 		++run;
-		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile"+run+".geni")));
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile" + run + ".geni")));
 		buffOutput.write("test-user-input\n");
 		buffOutput.write("semantics:[" + inputSemantics + "]\n");
 		buffOutput.close();
-		this.setTestsuiteSource("TmpFile"+run+".geni");
-		
-	}
-	
-	public void createAndConfigureInputFileForSemantics(String sampleName,String inputSemantics) throws IOException
-	{
-		++run;
-		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile"+run+".geni")));
-		
-		buffOutput.write(sampleName+"\n");
-		buffOutput.write("semantics:[" + inputSemantics + "]\n");
-		buffOutput.close();
-		this.setTestsuiteSource("TmpFile"+run+".geni");
-		
+		this.setTestsuiteSource("TmpFile" + run + ".geni");
+
 	}
 
-	String getGrammarSource()
+
+	public void createAndConfigureInputFileForSemantics(String sampleName, String inputSemantics) throws IOException
+	{
+		++run;
+		BufferedWriter buffOutput = new BufferedWriter(new FileWriter(new File("TmpFile" + run + ".geni")));
+
+		buffOutput.write(sampleName + "\n");
+		buffOutput.write("semantics:[" + inputSemantics + "]\n");
+		buffOutput.close();
+		this.setTestsuiteSource("TmpFile" + run + ".geni");
+
+	}
+
+
+	public String getGrammarSource()
 	{
 
 		return this.resourcesFiles.get("grammar");
@@ -135,7 +141,7 @@ static int run=0;
 	}
 
 
-	String getLexiconSource()
+	public String getLexiconSource()
 	{
 
 		return this.resourcesFiles.get("lexicon");
@@ -150,7 +156,7 @@ static int run=0;
 	}
 
 
-	String getTestsuiteSource()
+	public String getTestsuiteSource()
 	{
 
 		return this.resourcesFiles.get("testsuite");
@@ -172,7 +178,7 @@ static int run=0;
 	/**
 	 * @return the verboseOutput
 	 */
-	boolean isVerboseOutput()
+	public boolean isVerboseOutput()
 	{
 		return verboseOutput;
 	}
@@ -181,7 +187,7 @@ static int run=0;
 	/**
 	 * @param verboseOutput the verboseOutput to set
 	 */
-	void setVerboseOutput(boolean verboseOutput)
+	public void setVerboseOutput(boolean verboseOutput)
 	{
 		this.verboseOutput = verboseOutput;
 	}
@@ -190,7 +196,7 @@ static int run=0;
 	/**
 	 * @return the userInputType
 	 */
-	int getUserInputType()
+	public int getUserInputType()
 	{
 		return userInputType;
 	}
@@ -199,13 +205,13 @@ static int run=0;
 	/**
 	 * @param userInputType the userInputType to set
 	 */
-	void setUserInputType(int userInputType)
+	public void setUserInputType(int userInputType)
 	{
 		this.userInputType = userInputType;
 	}
 
 
-	GeneratorConfiguration getGenerationConfig()
+	public GeneratorConfiguration getGenerationConfig()
 	{
 		return generationConfig;
 	}
