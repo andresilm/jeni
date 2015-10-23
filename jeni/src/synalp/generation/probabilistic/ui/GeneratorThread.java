@@ -7,10 +7,13 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Writer;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.stream.Stream;
@@ -86,6 +89,9 @@ public class GeneratorThread extends Thread
 		}
 		else
 		{
+			DecimalFormat df = new DecimalFormat("0", DecimalFormatSymbols.getInstance(Locale.ENGLISH));
+			df.setMaximumFractionDigits(3); //340 = DecimalFormat.DOUBLE_FRACTION_DIGITS
+			
 			GeneratorConfiguration config = this.appConfig.getGenerationConfig();
 
 			ProbabilisticGenerator generator = new ProbabilisticGenerator(config);
@@ -215,12 +221,12 @@ public class GeneratorThread extends Thread
 				
 						addToTextArea("*Times: " + surf.getTimes() + "\n");
 
-						addToTextArea("*Probability: " + surf.getProbability() + "\n\n");
+						addToTextArea("*Probability: " + df.format(surf.getProbability()) + "\n\n");
 				
 					}
 					else
 					{
-						addToTextArea("\"" + surf.getSentence() + "\"" + " (" + surf.getTimes()  + "," + surf.getProbability() + ")\n");
+						addToTextArea("\"" + surf.getSentence() + "\"" + " (" + surf.getTimes()  + "," + df.format(surf.getProbability()) + ")\n");
 					}
 
 					++sentenceCount;
