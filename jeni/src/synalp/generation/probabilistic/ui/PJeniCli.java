@@ -9,7 +9,7 @@ import java.io.OutputStreamWriter;
 import synalp.generation.probabilistic.common.AppConfiguration;
 import synalp.generation.probabilistic.common.TestsuiteRunner;
 
-public class PJeniCommandLine
+public class PJeniCli
 {
 	public static void main(String args[]) throws IOException
 	{

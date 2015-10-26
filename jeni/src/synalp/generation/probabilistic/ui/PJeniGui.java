@@ -2,7 +2,7 @@ package synalp.generation.probabilistic.ui;
 
 import java.awt.EventQueue;
 
-public class PJeniDemoApp
+public class PJeniGui
 {
 
 	/**
