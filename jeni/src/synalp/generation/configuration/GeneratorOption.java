@@ -46,7 +46,7 @@ public class GeneratorOption
 	public static long TIMEOUT = 0;
 
 	@OptionMessage("If true, uses filtering to group entries together before performing generation.")
-	public static boolean USE_FILTERING = false;
+	public static boolean USE_FILTERING = true;
 
 	@OptionMessage("If USE_FILTERING is true, lists categories to use as top categories (we should have instead ROOT_FEAT)")
 	public static String FILTERING_CATEGORIES = "s";
